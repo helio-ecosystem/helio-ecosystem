@@ -1,0 +1,1187 @@
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-FINA-DE-CALDERON-8"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/227733>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C.E.I.P.-PRINCIPE-DE-ASTURIAS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457728>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pº-CASTELLANA-Nº35"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528447>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-VALLECAS-C.F."^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/230112>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-INSTITUCION-LA-SALLE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3913526>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-FRANCISCO-JAVIER-SAENZ-DE-OIZA-242"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528282>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-CALLE-DE-SAN-CIPRIANO-46"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/175086>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-JUNTO-A-CARRIL-BICI"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3914176>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-ESTANISLAO-PEREZ-PITA-71"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457870>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pz.-SANTA-ANA-Nº15"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528501>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-Centro-Cultural-Zazuar"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528295>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-UNIÓN-FEDERAL-DE-POLICIA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529151>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-GLORIETA-MAR-CARIBE-5"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/193973>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-GLORIETA-DE-ROCIO-DURCAL"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457883>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-HUERTAS-Nº75"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4745682>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-BRAVO-MURILLO-Nº107"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/217575>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-BIBLIOTECA-PUBLICA-RAFAEL-ALBERTI"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457630>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pz.-MONCLOA-Nº1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528514>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-POLIDEPORTIVO-PALOMERAS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/168626>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-MINISTERIO-DE-HACIENDA.-METRO-CUZCO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/227813>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-FRENTE-A-LA-PERGOLA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457808>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pz.-SAN-MARTIN-Nº1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529164>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-ANDORRA-30"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/155190>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-INSTALACION-DEPORTIVA-BASICA-SANTA-HORTENSIA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3545445>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-URBANIZACION-LA-BUGANVILLA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3575550>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-CALLE-DE-LA-SIERRA-VIEJA-62"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529177>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-MARQUES-DE-CORBERA-54"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/124995>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-DIRECCION-GENERAL-DE-AGRICULTURA-DE-LA-COMUNIDAD-DE-MADRID"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457656>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-BRAVO-MURILLO-Nº32"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/216786>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C.E.I.P.-LORENZO-LUZURIAGA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528834>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-ONCE-7"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457491>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-LUIS-ESTEBAN-Nº5"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7179498>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-MONTSERRAT-Nº32"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528375>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-AVENIDA-DE-ORCASUR-60"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7179792>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-ORENSE-Nº8"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457963>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-JOAQUIN-DICENTA-Nº1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/172981>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CERCA-ESTACION-DE-METRO-PLAZA-DE-CASTILLA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7181774>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICILETAS-C/-DE-JUAN-DUQUE-22"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528847>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-MONOVAR-19"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/124590>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-COLEGIO-SALESIANOS-DE-ATOCHA-(SITUADO-LINEAL)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/201810>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-ESTACION-CERCANIAS-EL-BARRIAL"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3568890>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-CALLE-DE-BLASA-PEREZ-1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3566672>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-ARROYOFRESNO-17-ANILLO-VERDE-CICLISTA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457723>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-MIGUEL-ANGEL-Nº1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528607>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-IES-MORATALAZ"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7185689>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PSO-DE-LOS-PONTONES-8"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528442>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS--"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4990605>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-INFANTAS-Nº-6"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/219187>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-ANILLO-VERDE-CICLISTA-(PARQUE-ARROYO-FRESNO)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/5069903>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-CALLE-GENERAL-MARVA-I.E.S-PEDRO-SALINAS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3914171>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-ESTANISLAO-PEREZ-PITA-66"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3545079>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-ENTRADA-A-PARQUE-(CENTRO-DEPORTIVO-BMX)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/5182687>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-DAROCA-91"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4704609>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-HERMANOS-GASCON-76"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457584>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-RAIMUNDO-FERNANDEZ-VILLAVERDE-Nº32"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528468>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-CALLE-DE-LA-PEÑA-VEIGA-6"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457509>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-CAPITAN-BLANCO-ARGIBAY-Nº14"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/5068930>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-IES-JUAN-DE-VILLANUEVA.-CAMINO-VIEJO-VILLAVERDE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/157999>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AL-LADO-DE-LA-FUENTE-DE-LOS-DELFINES"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457803>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pz.-SANTO-DOMINGO-Nº19"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457597>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-JUAN-VIGON-Nº8"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7180299>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "\"SITUADO-APARCABICICLETAS-C/-JUAN-DUQUE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "IMPERIAL"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/179215>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CENTRO-CONCERTADO-COLEGIO-LOURDES"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/5226600>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CARRERA-DE-SAN-FRANCISCO-4"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3568908>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-BARCELO-Nº2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3914416>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-ALEJANDRO-DE-LA-SOTA-6"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529172>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-DEMETRIO-LOPEZ-6"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3540442>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-ZONA-COMERCIAL"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457651>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-FUENCARRAL-Nº123"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529185>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-INSITUCION-LIBRE-DE-ENSEÑANZA-168"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528370>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS--"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7184002>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-DEL-MONASTERIO-DE-LAS-HUELGAS-17"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3531545>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PARROQUIA-DE-SAN-HILARIO-DE-POLIERS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7180366>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-METRO-ALTO-EXTREMADURA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528842>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-INSTITUCION-LIBRE-DE-ENSEÑANZA-14"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529198>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-SAN-MARIANO-10"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528383>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-C.D.PUERTA-BONITA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4748550>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CENTRO-DEPORTIVO-MUNICIPAL-CIUDAD-DE-LOS-POETAS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528308>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-CENTRO-CULTURAL-ALBERTO-SANCHEZ"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529252>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-MEQUINENZA-16"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457731>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-ALMAGRO-Nº7"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/5203197>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PLAZA-LA-OROTAVA-6"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4990613>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-INFANTAS-Nº-17"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3536170>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CIUDAD-DE-LA-RAQUETA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4704604>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-SANTA-VIRGILIA-19"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3554928>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-EN-LA-ENTRADA-DEL-AYUNTAMIENTO-DE-MADRID"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528463>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-BIBLIOTECA-PÚBLICA-MARÍA-MOLINER"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4745556>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CENTRO-CIVICO-LA-VAGUADA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457504>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pz.-DONOSO-Nº5"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4704617>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-PROVISIONAL-CARCAVAS-OESTE-UNO-70"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4990461>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-SAN-MARCOS-Nº-19"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528476>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS--"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457517>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-FRANCISCO-GERVAS-Nº26"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3914117>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-JORDI-SOLE-TURA-26"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/187018>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CENTRO-DEPORTIVO-MUNICIPAL-LA-BOMBILLA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3914411>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-LAS-FUERZAS-ARMADAS-5"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/176608>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-POLIDEPORTIVO-MPAL-GALLUR"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/212758>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-COLEGIO-BRAVO-MURILLO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528489>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-CALLE-DE-LA-SIERRA-GADOR-42"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7182744>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-ALCALA-Nº-16"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529180>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-AQUITANIA-7"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3542121>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-POLIDEPORTIVO-DAOIZ-Y-VELARDE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4745164>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-METRO-SAN-CRISTOBAL"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/233419>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-ESTACION-METRO/CERCANIAS-ALUCHE-(AV/-DE-LOS-POBLADOS-41)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/236287>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CENTRO-CULTURAL-FERNANDEZ-DE-LOS-RIOS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528543>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-POLIDEPORTIVO-MUNICIPAL-SAN-FERMÍN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/173964>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AYUNTAMIENTO-DE-MADRID"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4782433>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-CALLE-DE-ELISA-OCHOA-2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529193>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-INSITUCION-LIBRE-DE-ENSEÑANZA-17-A"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529118>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-ABIZANDA-68"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7841606>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pº-CASTELLANA-Nº-69"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528850>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-INFANTA-CATALINA-MICAELA-37"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528303>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-CALLE-DEL-CIDRO-10"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528391>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-CALLE-DE-LA-LONJA-DE-LA-SEDA-41"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3556362>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-DIRECCION-SERVICIOS-PROTECCION-CIVIL-Y-BOMBEROS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528610>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS--"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3545781>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-MATADERO-DE-MADRID"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457904>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-MAYOR-Nº8"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/181120>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C.P-SAN-JOSE-DE-CALASANZ"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/168988>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PLAZA-REPUBLICA-DOMINICANA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528623>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS--AVENIDA-DE-MORATALAZ-51"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4740793>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-FRENTE-AL-AYUNTAMIENTO-DE-MADRID"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7179581>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PASEO-CASTELLANA-Nº141"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3562553>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-NUÑEZ-DE-BALBOA-16"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457752>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-EVARISTO-SAN-MIGUEL-Nº7"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4749618>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-CALLE-DE-LA-PICARA-MOLINERA-36"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4990621>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-INFANTAS-Nº-29"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/7179506>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PZA.-CONDE-DE-TORENO-Nº5"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4704612>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AVENIDA-LAS-FUERZAS-ARMADAS-206"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528471>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-COLEGIO-SAGRADO-CORAZON"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457765>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-LIBREROS-Nº16"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4988193>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PARQUE-ANA-TUTOR-(C/V-AVDA.-DEL-CARDENAL-HERRERA-ORIA)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457512>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-SAN-AQUILINO-Nº2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4704625>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PASEO-GINEBRA-55"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4782833>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-CIRCE-50"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528484>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS--"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3557017>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CARRETERA-DE-LA-DEHESA-DE-LA-VILLA-(INSTITUTO-VIRGEN-DE-LA-PALOMA)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457525>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-SINESIO-DELGADO-Nº34"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3914125>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-JULIO-CANO-LASSO-47"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3540610>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-FRENTE-AL-PARQUE-DEL-RETIRO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3568911>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PASEO-ALAMEDA-DE-OSUNA-46"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4704638>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-EUTERPE-5"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3569267>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/LUIS-LARRAINZA.-C.P.-PADRE-POVEDA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3538347>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AECID-AGENCIA-ESPAÑOLA-DE-COOPERACION"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/5226575>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CARRERA-SAN-FRANCISCO-1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/4741982>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-POLIDEPORTIVO-MUNICIPAL-ALBERTO-GARCIA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3569014>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-CALLE-DE-ELISA-OCHOA-2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/178375>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CENTRO-CULTURAL-JOSE-LUIS-SAMPREDO"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528497>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS--"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3558139>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-PARROQUIA-NUESTRA-SEÑORA-DE-HENAR"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457538>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Av.-PABLO-IGLESIAS-Nº96"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3914138>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-JOSE-ANTONIO-FERNANDEZ-ORDOÑEZ-25"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457832>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-MAYOR-Nº83"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/5226588>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-SAN-MILLAN-1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/138086>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CENTRO-DE-NEGOCIOS-VELAZQUEZ"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3565138>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CENTRO-DEPORTIVO-MUNICIPAL-ALFREDO-GOYENECHE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/223230>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-ANILLO-VERDE-CICLISTA-(AVDA-STO-DOMINGO-DE-LA-CALZADA-1)"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529113>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-PRINCIPE-CARLOS-36"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/234830>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-AUDITORIO-PARQUE-ALUCHE"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528551>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-CALLE-DE-GERARDO-DIEGO-15"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457845>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pz.-DE-LA-PAJA-Nº3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529126>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-LAS-PEDROÑERAS-39"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457858>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Pz.-PROVINCIA-Nº3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528311>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO_APARCABICICLETAS-CENTRO-DEPORTIVO-MUNICIPAL-PUENTE-DE-VALLECAS"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457605>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-Av.-REINA-VICTORIA-Nº56"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/5204933>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-SAN-GREGORIO-Nº15"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/3541340>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-COLONIA-DE-LA-FUENTE-DE-LA-TEJA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/457693>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-C/-SANTA-ENGRACIA-Nº69"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/529139>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADO-APARCABICICLETAS-CALLE-NAVARIDAS-7"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://www.biciwhere-madrid.es/bwm/resource/528324>
+        a       <http://www.biciwhere-madrid.es/bwm/ontology#BikeStand> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasDescription>
+                "SITUADOS_APARCABICICLETAS-PLAZA-DE-LA-EMPERATRIZ-5"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://www.biciwhere-madrid.es/bwm/ontology#hasOperativeStatus>
+                "OPERATIVO"^^<http://www.w3.org/2001/XMLSchema#string> .

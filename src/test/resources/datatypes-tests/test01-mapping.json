@@ -1,0 +1,32 @@
+{
+  "datasources": [
+    {
+      "id": "DataType Source",
+      "handler": {
+        "type": "JsonHandler",
+        "iterator": "$"
+      },
+      "provider": {
+        "type": "FileProvider",
+        "file": "./src/test/resources/datatypes-tests/test01-data.json"
+      }
+    }
+  ],
+  "resource_rules": [
+    {
+      "id": "OneDataType",
+      "datasource_ids": [
+        "DataType Source"
+      ],
+      "subject": "http://example.org",
+      "properties": [
+        {
+          "predicate": "http://saref/value",
+          "object": "{$.price}",
+          "is_literal": "True",
+          "datatype": "http://www.w3.org/2001/XMLSchema#{$.datatype}"
+        }
+      ]
+    }
+  ]
+}

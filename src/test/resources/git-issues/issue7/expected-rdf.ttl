@@ -1,0 +1,6 @@
+<https://example.test.es/test>
+        a       <https://example.test.org/Test> ;
+        <http://www.example.org/ontology#number>
+                "23"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> , "754"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> , "45"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> , "12312"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.example.org/ontology#text>
+                "France"@en , "Italy"@en , "Germany"@en , "Spain"@en .

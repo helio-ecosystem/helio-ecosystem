@@ -1,0 +1,9 @@
+{
+    "title": "JSON at Work",
+    "author": "Tom Marrs",
+    "price": 29.99,
+    "datatype": "double",
+    "datatypes": [
+    	"double", "string", "number"
+    ]
+}

@@ -1,0 +1,410 @@
+submission,first_name,last_name,email,country,affiliation,Web_page,person,corresponding?
+1,Martin,Drancé,martin.drance@etu.u-bordeaux.fr,France,Inserm. Bordeaux Population Health Research Center. Team ERIAS. University of Bordeaux. UMR1219,,79,yes
+2,Dafina,Jeaca,dafina.jeaca@gmail.com,Romania,SC Ogor Lab SRL,,80,no
+2,Nicu Cosmin,Ursache,cosmin.ursache@info.uaic.ro,Romania,Alexandru Ioan Cuza University of Iasi. Faculty of Computer Science,,81,no
+2,Andrei,Panu,andrei.panu@info.uaic.ro,Romania,Alexandru Ioan Cuza University of Iasi. Faculty of Computer Science,,82,yes
+3,Florina Livia,Covaci,florina.covaci@ubbcluj.ro,Romania,Babeș-Bolyai University of Cluj-Napoca,,83,yes
+3,Robert Andrei,Buchmann,robert.buchmann@ubbcluj.ro,Romania,Babeș-Bolyai University of Cluj Napoca,,84,yes
+3,Radu,Dragos,radu.dragos@ubbcluj.ro,Romania,Babeș-Bolyai University of Cluj-Napoca,,85,no
+4,Srinivas,G,gouryrajsrinivas2@gmail.com,India,ServiceNow,,86,yes
+4,Srinivas,G,gouryrajsrinivas2@gmal.com,India,ServiceNow,,87,no
+4,Srinivas,G,gouryrajsrinivas2@gmai.com,India,ServiceNow,,88,no
+5,Romana,Pernisch,pernisch@ifi.uzh.ch,Switzerland,University of Zurich,http://pernisch.ch,72,yes
+5,Daniele,Dell'Aglio,dade@cs.aau.dk,Denmark,Aalborg University,http://dellaglio.org,89,yes
+5,Abraham,Bernstein,bernstein@ifi.uzh.ch,Switzerland,University of Zurich,http://www.ifi.unizh.ch/ddis/people/bernstein/,90,yes
+6,Agnieszka,Jastrzebska,A.Jastrzebska@mini.pw.edu.pl,Poland,Warsaw University of Technology,,91,yes
+6,Wladyslaw,Homenda,homenda@mini.pw.edu.pl,Poland,Warsaw University of Technology. Warsaw. Poland,,92,yes
+6,Witold,Pedrycz,pedrycz@ece.ualberta.ca,Canada,University of Alberta,,93,no
+7,Pieter,Bonte,pieter.bonte@ugent.be,Belgium,Ghent University - imec,,94,yes
+7,Filip,De Turck,Filip.DeTurck@UGent.be,Belgium,Ghent University - imec,,95,yes
+7,Femke,Ongenae,femke.ongenae@ugent.be,Belgium,Ghent University - imec,https://www.ugent.be/ea/idlab/en,96,yes
+8,Agnieszka,Jastrzebska,A.Jastrzebska@mini.pw.edu.pl,Poland,Warsaw University of Technology,,91,yes
+8,Jakub,Bartak,bartakj@uek.krakow.pl,Poland,Cracow University of Economics,,97,yes
+9,Ashvini,Praisoody,praisoodyashvini@gmail.com,Sri Lanka,Sri Lanka Institute of Information Technology,,98,yes
+9,Sutharshan,Shanmugarajah,shanrajah09@gmail.com,Sri Lanka,Sri Lanka Institute of Information Technology,,99,yes
+9,Md Rakib,Uddin,rsrakib404@gmail.com,Sri Lanka,Sri Lanka Institute of Information Technology,,100,yes
+9,Vinojan,Paskkaran,vinojanp@gmail.com,Sri Lanka,Sri Lanka Institute of Information Technology,,101,yes
+10,Agnieszka,Jastrzebska,A.Jastrzebska@mini.pw.edu.pl,Poland,Warsaw University of Technology,,91,yes
+10,Wladyslaw,Homenda,homenda@mini.pw.edu.pl,Poland,Warsaw University of Technology. Warsaw. Poland,,92,yes
+10,Leszek,Gajecki,lgajecki@wsiz.edu.pl,Poland,University of Information Technology and Management in Rzeszow,,102,yes
+11,Mohamad Yaser,Jaradeh,yaser.jaradeh@gmail.com,Germany,L3S Research Center. Leibniz University Hannover,,103,yes
+11,Kuldeep,Singh,kuldeep.vit1989@yahoo.com,Germany,Cerence GmbH and Zerotha Research,,104,yes
+11,Markus,Stocker,markus.stocker@gmail.com,Germany,German National Library of Science and Technology (TIB),,105,no
+11,Sören,Auer,auer@l3s.de,Germany,TIB Leibniz Information Center Science & Technology and University of Hannover,,106,no
+12,Seyed Omid,Mohammadi,Omid_moh1373@yahoo.com,Iran,University of Tehran,,107,yes
+12,Ahmad,Kalhor,AKalhor@ut.ac.ir,Iran,University of Tehran,,108,no
+12,Hossein,Bodaghi,Hossein.Bodaghi@ut.ac.ir,Iran,University of Tehran,,109,no
+13,Hirokazu,Shimauchi,shimauchi@hi-tech.ac.jp,Japan,Hachinohe Institute of Technology,https://sites.google.com/view/hirokazu-shimauchi,110,yes
+14,Anna,Nguyen,anna.nguyen@kit.edu,Germany,Karlsruhe Institute of Technology,,111,yes
+14,Daniel,Hagenmayer,daniel.hagenmayer@student.kit.edu,Germany,Karlsruhe Institute of Technology,,112,yes
+14,Tobias,Weller,tobi@informatik.uni-mannheim.de,Germany,University of Mannheim,https://www.uni-mannheim.de/dws/people/researchers/postdoctoral-research-fellows/dr-tobias-weller/,113,yes
+14,Michael,Färber,michael.faerber@kit.edu,Germany,Karlsruhe Institute of Technology,https://www.aifb.kit.edu/web/Michael_F%C3%A4rber/en,114,yes
+15,Luigi,Asprino,luigi.asprino@unibo.it,Italy,University of Bologna,,115,yes
+15,Valentina Anita,Carriero,valentina.carriero3@unibo.it,Italy,University of Bologna,,116,yes
+15,Valentina,Presutti,valentina.presutti@unibo.it,Italy,University of Bologna,,117,yes
+16,Enrico,Scala,enricos83@gmail.com,Australia,Universita' di Brescia,http://www.hstairs.com,118,yes
+16,Thomas Leo,Mccluskey,t.l.mccluskey@hud.ac.uk,United Kingdom,University of Huddersfield,,119,yes
+16,Mauro,Vallati,m.vallati@hud.ac.uk,United Kingdom,University of Huddersfield,http://maurovallati.blogspot.co.uk,57,yes
+17,Firend,Rasch,drfirend@gmail.com,Malta,American University of Malta,http://aum.edu.mt,120,yes
+17,Narcisa Roxana,Mosteanu,narcisamosteanu@yahoo.com,Malta,American University of Malta,http://aum.edu.mt,121,no
+19,Gabriele,Sottocornola,Gabriele.Sottocornola@stud-inf.unibz.it,Italy,Free University of Bozen-Bolzano,,122,yes
+19,Sanja,Baric,sanja.baric@unibz.it,Italy,Free University of Bozen-Bolzano,,123,no
+19,Fabio,Stella,fabio.stella@unimib.it,Italy,University of Milano-Bicocca,,124,no
+19,Markus,Zanker,markus.zanker@unibz.it,Italy,Free University of Bozen-Bolzano,,125,no
+20,Laura-Maria,Cornei,laura.cornei@info.uaic.ro,Romania,Alexandru Ioan Cuza University Iasi,,126,yes
+20,Lenuta,Alboaie,adria@info.uaic.ro,Romania,Alexandru Ioan Cuza University Iasi,,127,yes
+21,Idafen,Santana-Pérez,idafen.santana@ulpgc.es,Spain,Universidad de Las Palmas de Gran Canaria,,128,no
+21,Mariano,Rico,mariano.rico@upm.es,Spain,Universidad Politécnica de Madrid,,44,yes
+22,Markus,Schröder,markus.schroeder@dfki.de,Germany,DFKI GmbH,https://www.dfki.uni-kl.de/~mschroeder/,129,yes
+22,Christian,Jilek,christian.jilek@dfki.de,Germany,DFKI GmbH,https://www.dfki.uni-kl.de/~jilek/,130,no
+22,Andreas,Dengel,andreas.dengel@dfki.de,Germany,DFKI GmbH,https://www.dfki.uni-kl.de/~dengel/,131,no
+23,Michał,Drozdowicz,michal.drozdowicz@ibspan.waw.pl,Poland,Systems Research Institute Polish Academy of Sciences,,132,yes
+23,Maria,Ganzha,maria.ganzha@ibspan.waw.pl,Poland,Warsaw University of Technology,http://pages.mini.pw.edu.pl/~ganzham/,133,yes
+23,Marcin,Paprzycki,paprzyck@ibspan.waw.pl,Poland,Systems Research Institute Polish Academy of Sciences,http://www.ibspan.waw.pl/~paprzyck/,134,yes
+24,Jędrzej,Potoniec,jedrzej.potoniec@cs.put.poznan.pl,Poland,Poznan University of Technology,,135,yes
+24,Dawid,Wiśniewski,dawid.wisniewski@cs.put.poznan.pl,Poland,Poznan University of Technology,,136,yes
+24,Agnieszka,Ławrynowicz,agnieszka.lawrynowicz@put.poznan.pl,Poland,Poznan University of Technology,,28,yes
+25,Albert,Meroño-Peñuela,albert.merono@kcl.ac.uk,United Kingdom,King's College London,https://www.albertmeronyo.org,32,yes
+25,Romana,Pernisch,pernisch@ifi.uzh.ch,Switzerland,University of Zurich,http://pernisch.ch,72,yes
+25,Christophe,Guéret,christophe.gueret@accenture.com,Ireland,Accenture Labs,http://cgueret.github.io/,66,yes
+25,Stefan,Schlobach,schlobac@few.vu.nl,Netherlands,Vrije Universiteit Amsterdam,http://www.few.vu.nl/~schlobac/,49,yes
+26,Saumya,Bhatnagar,s.bhatnagar@hud.ac.uk,United Kingdom,University of Huddersfield,,137,yes
+26,Sumit,Mund,sumit.mund@hud.ac.uk,United Kingdom,University of Huddersfield,,138,yes
+26,Enrico,Scala,enricos83@gmail.com,Italy,Universita' di Brescia,http://www.hstairs.com,118,yes
+26,Keith,McCabe,keith.mccabe@simplifaisystems.com,United Kingdom,Simplifai Systems Ltd.,,139,no
+26,Thomas Leo,Mccluskey,t.l.mccluskey@hud.ac.uk,United Kingdom,University of Huddersfield,,119,yes
+26,Mauro,Vallati,m.vallati@hud.ac.uk,United Kingdom,University of Huddersfield,http://maurovallati.blogspot.co.uk,57,yes
+27,Manzoor,Ali,manzoor@campus.uni-paderborn.de,Germany,DICE. Paderborn University,,140,yes
+27,Muhammad,Saleem,saleem@informatik.uni.leipzig.de,Germany,AKSW. University Of Leizpig,,141,no
+27,Axel-Cyrille,Ngonga Ngomo,axel.ngonga@upb.de,Germany,DICE. Paderborn University,,38,no
+28,Jan,Sawicki,j.sawicki@mini.pw.edu.pl,Poland,Warsaw University of Technology,,142,yes
+28,Maria,Ganzha,m.ganzha@mini.pw.edu.pl,Poland,Warsaw University of Technology,,133,yes
+28,Marcin,Paprzycki,marcin.paprzycki@ibspan.waw.pl,Poland,Polish Academy of Sciences,,134,yes
+29,Robin,Richardson,r.richardson@esciencecenter.nl,Netherlands,Netherlands eScience Center,,143,no
+29,Remzi,Celebi,remzi.celebi@maastrichtuniversity.nl,Netherlands,Maastricht University,,144,no
+29,Sven,van der Burg,s.vanderburg@esciencecenter.nl,Netherlands,Netherlands eScience Center,,145,no
+29,Djura,Smits,D.Smits@esciencecenter.nl,Netherlands,Netherlands eScience Center,,146,no
+29,Lars,Ridder,l.ridder@esciencecenter.nl,Netherlands,Netherlands eScience Center,,147,no
+29,Michel,Dumontier,michel.dumontier@maastrichtuniversity.nl,Netherlands,Maastricht University,,148,no
+29,Tobias,Kuhn,t.kuhn@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,149,yes
+30,Samaneh,Jozashoori,samaneh.jozashoori@gmail.com,Germany,Leibniz Universitaet Hannover. TIB,,150,yes
+30,Ahmad,Sakor,sakor@l3s.de,Germany,Leibniz Universitaet Hannover. TIB,,151,yes
+30,Enrique,Iglesias,s6enigle@uni-bonn.de,Germany,Universität Bonn,,152,yes
+30,Maria Esther,Vidal,mvidal@umiacs.umd.edu,Germany,TIB Leibniz Information Center for Science and Technology,https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal,58,yes
+31,Lucie,Cadorel,lucie.cadorel@inria.fr,France,Université Côte d'Azur / Inria,,153,yes
+31,Alicia,Blanchi,alicia.blanchi@kcitylabs.fr,France,Université Côte d'Azur,,154,yes
+31,Andrea,Tettamanzi,andrea.tettamanzi@unice.fr,France,Univ. Nice Sophia Antipolis,http://www.i3s.unice.fr/~tettaman/,155,yes
+32,Stijn,Schouten,stijnscho@gmail.com,Netherlands,Vrije Universiteit Amsterdam,,156,yes
+32,Victor,de Boer,v.de.boer@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,157,yes
+32,Lodewijk,Petram,lodewijk.petram@huygens.knaw.nl,Netherlands,Huygens Institute,,158,yes
+32,Marieke,van Erp,marieke.van.erp@dh.huc.knaw.nl,Netherlands,KNAW Humanities Cluster,http://www.mariekevanerp.com,159,yes
+33,Cogan,Shimizu,coganmshimizu@ksu.edu,United States,Kansas State University,http://www.coganshimizu.com,76,yes
+33,Rui,Zhu,ruizhu@geog.ucsb.edu,United States,University of California. Santa Barbara,http://www.geog.ucsb.edu/~zhu/,441,yes
+33,Gengchen,Mai,gengchen_mai@ucsb.edu,United States,University of California. Santa Barbara,,161,yes
+33,Colby,Fisher,cfish25@gmail.com,United States,Hydronos Labs,,162,yes
+33,Ling,Cai,lingcai@geog.ucsb.edu,United States,UC Santa Barbara,,163,yes
+33,Mark,Schildhauer,schild@nceas.ucsb.edu,United States,NCEAS,,164,yes
+33,Krzysztof,Janowicz,janowicz@ucsb.edu,United States,University of California. Santa Barbara,http://geog.ucsb.edu/~jano/,23,yes
+33,Pascal,Hitzler,pascal@pascal-hitzler.de,United States,Kansas State University,http://www.pascal-hitzler.de,165,yes
+33,Lu,Zhou,luzhou@ksu.edu,United States,Kansas State University,,78,yes
+33,Shirly,Stephen,shirlystephen@ucsb.edu,United States,UC Santa Barbara,,166,yes
+34,Simon,Curty,simon.curty@unifr.ch,Switzerland,University of Fribourg,,167,yes
+34,Hans-Georg,Fill,hans-georg.fill@unifr.ch,Switzerland,University of Fribourg,,62,yes
+34,Mark,Musen,musen@stanford.edu,United States,Stanford University,,168,yes
+35,Dmitry,Kudryavtsev,dmitry.ku@gmail.com,Russia,Graduate School of Management. St. Petersburg University,,169,yes
+35,Tatiana,Gavrilova,gavrilova@gsom.pu.ru,Russia,Graduate School of Management. St. Petersburg University,,170,yes
+35,Miroslav,Kubelskiy,mirqube@gmail.com,Russia,Smart Architects,,171,yes
+35,Elvira,Grinberg,elviramitim@gmail.com,Russia,Peter the Great St.Petersburg Polytechnic University,,172,yes
+36,Michael,Färber,michael.faerber@kit.edu,Germany,Karlsruhe Institute of Technology,https://www.aifb.kit.edu/web/Michael_F%C3%A4rber/en,114,yes
+36,Tarek,Saier,tareksaier@gmail.com,Germany,Karlsruhe Institute of Technology,,173,yes
+36,Lukas,Bauer,lukas.bauer@student.kit.edu,Germany,Karlsruhe Institute of Technology,,174,yes
+36,Johannes,Jestram,johannes.jestram@student.kit.edu,Germany,Karlsruhe Institute of Technology,,175,yes
+36,Florentin,Hollert,florentin.hollert@student.kit.edu,Germany,Karlsruhe Institute of Technology,,176,yes
+36,Thimo,Schulz,thimo.schulz@student.kit.edu,Germany,Karlsruhe Institute of Technology,,177,yes
+36,Leon,Hanschmann,leon.hanschmann@student.kit.edu,Germany,Karlsruhe Institute of Technology,,178,yes
+36,Daniel,Gomm,daniel.gomm@student.kit.edu,Germany,Karlsruhe Institute of Technology,,179,yes
+37,Petar,Ristoski,pristoski@ebay.com,United States,eBay Inc.,http://petarristoski.com,73,yes
+37,Zhizhong,Lin,zhizhong.lin@uga.edu,United States,University of Georgia,,180,yes
+37,Qunzhi,Zhou,qunzhou@ebay.com,United States,eBay Inc,,181,yes
+38,Michael,Wessel,michael.wessel@sri.com,United States,SRI International,http://www.michael-wessel.info,182,yes
+38,Girish,Acharya,girish.acharya@sri.com,United States,SRI International,,183,no
+39,Shu,Zhang,zhangshu@cn.fujitsu.com,China,Fujitsu R&D Center. China,,184,yes
+39,Yue,Gao,gaoyue@fujitsu.com,China,Fujitsu R&D Center. China,,185,no
+39,Jun,Sun,sunjun@fujitsu.com,China,Fujitsu R&D Center. China,,186,no
+39,Shan Shan,Yu,yu.shanshan@fujitsu.com,Japan,Fujitsu AI Ethics Research Center. Japan,,187,no
+39,Tetsu,Yamamoto,yamamoto.tetsu@fujitsu.com,Japan,Fujitsu AI Ethics Research Center. Japan,,188,no
+39,Tomoyoshi,Takebayashi,takebayashi.tom@fujitsu.com,Japan,Fujitsu Research. Japan,,189,no
+40,Sara,Narteni,sara.narteni@ieiit.cnr.it,Italy,Consiglio Nazionale delle Ricerche (CNR-IEIIT),,190,yes
+40,Melissa,Ferretti,melissa.ferretti@ieiit.cnr.it,Italy,Consiglio Nazionale delle Ricerche (CNR-IEIIT),,191,no
+40,Vittorio,Rampa,vittorio.rampa@ieiit.cnr.it,Italy,Consiglio Nazionale delle Ricerche (CNR-IEIIT),,192,no
+40,Maurizio,Mongelli,maurizio.mongelli@ieiit.cnr.it,Italy,Consiglio Nazionale delle Ricerche (CNR-IEIIT),,193,no
+41,Evangelos,Paparidis,cti20009@ct.aegean.gr,Greece,University of the Aegean. Dept. of Cultural Technology and Comm.. Intelligent Systems Lab,,194,yes
+41,Konstantinos,Kotis,kotis@aegean.gr,Greece,University of the Aegean. Dept. of Cultural Technology and Comm.. Intelligent Systems Lab,https://www.linkedin.com/in/kotis/,195,yes
+42,Sandaru,Seneviratne,sandaru.seneviratne@anu.edu.au,Australia,The Australian National University,,196,yes
+42,Sergio,Rodríguez Méndez,sergio.rodriguezmendez@anu.edu.au,Australia,The Australian National University,,197,yes
+42,Xuecheng,Zhang,xuecheng.zhang@anu.edu.au,Australia,The Australian National University,,198,no
+42,Pouya,Omran,p.g.omran@anu.edu.au,Australia,The Australian National University,,199,no
+42,Kerry,Taylor,kerry.taylor@anu.edu.au,Australia,The Australian National University,,200,no
+42,Armin,Haller,armin.haller@anu.edu.au,Australia,The Australian National University,,67,no
+43,Alba Catalina,Morales Tirado,alba.morales-tirado@open.ac.uk,United Kingdom,The Open University,http://kmi.open.ac.uk/people/member/alba-morales-tirado,201,yes
+43,Enrico,Daga,enrico.daga@open.ac.uk,United Kingdom,The Open University,http://kmi.open.ac.uk/people/member/enrico-daga,60,yes
+43,Enrico,Motta,e.motta@open.ac.uk,United Kingdom,The Open University,http://kmi.open.ac.uk/people/motta/,202,yes
+44,Nacira,Abbas,nacira.abbas@inria.fr,France,LORIA,,203,yes
+44,Alexandre,Bazin,alexandre.bazin@loria.fr,France,Loria,,204,yes
+44,Jérôme,David,Jerome.David@inria.fr,France,INRIA,,205,yes
+44,Amedeo,Napoli,amedeo.napoli@loria.fr,France,LORIA Nancy (CNRS - Inria - Université de Lorraine) France,https://members.loria.fr/ANapoli/,206,yes
+45,Michele,Ruta,michele.ruta@poliba.it,Italy,Polytechnic University of Bari,http://sisinflab.poliba.it/ruta,207,no
+45,Floriano,Scioscia,floriano.scioscia@poliba.it,Italy,Polytechnic University of Bari,http://sisinflab.poliba.it/scioscia/,208,yes
+45,Corrado,Fasciano,corrado.fasciano@poliba.it,Italy,Polytechnic University of Bari,http://sisinflab.poliba.it/fasciano/,209,no
+45,Giuseppe,Loseto,loseto@lum.it,Italy,LUM University,https://www.lum.it/docenti/giuseppe-loseto/,437,no
+46,Bruno,Sartini,bruno.sartini3@unibo.it,Italy,University of Bologna,https://orcid.org/0000-0002-9152-4402,211,yes
+46,Aldo,Gangemi,aldo.gangemi@unibo.it,Italy,University of Bologna,,13,yes
+46,Marieke,van Erp,marieke.van.erp@dh.huc.knaw.nl,Netherlands,KNAW Humanities Cluster,,159,yes
+47,Ryan,Brate,r.brate@gmail.com,Netherlands,KNAW Humanities Cluster,,212,yes
+47,Andrei,Nestorov,nesterov@cwi.nl,Netherlands,Centrum Wiskunde & Informatica,,213,yes
+47,Valentin,Vogelmann,valentin.vogelmann@dh.huc.knaw.nl,Netherlands,KNAW Humanities Cluster,,214,yes
+47,Jacco,van Ossenbruggen,jacco.van.ossenbruggen@vu.nl,Netherlands,VU University Amsterdam,,215,yes
+47,Laura,Hollink,l.hollink@cwi.nl,Netherlands,Centrum Wiskunde & Informatica,,216,yes
+47,Marieke,van Erp,marieke.van.erp@dh.huc.knaw.nl,Netherlands,KNAW Humanities Cluster,,159,yes
+48,Lucas,Simonne,simonne@lri.fr,France,Paris Saclay University,,217,yes
+48,Nathalie,Pernelle,pernelle@lipn.univ-paris13.fr,France,Sorbonne Paris Nord University,,218,yes
+48,Fatiha,Saïs,fatiha.sais@lri.fr,France,LRI ( Paris Sud University &CNRS8623). Paris Saclay University,http://www.lri.fr/~sais/index.html,47,yes
+48,Rallou,Thomopoulos,rallou.thomopoulos@inrae.fr,France,INRAE,,219,no
+49,Kaviya,Dhanabalachandran,kaviya@uni-bremen.de,Germany,University of Bremen,,220,yes
+49,Vanessa,Hassouna,hassouna@cs.uni-bremen.de,Germany,University of Bremen,,221,yes
+49,Maria M.,Hedblom,maria.m.hedblom@gmail.com,Sweden,Jönköping University,http://www.mariamhedblom.com,22,yes
+49,Michaela,Kuempel,kording@uni-bremen.de,Germany,University of Bremen,,222,yes
+49,Nils,Leusmann,leusmann@uni-bremen.de,Germany,University of Bremen,,223,yes
+49,Michael,Beetz,mbeetz@uni-bremen.de,Germany,University of Bremen,,224,no
+50,Sven,Hertling,svenhertling@t-online.de,Germany,University of Mannheim,https://www.uni-mannheim.de/dws/people/researchers/phd-students/sven-hertling/,225,yes
+50,Heiko,Paulheim,heiko@informatik.uni-mannheim.de,Germany,University of Mannheim,http://www.heikopaulheim.com/,41,yes
+51,Nicholas,Halliwell,nicholas.halliwell@inria.fr,France,Inria,,226,yes
+51,Fabien,Gandon,fabien.gandon@inria.fr,France,Inria,,227,yes
+51,Freddy,Lecue,freddy.lecue@inria.fr,France,Inria,,228,yes
+52,Edeline,Contempre,edeline_contempre@yahoo.com,Netherlands,Vrije Universiteit Amsterdam,,229,yes
+52,Zoltán,Szlávik,z.szlavik@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,230,no
+52,Majid,Mohammadi,m.mohammadi@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,231,no
+52,Erick,Velazquez,erick.velazquez@mytomorrows.com,Netherlands,Vrije Universiteit Amsterdam,,232,no
+52,Annette,ten Teije,annette.ten.teije@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,233,no
+52,Ilaria,Tiddi,i.tiddi@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,53,no
+53,Muhammad,Haris,haris@l3s.de,Germany,L3S Research Center,,234,yes
+53,Jennifer,D'Souza,Jennifer.DSouza@tib.eu,Germany,TIB Leibniz Information Center Science & Technology and University of Hannover,,235,no
+53,Markus,Stocker,markus.stocker@tib.eu,Germany,TIB Leibniz Information Center Science & Technology and University of Hannover,,105,no
+53,Sören,Auer,auer@l3s.de,Germany,TIB Leibniz Information Center Science & Technology and University of Hannover,https://tib.eu/auer,106,yes
+54,Melisachew Wudage,Chekol,melwud@gmail.com,Netherlands,Utrecht University,,236,yes
+55,Aneeta,Sylolypavan,aneeta.sylolypavan.20@ucl.ac.uk,United Kingdom,Institute of Health Informatics. University College. London,,237,no
+55,Derek,Sleeman,d.sleeman@abdn.ac.uk,United Kingdom,University of Aberdeen,,238,yes
+55,Honghan,Wu,Honghan.wu@ucl.ac.uk,United Kingdom,Institute of Health Informatics. University College. London,,239,no
+55,Malcolm,Sim,malcolm.sim@ggc.scot.nhs.uk,United Kingdom,Queen Elizabeth University Hospital. Glasgow,,240,no
+57,Hamada,Zahera,hamada.zahera@uni-paderborn.de,Germany,Paderborn University,,438,yes
+57,Stefan,Balke,stefan.balke@pmone.com,Germany,pmOne AG,,242,no
+57,Jonas,Haupt,jonas.haupt@elevait.de,Germany,elevait GmbH,,243,no
+57,Stefan,Heindorf,heindorf@upb.de,Germany,Paderborn University,,244,no
+57,Martin,Voigt,matin.voigt@elevait.de,Germany,elevait GmbH,,245,no
+57,Carolin,Walter,carolin.walter@usu.com,Germany,USU Software AG,,246,no
+57,Fabian,Witter,fabian.witter@pmone.com,Germany,pmOne AG,,247,no
+57,Axel-Cyrille Ngonga,Ngomo,axel.ngonga@uni-paderborn.e,Germany,Paderborn University,,248,no
+58,Suraj,Kumar,surajkumar@cse.iitb.ac.in,India,Indian Institute of Technology - Bombay,,249,no
+58,Ganesh,Ramakrishnan,ganesh@cse.iitb.ac.in,India,Indian Institute of Technology - Bombay,,250,yes
+58,Varsha,Apte,varsha@cse.iitb.ac.in,India,Indian Institute of Technology - Bombay,http://www.cse.iitb.ac.in/~varsha/,251,yes
+58,Pranshu,Chourasia,pranshuiitb@cse.iitb.ac.in,India,Indian Institute of Technology - Bombay,,252,yes
+59,Rafael,Ines-Guillen,rafael.ines.guillen@gmail.com,Spain,Universidad Politécnica de Madrid,,253,yes
+59,Carlos,Badenes-Olmedo,cbadenes@fi.upm.es,Spain,Universidad Politécnica de Madrid,,254,yes
+59,Oscar,Corcho,ocorcho@fi.upm.es,Spain,Universidad Politécnica de Madrid,,8,yes
+60,Doerthe,Arndt,doerthe.arndt@tu-dresden.de,Germany,TU Dresden. Computational LogicGroup,,430,yes
+60,Sven,Lieber,Sven.Lieber@ugent.be,Belgium,Ghent University – imec – IDLab. KBR Royal Library of Belgium,,256,no
+60,Raf,Buyle,raf.buyle@vlaanderen.be,Belgium,Ghent University – imec – IDLab,,257,no
+60,Sander,Goossens,sander.goossens@endare.com,Belgium,Endare BV,,258,no
+60,David,De Block,david.deblock@internetarchitects.be,Belgium,Internet Architects,,259,no
+60,Ben,De Meester,ben.demeester@ugent.be,Belgium,Ghent University – imec – IDLab,https://ben.de-meester.org/#me,260,yes
+60,Erik,Mannens,erik.mannens@ugent.be,Belgium,Ghent University – imec – IDLab,,261,no
+61,Ariam,Rivas Méndez,ariam.rivas@tib.eu,Germany,Leibniz University of Hannover,https://www.tib.eu/en/research-development/scientific-data-management/staff/ariam-rivas,262,yes
+61,Maria Esther,Vidal,maria.vidal@tib.eu,Germany,TIB Leibniz Information Centre for Science and Technology and Leibniz University of Hannover,https://www.tib.eu/en/research-development/scientific-data-management/staff/maria-esther-vidal,58,yes
+62,Nassim,Bahri,bahri.nassim@gmail.com,Tunisia,LARODEC-ISG Tunis,http://nassimbahri.ovh,263,yes
+62,Mohamed Anis,Bach Tobji,anis.bach@esen.tn,Tunisia,LARODEC-ISG. ESEN Manouba,,264,no
+62,Boutheina,Ben Yaghlane,boutheina.yaghlane@ihec.rnu.tn,Tunisia,LARODEC-ISG. IHEC Carthage,,265,no
+63,Sven,Lieber,Sven.Lieber@ugent.be,Belgium,Ghent University,,256,yes
+63,Pieter,Heyvaert,pieter.heyvaert@ugent.be,Belgium,IDLab. Ghent University -- imec,,266,yes
+63,Anastasia,Dimou,anastasia.dimou@kuleuven.be,Belgium,KU Leuven,,11,yes
+64,Cristina-Iulia,Bucur,bucurcristina@yahoo.com,Netherlands,Vrije Universiteit Amsterdam,,267,yes
+64,Tobias,Kuhn,kuhntobias@gmail.com,Netherlands,Vrije Universiteit Amsterdam,http://www.tkuhn.org,149,yes
+64,Davide,Ceolin,davide@cwi.nl,Netherlands,CWI,https://www.cwi.nl/people/davide-ceolin,268,yes
+64,Jacco,van Ossenbruggen,jacco.van.ossenbruggen@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,215,yes
+65,Thomas,Delva,Thomas.Delva@ugent.be,Belgium,Ghent University,,269,yes
+65,,Sitt Min Oo,X.SittMinOo@ugent.be,Belgium,Ghent University,,270,no
+65,Dylan,Van Assche,dylan.vanassche@ugent.be,Belgium,Universiteit Gent,https://dylanvanassche.be,271,no
+65,Sven,Lieber,sven.lieber@ugent.be,Belgium,IDLab. Department of Electronics and Information Systems. Ghent University -- imec,,256,no
+65,Anastasia,Dimou,anastasia.dimou@kuleuven.be,Belgium,KU Leuven,,11,yes
+66,Thomas Leo,Mccluskey,t.l.mccluskey@hud.ac.uk,United Kingdom,University of Huddersfield,,119,yes
+66,Hassna,Louadah,hassna.louadah@gmail.com,United Kingdom,Huddersfield University,,272,yes
+66,Emmanuel,Papadakis,E.Papadakis@hud.ac.uk,United Kingdom,University of Huddersfield,,273,yes
+66,Gareth,Tucker,g.tucker@hud.ac.uk,United Kingdom,University of Huddersfield,,274,no
+66,Adam,Bevan,a.bevan@hud.ac.uk,United Kingdom,University of Huddersfield,,275,no
+66,Peter,Hughes,p.hughes@hud.ac.uk,United Kingdom,University of Huddersfield,,276,no
+67,Tomas,Martin,martin.tomas@courrier.uqam.ca,Canada,UQAM,,277,yes
+67,Victor,Fuentes,fuentes.victor_eduardo@courrier.uqam.ca,Canada,Université du Québec à  Montréal (UQAM),,278,no
+67,Petko,Valtchev,valtchev.petko@uqam.ca,Canada,Université du Québec À Montréal,http://www.info.uqam.ca/Members/valtchev_p,279,yes
+67,Abdoulaye Baniré,Diallo,diallo.abdoulaye@uqam.ca,Canada,Université du Québec à Montréal,,280,no
+67,René,Lacroix,rlacroix@lactanet.ca,Canada,LactaNet,,281,no
+68,Hamada,Zahera,hamada.zahera@uni-paderborn.de,Germany,Paderborn University,,438,yes
+68,Stefan,Heindorf,heindorf@uni-paderborn.de,Germany,Paderborn University,,244,yes
+68,Axel-Cyrille Ngonga,Ngomo,axel.ngona@uni-paderborn.de,Germany,Paderborn University,,282,yes
+69,Armita,Khajeh Nassiri,armita.khajehnassiri@gmail.com,France,LISN. CNRS 9015. Paris Saclay University.,,283,yes
+69,Nathalie,Pernelle,pernelle@lri.fr,France,LIPN.  Université Sorbonne Paris Nord,http://www.lri.fr/~pernelle,218,yes
+69,Fatiha,Saïs,fatiha.sais@lri.fr,France,LISN. CNRS 9015. Paris Saclay University.,http://www.lri.fr/~sais/index.html,47,yes
+69,Gianluca,Quercini,gianluca.quercini@centralesupelec.fr,France,LISN. CNRS 9015. Paris Saclay University.,https://gquercini.github.io/,284,yes
+70,Samuel,Printz,samuel.printz@student.kit.edu,Germany,Karlsruhe Institute of Technology,,285,yes
+70,Kristian,Noullet,kristian.noullet@kit.edu,Germany,Karlsruhe Institute of Technology,,286,yes
+70,Michael,Färber,michael.faerber@kit.edu,Germany,Karlsruhe Institute of Technology,,114,yes
+71,Md Reshad Ul,Hoque,mhoqu001@odu.edu,United States,Old Dominion University,,287,yes
+71,Jian,Wu,j1wu@odu.edu,United States,Old Dominion University,,288,yes
+71,Jiang,Li,li@odu.edu,United States,Old Dominion University,,289,yes
+72,Ghadah,Alghamdi,ghadah.alghamdi@postgrad.manchester.ac.uk,United Kingdom,The University of Manchester,,290,yes
+72,Renate A.,Schmidt,renate.schmidt@manchester.ac.uk,United Kingdom,The University of Manchester,,291,yes
+72,Warren,Del-Pinto,warren.del-pinto@manchester.ac.uk,United Kingdom,The University of Manchester,,292,no
+72,Yongsheng,Gao,yga@snomed.org,United Kingdom,IHTSDO  (SNOMED International),,293,no
+73,Koichi,Kamijo,kkamijoh@gmail.com,Japan,International Professional University of Technology in Tokyo,https://researchmap.jp/kkamijoh?lang=en,294,yes
+73,Tetsuya,Nasukawa,nasukawa@jp.ibm.com,Japan,IBM Research - Tokyo,https://researcher.watson.ibm.com/researcher/view.php?person=jp-NASUKAWA,295,yes
+73,Shoko,Suzuki,E30126@jp.ibm.com,Japan,IBM Research - Tokyo,https://www.linkedin.com/in/%E7%A5%A5%E5%AD%90-%E9%88%B4%E6%9C%A8-b579aa172/?originalSubdomain=jp,296,yes
+74,Katarzyna,Wasielewska-Michniewska,katarzyna.wasielewska@ibspan.waw.pl,Poland,Systems Research Institute. Polish Academy of Sciences,,297,yes
+74,Maria,Ganzha,maria.ganzha@ibspan.waw.pl,Poland,Systems Research Institute. Polish Academy of Sciences,,133,yes
+74,Marcin,Paprzycki,paprzyck@ibspan.waw.pl,Poland,IBS PAN and WSM,http://www.ibspan.waw.pl/~paprzyck/,134,yes
+74,Aleksander,Denisiuk,denisjuk@matman.uwm.edu.pl,Poland,University of Warmia and Mazury,,298,yes
+75,Ron,Alford,ralford@mitre.org,United States,The MITRE Corporation,http://www.volus.net/,299,yes
+75,Lukáš,Chrpa,chrpaluk@fel.cvut.cz,Czechia,Czech Technical University in Prague,,300,yes
+75,Mauro,Vallati,m.vallati@hud.ac.uk,United Kingdom,University of Huddersfield,,57,yes
+75,Andy,Applebaum,aapplebaum@mitre.org,United States,The MITRE Corporation,,301,yes
+76,Sheldon,Schiffer,schiffer@student.gsu.edu,United States,Georgia State University. Creative Media Industries Institute,https://cmii.gsu.edu/profile/sheldon-schiffer/,302,yes
+77,Brenna,Drummond,bdrummond@ryerson.ca,Canada,Ryerson University,,303,yes
+77,Aysun,Bozanta,aysun.bozanta@ryerson.ca,Canada,Ryerson University,,304,yes
+78,Xin,Wei,xwei001@odu.edu,United States,Old Dominion University,,305,no
+78,Jian,Wu,j1wu@odu.edu,United States,Old Dominion University,,288,yes
+78,Diane,Oyen,doyen@lanl.gov,United States,Los Alamos National Laboratory,,306,no
+79,Alberto,Moya Loustaunau,albertomoya87@gmail.com,Chile,Universidad de Chile,,307,yes
+79,Aidan,Hogan,aidhog@gmail.com,Chile,Universidad de Chile,http://aidanhogan.com/,68,yes
+80,Ling,Cai,lingcai@ucsb.edu,United States,University of California. Santa Barbara,,308,yes
+80,Krzysztof,Janowicz,janowicz@ucsb.edu,United States,University of California. Santa Barbara,http://geog.ucsb.edu/~jano/,23,no
+80,Bo,Yan,byan6616w@gmail.com,United States,University of California. Santa Barbara,http://geog.ucsb.edu/~boyan/,59,no
+80,Rui,Zhu,ruizhu@geog.ucsb.edu,United States,University of California. Santa Barbara,http://www.geog.ucsb.edu/~zhu/,441,no
+80,Gengchen,Mai,gengchen.mai@gmail.com,United States,Stanford University,https://gengchenmai.github.io/,161,no
+81,Gaia,Gambarelli,gaia.gambarelli2@unibo.it,Italy,University of Bologna,,309,yes
+81,Aldo,Gangemi,aldo.gangemi@unibo.it,Italy,University of Bologna & IST-CNR,,13,yes
+82,Michel,Wijkstra,m.wijkstra@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,431,yes
+82,Timo,Lek,t.m.lek@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,311,yes
+82,Tobias,Kuhn,kuhntobias@gmail.com,Netherlands,Vrije Universiteit Amsterdam,http://www.tkuhn.org,149,yes
+82,Kasper,Welbers,k.welbers@vu.nl,Netherlands,Vrije Universiteit Amsterdam,,312,yes
+82,Mickey,Steijaert,mickey.steijaert@gmail.com,Netherlands,Vrije Universiteit Amsterdam,,313,no
+83,Reham,Alharbi,r.alharbi@liverpool.ac.uk,United Kingdom,University of Liverpool,,314,yes
+83,Valentina,Tamma,valli@liverpool.ac.uk,United Kingdom,University of Liverpool,,315,yes
+83,Floriana,Grasso,floriana@liverpool.ac.uk,United Kingdom,University of Liverpool,,316,yes
+84,Liangping,Ding,dingliangping@mail.las.ac.cn,China,National Science Library. Chinese Academy of Sciences,,317,yes
+84,Zhixiong,Zhang,zhangzhx@mail.las.ac.cn,China,National Science Library. Chinese Academy of Sciences,,318,no
+84,Huan,Liu,liuhuan@mail.las.ac.cn,China,National Science Library. Chinese Academy of Sciences,,319,no
+85,Anna,Breit,anna@breit-mail.at,Austria,Semantic Web Company,,320,yes
+85,Maria,Khvalchik,maria.khvalchik@semantic-web.com,Austria,Semantic Web Company,,321,no
+85,Victor,Mireles,syats.vm@gmail.com,Austria,Semantic Web Company,,322,yes
+85,Artem,Revenko,artreven@gmail.com,Austria,Semantic Web Company GmbH,,323,yes
+85,Peter,Bourgonje,peter.bourgonje@morningsun-technology.com,Germany,Morningsun Technology,,324,yes
+85,Julián,Moreno Schneider,julian.moreno_schneider@dfki.de,Germany,DFKI,,325,yes
+85,Georg,Rehm,Georg.Rehm@dfki.de,Germany,DFKI,http://georg-re.hm,326,no
+86,Tarek,Al Mustafa,tarek.almustafa@uni-jena.de,Germany,Friedrich Schiller University. Jena,,327,yes
+86,Sheeba,Samuel,sheeba.samuel@uni-jena.de,Germany,Friedrich Schiller University. Jena,http://fusion.cs.uni-jena.de/fusion/members/sheeba-samuel/,328,yes
+86,Birgitta,König-Ries,birgitta.koenig-ries@uni-jena.de,Germany,Friedrich Schiller University of Jena,http://fusion.cs.uni-jena.de,329,yes
+87,Dominik,Kerzel,dominik.kerzel@uni-jena.de,Germany,Friedrich Schiller University. Jena,,330,yes
+87,Sheeba,Samuel,sheeba.samuel@uni-jena.de,Germany,Friedrich Schiller University. Jena,http://fusion.cs.uni-jena.de/fusion/members/sheeba-samuel/,328,yes
+87,Birgitta,König-Ries,birgitta.koenig-ries@uni-jena.de,Germany,Friedrich Schiller University of Jena,https://fusion.cs.uni-jena.de/fusion/members/birgitta-konig-ries/,329,yes
+88,Manuel,Vimercati,manuel.vimercati@unimib.it,Italy,University of Milan-Bicocca,,331,yes
+88,Federico,Moiraghi Motta,f.moiraghimotta@campus.unimib.it,Italy,University of Milan-Bicocca,,332,yes
+88,Federico,Bianchi,f.bianchi@unibocconi.it,Italy,Bocconi University,,333,yes
+88,Matteo,Palmonari,palmonari@disco.unimib.it,Italy,University of Milano-Bicocca,,334,yes
+89,Teresa,Zawadzka,tegra@eti.pg.gda.pl,Poland,Gdansk University of Technology,,335,yes
+89,Wojciech,Waloszek,wowal@eti.pg.gda.pl,Poland,Gdansk University of Technology,http://loqi01.eti.pg.gda.pl/pracownicy/wowal,336,yes
+89,Zawadzki,Michał,michal.j.zawadzki@gmail.com,Poland,None,,337,no
+90,Ioana-Adina,Florea,adina_florea39@yahoo.com,Romania,Babes-Bolyai University of Cluj-Napoca,,338,no
+90,Ana-Maria,Ghiran,anamaria.ghiran@econ.ubbcluj.ro,Romania,Babes-Bolyai University of Cluj-Napoca,,339,yes
+91,Martin,Mansfield,martin.mansfield@liverpool.ac.uk,United Kingdom,University of Liverpool,,340,yes
+91,Valentina,Tamma,V.Tamma@liverpool.ac.uk,United Kingdom,University of Liverpool,http://www.csc.liv.ac.uk,52,yes
+91,Phil,Goddard,phil.goddard@csols.com,United Kingdom,CSols Ltd,http://www.csols.com,341,no
+91,Frans,Coenen,Coenen@liverpool.ac.uk,United Kingdom,University of Liverpool,http://www.csc.liv.ac.uk/~frans/,342,no
+92,Jessica,Amianto Barbato,j.amiantobarbato@campus.unimib.it,Italy,Università degli Studi di Milano-Bicocca,,343,yes
+92,Marco,Cremaschi,marco.cremaschi@unimib.it,Italy,Università degli Studi di Milano-Bicocca,,344,yes
+92,Anisa,Rula,anisa.rula@unibs.it,Italy,University of Brescia,,75,yes
+92,Andrea,Maurino,maurino@disco.unimib.it,Italy,università degli studi di Milano - Bicocca,,345,yes
+93,Ken,Barker,kjbarker@us.ibm.com,United States,IBM Research AI,,346,yes
+93,Parul,Awasthy,awasthyp@us.ibm.com,United States,IBM Research AI,,347,no
+93,Jian,Ni,nij@us.ibm.com,United States,IBM Research AI,,348,no
+93,Taesun,Moon,tsmoon@us.ibm.com,United States,IBM Research AI,,349,no
+93,Radu,Florian,raduf@us.ibm.com,United States,IBM Research AI,,350,no
+94,Ismail,Harrando,harrando@eurecom.fr,France,EURECOM,http://www.eurecom.fr/en/people/harrando-ismail,351,yes
+94,Raphaël,Troncy,raphael.troncy@eurecom.fr,France,EURECOM,https://www.eurecom.fr/~troncy/,55,yes
+95,Daniyal,Selani,d.selani@student.vu.nl,Netherlands,vrije universiteit amsterdam,https://vu.nl/en,352,yes
+95,Ilaria,Tiddi,i.tiddi@vu.nl,Netherlands,vrije universiteit amsterdam,https://vu.nl/en,53,yes
+96,Fabian,Kirstein,fabian.kirstein@fokus.fraunhofer.de,Germany,Fraunhofer,https://fabiankirstein.de,353,yes
+96,Manfred,Hauswirth,manfred.hauswirth@tu-berlin.de,Germany,TU Berlin,https://www.manfredhauswirth.org/,354,yes
+97,Xue,Li,x.li3@uva.nl,Netherlands,University of Amsterdam,https://effyli.github.io/,355,yes
+97,Sara,Magliacane,s.magliacane@uva.nl,Netherlands,University of Amsterdam,https://smaglia.wordpress.com/,356,yes
+97,Paul,Groth,p.t.groth@uva.nl,Netherlands,University of Amsterdam,https://pgroth.com/,20,yes
+99,Asep Fajar,Firmansyah,asep.fajar.firmansyah@uni-paderborn.de,Germany,Paderborn University,https://dice-research.org/AsepFajarFirmansyah,358,yes
+99,Diego,Moussallem,diego.moussallem@uni-paderborn.de,Germany,Paderborn University,https://dice-research.org/DiegoMoussallem,35,yes
+99,Axel-Cyrille,Ngonga Ngomo,axel.ngonga@upb.de,Germany,Paderborn University,https://dice-research.org/AxelCyrilleNgongaNgomo,38,yes
+100,Russa,Biswas,russa.biswas@fiz-karlsruhe.de,Germany,FIZ Karlsruhe. Leibniz Institute for Information Infrastructure & KIT Karlsruhe,,359,yes
+100,Radina,Sofronova,radina.sofronova@student.kit.edu,Germany,FIZ Karlsruhe. Leibniz Institute for Information Infrastructure & KIT Karlsruhe,,360,yes
+100,Harald,Sack,harald.sack@kit.edu,Germany,FIZ Karlsruhe. Leibniz Institute for Information Infrastructure & KIT Karlsruhe,http://www.aifb.kit.edu/web/Harald_Sack/en,361,yes
+100,Mehwish,Alam,alammehw@gmail.com,Germany,FIZ Karlsruhe - Leibniz Institute for Information Infrastructure. AIFB Institute. KIT,https://t.co/jTAVkA1A7j,3,yes
+102,Olivia,Sanchez-Graillet,olivia.sanchez@uni-bielefeld.de,Germany,CITEC. University of Bielefeld,,366,yes
+102,Arne,Kramer-Sunderbrink,herr-kramer-sunderbrink@t-online.de,Germany,Technische Fakultät. Bielefeld University,,367,no
+102,Philipp,Cimiano,cimiano@cit-ec.uni-bielefeld.de,Germany,CITEC. University of Bielefeld,,368,no
+103,Richard,Nordsieck,richard.nordsieck@xitaso.com,Germany,XITASO GmbH,,369,yes
+103,Michael,Heider,michael.heider@informatik.uni-augsburg.de,Germany,University of Augsburg,,370,yes
+103,Alwin,Hoffmann,alwin.hoffmann@xitaso.com,Germany,XITASO GmbH,,432,yes
+103,Joerg,Haehner,joerg.haehner@informatik.uni-augsburg.de,Germany,Universitaet Augsburg,http://www.informatik.uni-augsburg.de/lehrstuehle/oc/,372,yes
+104,Adnan,Akhter,akhter@informatik.uni-leipzig.de,Germany,AKSW. University of Leipzig. Germany,http://aksw.org/AdnanAkhter.html,373,yes
+104,Muhammad,Saleem,saleem@informatik.uni-leipzig.de,Germany,AKSW. University of Leipzig. Germany,https://sites.google.com/site/saleemsweb/,374,yes
+104,Axel-Cyrille,Ngonga Ngomo,axel.ngonga@upb.de,Germany,Universität Paderborn,https://www.uni-paderborn.de/person/65716/,38,yes
+104,Alexander,Bigerl,alexander.bigerl@uni-paderborn.de,Germany,Universität Paderborn,,375,yes
+105,Anca-Elena,Iordan,Anca.Iordan@cs.utcluj.ro,Romania,Technical University of Cluj-Napoca,https://www.utcluj.ro/,376,yes
+106,Salim,Sazzed,ssazz001@odu.edu,United States,Old Dominion University,,377,yes
+107,Ibrahim,Abdelaziz,ibrahim.abdelaziz1@ibm.com,United States,IBM Research,,378,yes
+107,Julian,Dolby,dolby@us.ibm.com,United States,IBM Research,,379,yes
+107,James P,McCusker,mccusj2@rpi.edu,United States,Rensselaer Polytechnic Institute (RPI),,380,yes
+107,Kavitha,Srinivas,kavitha.srinivas@ibm.com,United States,IBM Research,,77,yes
+112,Gordian,Dziwis,dziwis@infai.org,Germany,Institute for Applied Informatics,,386,yes
+112,Lisa,Wenige,wenige@infai.org,Germany,Institute for Applied Informatics,,387,yes
+112,Lars-Peter,Meyer,lpmeyer@infai.org,Germany,Institute for Applied Informatics,,388,yes
+113,Lu,Cheng,lucheng@g.ucla.edu,United States,UCLA,,389,yes
+113,Girish,Ganesan,gg655@rutgers.edu,United States,Rutgers University,,390,yes
+113,William,He,WilliamHe@u.northwestern.edu,United States,Northwestern University,,391,yes
+113,Daniel,Silverston,daniel_silverston@brown.edu,United States,Brown University,,392,yes
+113,Harlin,Lee,harlin@math.ucla.edu,United States,UCLA,https://www.math.ucla.edu/~harlin/,393,yes
+113,Jacob,Foster,foster@soc.ucla.edu,United States,UCLA,,394,yes
+114,Viet Bach,Nguyen,nvbach91@outlook.com,Czechia,Prague University of Economics and Business,,395,yes
+114,Vojtěch,Svátek,svatek@vse.cz,Czechia,Prague University of Economics and Business,http://nb.vse.cz/~svatek,51,no
+114,Oscar,Corcho,ocorcho@fi.upm.es,Spain,Universidad Politécnica de Madrid,,8,no
+114,Marek,Dudáš,marek.dudas@vse.cz,Czechia,Prague University of Economics and Business,,396,no
+115,Nicholas,Klein,nmklein@usc.edu,United States,Information Sciences Institute. University of Southern California,,397,yes
+115,Filip,Ilievski,ilievski@isi.edu,United States,Information Sciences Institute. University of Southern California,,398,yes
+115,Pedro,Szekely,pszekely@isi.edu,United States,Information Sciences Institute. University of Southern California,,399,no
+116,Rui,Zhu,ruizhu@geog.ucsb.edu,United States,University of California. Santa Barbara,http://www.geog.ucsb.edu/~zhu/,441,yes
+116,Ling,Cai,lingcai@ucsb.edu,United States,University of California. Santa Barbara,,308,yes
+116,Gengchen,Mai,gengchen.mai@gmail.com,United States,Stanford University,https://gengchenmai.github.io/,161,no
+116,Cogan,Shimizu,coganmshimizu@ksu.edu,United States,Kansas State University,,76,no
+116,Colby K.,Fisher,cfish25@gmail.com,United States,Hydronos Labs,,162,no
+116,Krzysztof,Janowicz,janowicz@ucsb.edu,United States,University of California. Santa Barbara,http://geog.ucsb.edu/~jano/,23,no
+116,Anna,Lopez-Carr,alopez-carr@directrelief.org,United States,Direct Relief,,400,no
+116,Andrew,Schroeder,aschroeder@directrelief.org,United States,Direct Relief,,401,no
+116,Mark,Schildhauer,schild@nceas.ucsb.edu,United States,UC Santa Barbara,,164,no
+116,Yuanyuan,Tian,ytian72@asu.edu,United States,Arizona State University,,402,no
+116,Shirly,Stephen,shirlystephen@ucsb.edu,United States,UC Santa Barbara,,166,no
+116,Zilong,Liu,zilongliu@ucsb.edu,United States,UC Santa Barbara,,403,no
+117,Salim,Sazzed,ssazz001@odu.edu,United States,Old Dominion University,,377,yes
+118,Martin,Verrev,martin.verrev@taltech.ee,Estonia,Tallinn University Of Technology,,404,yes
+119,Ali,Ballout,ballout619@gmail.com,France,Universite Cote d'Azur. I3S. Inria,,405,yes
+119,Andrea,Tettamanzi,andrea.tettamanzi@unice.fr,France,Universite Cote d'Azur. I3S. Inria,,155,yes
+123,Krzysztof,Janowicz,janowicz@ucsb.edu,United States,University of California. Santa Barbara,http://geog.ucsb.edu/~jano/,23,yes
+123,Cogan,Shimizu,coganmshimizu@ksu.edu,United States,Kansas State University,http://www.coganshimizu.com,76,yes
+123,Pascal,Hitzler,pascal@pascal-hitzler.de,United States,Kansas State University,http://www.pascal-hitzler.de,165,yes
+123,Gengchen,Mai,maigch@cs.stanford.edu,United States,Stanford University,,161,yes
+123,Shirly,Stephens,shirlystephen@ucsb.edu,United States,University of California. Santa Barbara,,166,yes
+123,Rui,Zhu,ruizhu@geog.ucsb.edu,United States,University of California. Santa Barbara,http://www.geog.ucsb.edu/~zhu/,441,yes
+123,Ling,Cai,lingcai@ucsb.edu,United States,University of California. Santa Barbara,,308,yes
+123,Mark,Schildhauer,schild@nceas.ucsb.edu,United States,NCEAS,,164,yes

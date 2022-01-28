@@ -1,0 +1,11 @@
+{
+	 "link_rules" : [
+        {
+            "condition" : "S({$.Buildings.Building.Description}) = T({$.Buildings.Building.Description})",
+            "source" : "Building async",
+            "target" : "Building sync",
+            "predicate" : "http://www.w3.org/2002/07/owl#sameAs"
+        }
+    ]
+
+}

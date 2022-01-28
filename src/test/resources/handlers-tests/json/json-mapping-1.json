@@ -1,0 +1,32 @@
+{  "datasources" : [
+      {
+        "id" : "test",
+        "provider" : { "type" : "FileProvider", "file" : "./src/test/resources/handlers-tests/json/json-file-1.json"},
+        "handler" : { "type" : "JsonHandler", "iterator" : "$.book[*]"}
+      }
+  ],
+"resource_rules" : [
+    { 
+      "id" : "Astrea Queries",
+      "datasource_ids" : ["test"],
+      "subject" : "http://localhost:8080/[REPLACE(TRIM({$.title}), ' ', '')]",
+      "properties"  : [
+            {
+               "predicate" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type", 
+               "object" : "https://w3id.org/def/astrea#SPARQLQuery",
+               "is_literal" : "False" 
+            },
+            {
+               "predicate" : "https://w3id.org/def/astrea#body", 
+               "object" : "[TRIM({$.title})]",
+               "lang" : "en",
+               "is_literal" : "True" 
+            },{
+               "predicate" : "https://w3id.org/def/astrea#order", 
+               "object" : "{$.price}",
+                "datatype" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+               "is_literal" : "True" 
+            }                       
+      ]
+    }  ]
+} 

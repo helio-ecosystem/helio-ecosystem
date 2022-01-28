@@ -1,0 +1,42 @@
+TOPIC,ID,TITLE
+Applications; Workflows; Reasoning,29,User-friendly composition of FAIR workflows in a notebook environment
+Applications; Workflows; Reasoning,43,Reasoning on health condition evolution for enhanced detection of vulnerable people in emergency settings
+Applications; Workflows; Reasoning,47,Capturing Contentiousness: Constructing the Contentious terms in Context Corpus
+Applications; Workflows; Reasoning,49,Cutting Events: Towards Autonomous Plan Adaption by Robotic Agents through Image-Schematic Event Segmentation
+Applications; Workflows; Reasoning,61,Capturing Knowledge about Drug-Drug Interactions to Enhance Treatment Effectiveness
+Information Extraction; Entities; Embeddings and Linking,31,Geospatial Knowledge in housing advertisements : Capturing and Extracting Spatial Information from Text
+Information Extraction; Entities; Embeddings and Linking,37,KG-ZESHEL: Knowledge Graph-Enhanced Zero-Shot Entity Linking
+Information Extraction; Entities; Embeddings and Linking,51,User Scored Evaluation of Non-Unique Explanations for Relational Graph Convolutional Network Link Prediction on Knowledge Graphs
+Information Extraction; Entities; Embeddings and Linking,95,Knowledge Extraction from Auto-Encoders on Anomaly Detection Tasks Using Co-activation Graphs
+Information Extraction; Entities; Embeddings and Linking,99,GATES: Using Graph Attention Network for Entity Summarization
+Information Extraction; Entities; Embeddings and Linking,100,Cat2Type: Wikipedia Category Embeddings for Entity Typing in Knowledge Graphs
+Information Extraction; Entities; Embeddings and Linking,115,Generating Explainable Abstractions for Wikidata Entities
+Knowledge Graphs,32,The Wind in Our Sails: Developing a Reusable and Maintainable Dutch Maritime History Knowledge Graph
+Knowledge Graphs,48,Differential Causal Rules Mining in Knowledge Graphs
+Knowledge Graphs,50,Order Matters: Matching Multiple Knowledge Graphs
+Knowledge Graphs,80,Time in a Box: Advancing Knowledge Graph Completion with Temporal Scopes
+Knowledge Graphs,91,Capturing Expert Knowledge for Building Enterprise SME Knowledge Graphs
+Knowledge Graphs,107,A Toolkit for Generating Code Knowledge Graphs
+Languages; Querying,22,Spread2RML: Constructing Knowledge Graphs by Predicting RML Mappings on Messy Spreadsheets
+Languages; Querying,65,RML2SHACL: RDF generation taking shape
+Languages; Querying,79,Predicting SPARQL Query Dynamics
+Languages; Querying,104,Efficient RDF Knowledge Graph Partitioning Using Querying Workload
+Ontology Development,5,Toward Measuring the Resemblance of Embedding Models for Evolving Ontologies
+Ontology Development,15,Extraction of common conceptual components from multiple ontologies
+Ontology Development,25,Multi-domain and Explainable Prediction of Changes in Web Vocabularies
+Ontology Development,46,Marriage is a Peach and a Chalice: Modelling Cultural Symbolism on the Semantic Web
+Ontology Development,72,Upwardly Abstracted Definition-Based Subontologies
+Ontology Development,83,Characterising the Gap Between Theory and Practice of Ontology Reuse
+Scholarly Knowledge,11,Triple Classification for Scholarly Knowledge Graph Completion
+Scholarly Knowledge,64,Expressing High-Level Scientific Claims with Formal Semantics
+Scholarly Knowledge,82,Living Literature Reviews
+Short Papers and Demos,42,TNNT: The Named Entity Recognition Toolkit
+Short Papers and Demos,54,Tensor Decomposition for Link Prediction in Temporal Knowledge Graphs
+Short Papers and Demos,60,Dynamic workflow composition with OSLO-steps: Data re-use and simplification of automated administration
+Short Papers and Demos,68,ASSET: A Semi-supervised Approach for Entity Typing in Knowledge Graphs
+Short Papers and Demos,94,Discovering Interpretable Topics by Leveraging Common Sense Knowledge
+Short Papers and Demos,96,Blockchain for Trustworthy Publication and Integration of Linked Open Data
+Short Papers and Demos,97,The Challenges of Cross-Document Coreference Resolution for Email
+Short Papers and Demos,102,CTrO-Editor: A Web-based tool to capture clinical trial data for aggregation and pooling
+Short Papers and Demos,114,Knowledge Engineering of PhD Stories: A Preliminary Study
+Short Papers and Demos,116,Providing Humanitarian Relief Support through Knowledge Graphs

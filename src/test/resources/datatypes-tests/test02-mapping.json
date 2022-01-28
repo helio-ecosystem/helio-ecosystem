@@ -1,0 +1,33 @@
+{
+  "datasources": [
+    {
+      "id": "DataType Source",
+      "handler": {
+        "type": "JsonHandler",
+        "iterator": "$"
+      },
+      "provider": {
+        "type": "FileProvider",
+        "file": "./src/test/resources/datatypes-tests/test02-data.json"
+      }
+    }
+  ],
+  "resource_rules": [
+    {
+      "id": "OneDataType",
+      "datasource_ids": [
+        "DataType Source"
+      ],
+      "subject": "http://example.org",
+      "properties": [
+        {
+          "predicate": "ns0:org",
+          "object": "{$.price}",
+          "is_literal": "True",
+          "datatype": "http://custom-datatype.oeg/dtype#{$.datatypes[*]}"
+        }
+      ]
+    }
+  ]
+}    
+  

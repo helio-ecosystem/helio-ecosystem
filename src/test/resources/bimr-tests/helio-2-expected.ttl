@@ -1,0 +1,8 @@
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/building#Building> .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.exmaple.com/test#AsyncResource> .
+_:b0 <https://bimerr.iot.linkeddata.es/def/building#description> "A office building which contains 12 space and 16 staffs." .
+_:b0 <https://w3id.org/def/saref4bldg#hasSpace> <https://www.data.bimerr.occupancy.es/resource/S2_Researcher_Office> .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://bimerr.iot.linkeddata.es/def/building#Building> .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.exmaple.com/test#AsyncResource> .
+_:b1 <https://bimerr.iot.linkeddata.es/def/building#description> "A office building which contains 12 space and 16 staffs." .
+_:b1 <https://w3id.org/def/saref4bldg#hasSpace> <https://www.data.bimerr.occupancy.es/resource/S2_Researcher_Office> .

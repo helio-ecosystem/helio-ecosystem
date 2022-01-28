@@ -1,0 +1,38 @@
+{
+    "book": 
+    [
+        {
+            "title": "Beginning JSON",
+            "author": "Ben Smith",
+            "price": 49.99
+        },
+ 
+        {
+            "title": "Beginning JSON",
+            "author": "Tom Marrs",
+            "price": 29.99
+        },
+ 
+        {
+            "title": "Beginning JSON",
+            "author": "Acodemy",
+            "price": 8.99
+        },
+ 
+        {
+            "title": "Beginning JSON",
+            "author": "George Duckett",
+            "price": 6.00
+        },
+        {
+            "author": "Beginning JSON",
+            "price": 6.00
+        }
+    ],
+ 
+    "price range": 
+    {
+        "cheap": 10.00,
+        "medium": 20.00
+    }
+}

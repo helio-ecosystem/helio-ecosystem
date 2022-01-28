@@ -1,0 +1,42 @@
+{
+    "datasources": [
+        {
+            "id": "OccupantBehavior Datasource",
+            "handler": {
+                "type": "JsonHandler",
+                "iterator": "$"
+            },
+            "provider": {
+                "type": "FileProvider",
+                "file": "./src/test/resources/bimr-tests/helio-4-data.json"
+            }
+        }
+    ],
+    "resource_rules": [
+        {
+            "id": "Occupant",
+            "datasource_ids": [
+                "OccupantBehavior Datasource"
+            ],
+            "subject": "https://www.data.bimerr.occupancy.es/resource/{$.Occupants.[*]._ID}",
+            "properties": [
+                {
+                    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+                    "object": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#Occupant",
+                    "is_literal": "False"
+                },
+                {
+                    "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#age",
+                    "object": "{$.Occupants.[*].Age}",
+                    "is_literal": "True",
+                    "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+                },
+                {
+                    "predicate": "https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasBehavior",
+                    "object": "https://www.data.bimerr.occupancy.es/resource/{$.Occupants.[*].BehaviorID.[*]}",
+                    "is_literal": "False"
+                }
+            ]
+        }
+    ]
+}

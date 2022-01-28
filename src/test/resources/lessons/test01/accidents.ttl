@@ -1,0 +1,30 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix transit: <http://vocab.org/transit/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix vocab: <http://www.preventbicyleaccidents-app.es/group02/ontology/bicycletrafficaccident#> .
+@base <http://example.com/ns#>.
+
+<#TriplesMap1> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "./src/test/resources/lessons/test01/AccidentesBicicletas_2021-updated.csv" ;
+    rml:referenceFormulation ql:CSV 
+  ];
+  rr:subjectMap [
+    rr:template "http://www.preventbicyleaccidents-app.es/group02/resources/Accident/{EXPEDIENTE}";
+    rr:termType rr:IRI;
+  rr:class vocab:Accident
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicateMap [
+      rr:constant vocab:hasWeather; 
+      rr:termType rr:IRI
+    ];
+    rr:objectMap [
+        rml:reference "TIEMPO";
+        rr:termType rr:Literal
+      ]
+  ].

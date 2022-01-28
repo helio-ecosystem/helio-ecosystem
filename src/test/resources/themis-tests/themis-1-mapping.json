@@ -1,0 +1,15 @@
+{
+  "datasources" : [
+      {
+        "id" : "Themis Repository",
+        "handler" : {"type" : "RDFHandler", "format" : "TURTLE"},
+        "provider"  : { "type" : "FileProvider", "file" : "./src/test/resources/themis-tests/themis-1-expected.ttl"}
+      }
+  ],
+   "resource_rules" : [
+    { 
+      "id" : "Themis Data",
+      "datasource_ids" : ["Themis Repository"]
+    }
+  ]
+}

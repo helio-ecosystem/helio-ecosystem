@@ -1,0 +1,3 @@
+<http://example.org> <ns0:org> "29.99"^^<http://custom-datatype.oeg/dtype#double> .
+<http://example.org> <ns0:org> "29.99"^^<http://custom-datatype.oeg/dtype#string> .
+<http://example.org> <ns0:org> "29.99"^^<http://custom-datatype.oeg/dtype#integer> .

@@ -1,0 +1,3 @@
+<https://www.data.bimerr.occupancy.es/resource/sync/Building_1> a <https://bimerr.iot.linkeddata.es/def/building#Building>;
+  <https://bimerr.iot.linkeddata.es/def/building#description> "A office building which contains 12 space and 16 staffs."^^<http://www.w3.org/2001/XMLSchema#string>;
+  <https://w3id.org/def/saref4bldg#hasSpace> <https://www.data.bimerr.occupancy.es/resource/S2_Researcher_Office> .

@@ -1,0 +1,4 @@
+<http://trans.example.com/airport/6523> a <http://schema.org/Airport> .
+<http://venue.example.com/London> a <http://schema.org/City> .
+<http://venue.example.com/Brussels> a <http://schema.org/City> .
+<http://trans.example.com/airport/6523> <http://example.com/ns#located> <http://venue.example.com/Brussels> .

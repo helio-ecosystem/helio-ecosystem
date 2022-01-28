@@ -1,0 +1,35 @@
+<https://linking.test.es/Switzeland> a <https://www.linking.org/ontology#Country>;
+  <http://www.linking.org/ontology#countryName> "Switzeland"@en .
+
+<https://example.test.es/3> a <https://example.test.org/Test>;
+  <http://www.example.org/ontology#key> "3";
+  <http://www.example.org/ontology#number> "754"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>;
+  <http://www.example.org/ontology#text> "Italy"@en .
+
+<https://linking.test.es/Portugal> a <https://www.linking.org/ontology#Country>;
+  <http://www.linking.org/ontology#countryName> "Portugal"@en .
+
+<https://example.test.es/4> a <https://example.test.org/Test>;
+  <http://www.example.org/ontology#key> "4";
+  <http://www.example.org/ontology#number> "23"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>;
+  <http://www.example.org/ontology#text> "France"@en .
+
+<https://linking.test.es/France> a <https://www.linking.org/ontology#Country>;
+  <http://www.linking.org/ontology#countryName> "France"@en .
+
+<https://example.test.es/2> a <https://example.test.org/Test>;
+  <http://www.example.org/ontology#key> "2";
+  <http://www.example.org/ontology#number> "45"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>;
+  <http://www.example.org/ontology#text> "Germany"@en .
+
+<https://linking.test.es/Spain> a <https://www.linking.org/ontology#Country>;
+  <http://www.linking.org/ontology#countryName> "Spain"@en .
+
+<https://example.test.es/1> a <https://example.test.org/Test>;
+  <http://www.example.org/ontology#key> "1";
+  <http://www.example.org/ontology#number> "12312"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger>;
+  <http://www.example.org/ontology#text> "Spain"@en .
+
+<https://linking.test.es/Spain> <http://www.w3.org/2002/07/owl#sameAs> <https://example.test.es/1> .
+
+<https://linking.test.es/France> <http://www.w3.org/2002/07/owl#sameAs> <https://example.test.es/4> .

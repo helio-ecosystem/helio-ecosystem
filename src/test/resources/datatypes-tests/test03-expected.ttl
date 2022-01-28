@@ -1,0 +1,3 @@
+<http://example.org> <http://sample-namespace.org/ontology#value> "2.999E1"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://example.org> <http://sample-namespace.org/ontology#value> "29.99" .
+<http://example.org> <http://sample-namespace.org/ontology#value> "29.99"^^<http://www.w3.org/2001/XMLSchema#number> .
