@@ -1,99 +1,129 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>upm.oeg.helio</groupId>
-  <artifactId>materialiser</artifactId>
-  <version>0.4.0</version>
-  <url>https://github.com/oeg-upm/helio-materialiser</url>
-  
-    <properties>
-	    <maven.compiler.target>11</maven.compiler.target>
-	    <maven.compiler.source>11</maven.compiler.source>    
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.github.helio-ecosystem</groupId>
+	<artifactId>helio-core</artifactId>
+	<version>0.4.0</version>
+	<url>https://github.com/helio-ecosystem/helio-core</url>
+	<name>Helio core</name>
+	<description>The maven dependency of Helio</description>
+
+	<properties>
+		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.release>11</maven.compiler.release>
-	  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-   		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>   
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<slf4jVersion>1.6.1</slf4jVersion>
-  </properties>
+	</properties>
 
 
-  <dependencies>
+	<developers>
+		<developer>
+			<name>Andrea Cimmino</name>
+			<email>cimmino@fi.upm.es</email>
+			<organization>Universidad Politecnica de Madrid, Ontology Engineering Group</organization>
+			<organizationUrl>https://www.oeg-upm.net/</organizationUrl>
+		</developer>
+	</developers>
 
-  
-  	<!-- Helio framework -->
-	<dependency>
-		 <groupId>helio-ecosystem</groupId>
-		  <artifactId>core</artifactId>
-		  <version>0.4.2</version>
-	</dependency>
-	
-	<!-- Velocity -->
-  	<dependency>
-	    <groupId>org.apache.velocity</groupId>
-	    <artifactId>velocity</artifactId>
-	    <version>1.7</version>
-	  </dependency>
-	<dependency>
-	     <groupId>org.apache.velocity</groupId>
-	     <artifactId>velocity-tools</artifactId>
-	     <version>2.0</version>
-	</dependency>
-	
-	
-	<dependency>
-	    <groupId>info.debatty</groupId>
-	    <artifactId>java-string-similarity</artifactId>
-	    <version>RELEASE</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-model -->
-	<dependency>
-	    <groupId>org.eclipse.rdf4j</groupId>
-	    <artifactId>rdf4j-model</artifactId>
-	    <version>3.4.0</version>
-	</dependency>
+	<scm>
+		<connection>scm:git:git://github.com/helio-ecosystem/helio-core.git</connection>
+		<developerConnection>scm:git:ssh://github.com:helio-ecosystem/helio-core.git</developerConnection>
+		<url>https://helio-ecosystem.github.io/helio-ecosystem/</url>
+	</scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<dependencies>
+
+
+		<!-- Helio framework -->
+		<dependency>
+			<groupId>helio-ecosystem</groupId>
+			<artifactId>core</artifactId>
+			<version>0.4.2</version>
+		</dependency>
+
+		<!-- Velocity -->
+		<dependency>
+			<groupId>helio-ecosystem.github.io</groupId>
+			<artifactId>helio-blueprints</artifactId>
+			<version>0.4.0-test</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity-tools</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>info.debatty</groupId>
+			<artifactId>java-string-similarity</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-model -->
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-model</artifactId>
+			<version>3.4.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-rio-api -->
-<!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-rio-turtle -->
-<dependency>
-    <groupId>org.eclipse.rdf4j</groupId>
-    <artifactId>rdf4j-rio-turtle</artifactId>
-    <version>3.4.0</version>
-</dependency>
-		
+		<!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-rio-turtle -->
+		<dependency>
+			<groupId>org.eclipse.rdf4j</groupId>
+			<artifactId>rdf4j-rio-turtle</artifactId>
+			<version>3.4.0</version>
+		</dependency>
 
-	
-	 <!-- JsonPath: https://github.com/json-path/JsonPath -->
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-            <version>2.3.0</version>
-        </dependency>
-  
-	<!-- JUnit -->
-	 <dependency>
-	    <groupId>junit</groupId>
-	    <artifactId>junit</artifactId>
-	    <version>4.4</version>
-	    <scope>test</scope>
-	</dependency>
-	<!-- JCL -->
-	  <dependency>
-	 	<groupId>org.xeustechnologies</groupId>
-		<artifactId>jcl-core</artifactId> 
-		<version>2.8</version>
-	  </dependency>
-	
-	   <!-- jsoup HTML parser library @ https://jsoup.org/ -->
-	  <dependency>
-		  <groupId>org.jsoup</groupId>
-		  <artifactId>jsoup</artifactId>
-		  <version>1.11.3</version>
-	   </dependency>
-	   <!-- tuples -->
-	   <dependency>
-		    <groupId>org.javatuples</groupId>
-		    <artifactId>javatuples</artifactId>
-		    <version>1.2</version>
+
+
+		<!-- JsonPath: https://github.com/json-path/JsonPath -->
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<!-- JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- JCL -->
+		<dependency>
+			<groupId>org.xeustechnologies</groupId>
+			<artifactId>jcl-core</artifactId>
+			<version>2.8</version>
+		</dependency>
+
+		<!-- jsoup HTML parser library @ https://jsoup.org/ -->
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.11.3</version>
+		</dependency>
+		<!-- tuples -->
+		<dependency>
+			<groupId>org.javatuples</groupId>
+			<artifactId>javatuples</artifactId>
+			<version>1.2</version>
 		</dependency>
 		<!-- Loggin -->
-       <dependency>
+		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>${slf4jVersion}</version>
@@ -104,79 +134,94 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>${slf4jVersion}</version>
 		</dependency>
-		<!--  -->
+		<!-- -->
 		<dependency>
-		  <groupId>org.json</groupId>
-		  <artifactId>json</artifactId>
-		  <version>20180813</version>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20180813</version>
 		</dependency>
-		
-				
+
+
 		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
 		<dependency>
-		    <groupId>org.apache.jena</groupId>
-		    <artifactId>jena-arq</artifactId>
-		    <version>4.3.2</version>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>jena-arq</artifactId>
+			<version>4.3.2</version>
 		</dependency>
-	
-				
-  </dependencies>
-  
-  
-  <build>
-  <plugins>
-   <plugin>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-maven-plugin</artifactId>
-	    <executions>
-	        <execution>
-	            <goals>
-	                <goal>repackage</goal>
-	            </goals>
-	            <configuration>
-	                <classifier>spring-boot</classifier>
-	                <mainClass>
-	                  helio.materialiser.run.Main
-	                </mainClass>
-	            </configuration>
-	        </execution>
-	    </executions>
-	</plugin>
-	<!-- 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-	-->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>3.1.1</version>
 
-                <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
-                </configuration>
 
-                <executions>
-                    <execution>
-                        <id>make-assembly</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                    </execution>
-                </executions>
-    
-            </plugin> 
-          
-	</plugins>
-</build>
-  
+	</dependencies>
+
+
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.3.1</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.8</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>

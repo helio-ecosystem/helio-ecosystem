@@ -24,7 +24,6 @@ import helio.Helio;
 import helio.Utils;
 import helio.bleprints.mappings.Datasource;
 import helio.bleprints.mappings.Expresions;
-import helio.bleprints.mappings.LinkRule;
 import helio.bleprints.mappings.TranslationRules;
 import helio.bleprints.mappings.TranslationUnit;
 import helio.bleprints.mappings.UnitType;
