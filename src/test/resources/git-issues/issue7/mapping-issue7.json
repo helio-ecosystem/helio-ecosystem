@@ -4,7 +4,7 @@
       "id": "Linking test",
       "handler": {
         "type": "JsonHandler",
-        "iterator": "$[*]"
+        "iterator": "$"
       },
       "provider": {
         "type": "FileProvider",
@@ -27,18 +27,20 @@
         },
         {
           "predicate": "http://www.example.org/ontology#key",
-          "object": "{$.key}",
-          "is_literal": "True"
+          "object": "{$.*.key}",
+          "is_literal": "True",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+
         },
         {
           "predicate": "http://www.example.org/ontology#number",
-          "object": "{$.number}",
+          "object": "{$.[*].number}",
           "is_literal": "True",
           "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
         },
         {
           "predicate": "http://www.example.org/ontology#text",
-          "object": "{$.text}",
+          "object": "{$.[*].text}",
           "is_literal": "True",
           "lang": "en"
         }

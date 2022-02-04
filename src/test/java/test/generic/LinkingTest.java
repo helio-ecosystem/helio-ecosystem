@@ -1,24 +1,17 @@
-package helio.materialiser.engine.mappings;
-
-import java.io.IOException;
-import org.apache.jena.rdf.model.Model;
-import org.junit.Assert;
-import org.junit.Test;
-
-import helio.materialiser.test.utils.TestUtils;
+package test.generic;
 
 public class LinkingTest {
 
-	@Test
-	public void test1() throws IOException, InterruptedException {
-
-		String mappingFile = "./src/test/resources/linking-tests/linking-1-mapping.json";
-		String expectedFile = "./src/test/resources/linking-tests/linking-1-expected.ttl";
-		Model expected = TestUtils.readModel(expectedFile);
-		Model generated = TestUtils.generateRDFSynchronously(mappingFile);
-
-		Assert.assertTrue(TestUtils.compareModels(generated, expected));
-	}
+//	@Test
+//	public void test1() throws IOException, InterruptedException {
+//
+//		String mappingFile = "./src/test/resources/linking-tests/linking-1-mapping.json";
+//		String expectedFile = "./src/test/resources/linking-tests/linking-1-expected.ttl";
+//		Model expected = TestUtils.readModel(expectedFile);
+//		Model generated = TestUtils.generateRDFSynchronously(mappingFile);
+//
+//		Assert.assertTrue(TestUtils.compareModels(generated, expected));
+//	}
 
 //	@Test
 //	public void test2() throws IOException, InterruptedException {
@@ -34,7 +27,7 @@ public class LinkingTest {
 //
 //	@Test
 //	public void test3() throws IOException, MalformedMappingException, InterruptedException {
-//	
+//
 //		String mappingStr1 = TestUtils.readFile("./src/test/resources/bimr-tests/helio-1-mapping.json");
 //		String mappingStr2 = TestUtils.readFile("./src/test/resources/bimr-tests/helio-2-mapping.json");
 //		String mappingStr3 = TestUtils.readFile("./src/test/resources/linking-tests/test-async-linking-1-mapping.json");

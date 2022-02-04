@@ -1,10 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.helio-ecosystem</groupId>
 	<artifactId>helio-core</artifactId>
-	<version>0.4.0</version>
+	<version>0.4.00</version>
 	<url>https://github.com/helio-ecosystem/helio-core</url>
 	<name>Helio core</name>
 	<description>The maven dependency of Helio</description>
@@ -13,8 +11,6 @@
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.release>11</maven.compiler.release>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<slf4jVersion>1.6.1</slf4jVersion>
 	</properties>
 
@@ -50,78 +46,11 @@
 
 		<!-- Helio framework -->
 		<dependency>
-			<groupId>helio-ecosystem</groupId>
-			<artifactId>core</artifactId>
+			<groupId>io.github.helio-ecosystem</groupId>
+			<artifactId>helio-blueprints</artifactId>
 			<version>0.4.2</version>
 		</dependency>
-
-		<!-- Velocity -->
-		<dependency>
-			<groupId>helio-ecosystem.github.io</groupId>
-			<artifactId>helio-blueprints</artifactId>
-			<version>0.4.0-test</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.velocity</groupId>
-			<artifactId>velocity-tools</artifactId>
-			<version>2.0</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>info.debatty</groupId>
-			<artifactId>java-string-similarity</artifactId>
-			<version>RELEASE</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-model -->
-		<dependency>
-			<groupId>org.eclipse.rdf4j</groupId>
-			<artifactId>rdf4j-model</artifactId>
-			<version>3.4.0</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-rio-api -->
-		<!-- https://mvnrepository.com/artifact/org.eclipse.rdf4j/rdf4j-rio-turtle -->
-		<dependency>
-			<groupId>org.eclipse.rdf4j</groupId>
-			<artifactId>rdf4j-rio-turtle</artifactId>
-			<version>3.4.0</version>
-		</dependency>
-
-
-
-		<!-- JsonPath: https://github.com/json-path/JsonPath -->
-		<dependency>
-			<groupId>com.jayway.jsonpath</groupId>
-			<artifactId>json-path</artifactId>
-			<version>2.3.0</version>
-		</dependency>
-
-		<!-- JUnit -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.4</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- JCL -->
-		<dependency>
-			<groupId>org.xeustechnologies</groupId>
-			<artifactId>jcl-core</artifactId>
-			<version>2.8</version>
-		</dependency>
-
-		<!-- jsoup HTML parser library @ https://jsoup.org/ -->
-		<dependency>
-			<groupId>org.jsoup</groupId>
-			<artifactId>jsoup</artifactId>
-			<version>1.11.3</version>
-		</dependency>
-		<!-- tuples -->
-		<dependency>
-			<groupId>org.javatuples</groupId>
-			<artifactId>javatuples</artifactId>
-			<version>1.2</version>
-		</dependency>
+		
 		<!-- Loggin -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -134,22 +63,41 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>${slf4jVersion}</version>
 		</dependency>
-		<!-- -->
+
+		<!-- Velocity -->
+
 		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20180813</version>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity-tools</artifactId>
+			<version>2.0</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>info.debatty</groupId>
+			<artifactId>java-string-similarity</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		
+		<!-- JsonPath: https://github.com/json-path/JsonPath -->
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		
+		<!-- tuples -->
+		<dependency>
+			<groupId>org.javatuples</groupId>
+			<artifactId>javatuples</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
 		<dependency>
 			<groupId>org.apache.jena</groupId>
 			<artifactId>jena-arq</artifactId>
 			<version>4.3.2</version>
 		</dependency>
-
-
 	</dependencies>
 
 
@@ -159,7 +107,6 @@
 			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
 		</license>
 	</licenses>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -223,5 +170,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

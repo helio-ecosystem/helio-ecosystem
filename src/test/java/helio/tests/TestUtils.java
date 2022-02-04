@@ -1,12 +1,10 @@
-package helio.materialiser.test.utils;
+package helio.tests;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.UUID;
@@ -15,19 +13,17 @@ import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.RDFNode;
-import org.apache.jena.rdf.model.ResourceFactory;
 import org.apache.jena.sparql.resultset.ResultsFormat;
-import org.eclipse.rdf4j.model.vocabulary.RDF;
-import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.jayway.jsonpath.internal.Utils;
 
 import helio.Configuration;
 import helio.Helio;
 import helio.Mappings;
-import helio.bleprints.mappings.Mapping;
+import helio.Utils;
+import helio.blueprints.Components;
+import helio.blueprints.exceptions.ExtensionNotFoundException;
+import helio.blueprints.mappings.Mapping;
 
 public class TestUtils {
 
@@ -35,9 +31,56 @@ public class TestUtils {
 	static 	String file = "./src/test/resources/test-"+UUID.randomUUID().toString()+".md";
 
 	static {
+		try {
+			Components.registerComponent("/Users/andreacimmino/Desktop/helio-handler-csv-0.0.2.jar", "handlers.CsvHandler", Components.EXTENSION_TYPE_HANDLER);
+		} catch (ExtensionNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			Components.registerComponent("https://github.com/helio-ecosystem/helio-handler-jayway/releases/download/v0.0.2/helio-handler-jayway-0.0.2.jar", "handlers.JsonHandler", Components.EXTENSION_TYPE_HANDLER);
+		} catch (ExtensionNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			Components.registerComponent("https://github.com/helio-ecosystem/helio-handler-jsoup/releases/download/v0.0.1/helio-handler-jsoup-0.0.1.jar", "handlers.JsoupHandler", Components.EXTENSION_TYPE_HANDLER);
+		} catch (ExtensionNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			Components.registerComponent("https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.0.1/helio-provider-url-0.0.1.jar", "provider.URLProvider", Components.EXTENSION_TYPE_PROVIDER);
+		} catch (ExtensionNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			Components.registerComponent("https://github.com/helio-ecosystem/helio-handler-regex/releases/download/v0.0.1/helio-handler-regex-0.0.1.jar", "handlers.RegexHandler", Components.EXTENSION_TYPE_HANDLER);
+		} catch (ExtensionNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			Components.registerComponent("https://github.com/helio-ecosystem/helio-handler-xml/releases/download/v0.0.1/helio-handler-xml-0.0.1.jar", "handlers.XmlHandler", Components.EXTENSION_TYPE_HANDLER);
+		} catch (ExtensionNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			Components.registerComponent("https://github.com/helio-ecosystem/helio-reader-rml/releases/download/v0.0.4/helio-reader-rml-0.0.4.jar", "readers.RmlReader", Components.EXTENSION_TYPE_READER);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			Components.registerComponent("https://github.com/helio-ecosystem/helio-provider-file/releases/download/v.0.0.1/helio-provider-file-0.0.1.jar",  "providers.FileProvider", Components.EXTENSION_TYPE_PROVIDER);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			Components.registerComponent(null, "helio.components.functions.HF", Components.EXTENSION_TYPE_FUNCTION);
+			Components.registerComponent(null, "helio.components.handlers.RDFHandler", Components.EXTENSION_TYPE_HANDLER);
+			Components.registerComponent(null, "helio.components.readers.JsonReader", Components.EXTENSION_TYPE_READER);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 		Helio.configuration = Configuration.createDefault();
 	}
-	
+
 
 	public static Model readModel(String file) {
 		FileInputStream out;
@@ -72,7 +115,7 @@ public class TestUtils {
 	 private static final String SEPARATOR = ";";
 	public static Model generateRDFSynchronously(String mappingFile) {
 		Model model = ModelFactory.createDefaultModel();
-	
+
 		try {
 			StringBuilder line = new StringBuilder();
 			line.append("Reading mapping file; Instantiating mapping; Creating unit; Translating; Fetching RDF ## ");
@@ -98,7 +141,7 @@ public class TestUtils {
 			long endTime4 = System.nanoTime();
 			long duration4 = (endTime4 - startTime4) / 1000000;  //divide by 1000000 to get milliseconds.
 			line.append(SEPARATOR).append(duration4);
-			
+
 			long startTime3 = System.nanoTime();
 			model.read(new ByteArrayInputStream(Helio.getRDF(mapping, ResultsFormat.FMT_RDF_NT).toByteArray()), Helio.configuration.getNamespace(), "NT");
 			long endTime3 = System.nanoTime();
@@ -114,22 +157,29 @@ public class TestUtils {
 
 
 	public static Boolean compareModels(Model model1, Model model2) {
-		if(model1==null || model2==null)
+		if(model1==null || model2==null || model1.isEmpty() || model2.isEmpty())
 			return false;
-
-		String query1 = prepareQuery(model1);
-		Boolean model2Contains1 = QueryExecutionFactory.create(query1, model2).execAsk();
-		String query2 = prepareQuery(model2);
-		Boolean model1Contains2 = QueryExecutionFactory.create(query2, model1).execAsk();
-
+		Boolean model2Contains1 = contains(model1, model2);	
+		Boolean model1Contains2 = contains(model2, model1);
 
 		return model2Contains1 && model1Contains2;
 	}
 
-	private static String prepareQuery(Model model) {
+	public static Boolean contains(Model model1, Model model2) {
 		Writer writer = new StringWriter();
-		model.write(writer, "NT");
-		return Utils.concat("ASK {\n", writer.toString(), "\n}");
+		model1.write(writer, "NT");
+		String[] triplet = writer.toString().split("\n");
+		Boolean result = true;
+		for(int index=0; index < triplet.length; index++) {
+			String query = Utils.concatenate("ASK {\n", triplet[index], "\n}");
+			Boolean aux = QueryExecutionFactory.create(query, model2).execAsk();
+			if(!aux) {
+				result = false;
+				System.out.println("Not present in model 2:"+ triplet[index]);
+				break;
+			}
+		}
+		return result;	
 	}
 
 	private static boolean compare(RDFNode obj1, RDFNode obj2) {

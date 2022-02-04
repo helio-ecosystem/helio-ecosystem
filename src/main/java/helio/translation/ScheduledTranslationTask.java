@@ -2,7 +2,7 @@ package helio.translation;
 
 import java.util.TimerTask;
 
-import helio.bleprints.mappings.TranslationUnit;
+import helio.blueprints.mappings.TranslationUnit;
 
 /**
  * This class wraps {@link AsyncronousTranslationTask} in order for them to be executed asynchronously.

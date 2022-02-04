@@ -2,6 +2,8 @@ package helio.components.functions;
 
 import java.util.Date;
 
+import org.apache.commons.digester.RegexMatcher;
+import org.apache.commons.lang3.RegExUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import helio.blueprints.components.MappingFunctions;
@@ -11,11 +13,20 @@ public class HF implements MappingFunctions {
 	// RDF generation functions
 
 	private static final String QUOTATION = "\"";
-	public static String format(String node, Boolean isLiteral) {
-		if(isLiteral) {
-			return node.trim();
-		}else {
+	public static String format(String node, Boolean isLiteral, Boolean hasDatatype, Boolean hasLanguage) {
+		node = node.trim();
+		if(isLiteral && !hasDatatype && !hasLanguage)
+			System.out.println("here");
+		if(!isLiteral) {
 			return formatNewURI(node);
+		}else if(isLiteral && !hasDatatype && !hasLanguage && node.matches("\"[^\"]*\"\s+\"[^\"]*\".*")) {
+			return node.replaceAll("\"\s+\"", "\", \"");
+		}else if(isLiteral && !hasDatatype && hasLanguage && node.matches("\"[^\"]*\"@[A-z]{2}\s*.+")) {
+			return node.replaceAll("\s+\"", ", \"");
+		}else if(isLiteral && hasDatatype && !hasLanguage && node.matches("\"[^\"]*\"[^>]+>\s*.+")){
+			return node.replaceAll(">\s+\"", ">, \"");
+		}else{
+			return node;
 		}
 	}
 
@@ -26,12 +37,13 @@ public class HF implements MappingFunctions {
 		return formatNewURI(format.toString());
 	}
 
-	private static final char CHAR_SPACE = ' ';
-	private static final char CHAR_UNDERSCORE = '_';
-	private static final String TOKEN_WRONG_SPACE = ">,__<";
+	private static final String TOKEN_SPACE = "\s+";
+	private static final String TOKEN_UNDERSCORE = "_";
+	private static final String TOKEN_WRONG_SPACE = ">,?[_]+<";
 	private static final String TOKEN_FIXED_SPACE = ">, <";
 	public static String formatNewURI(String uri) {
-		return uri.trim().replace(CHAR_SPACE, CHAR_UNDERSCORE).replaceAll(TOKEN_WRONG_SPACE, TOKEN_FIXED_SPACE);
+		String clean = uri.trim().replaceAll(TOKEN_SPACE, TOKEN_UNDERSCORE).replaceAll(TOKEN_WRONG_SPACE, TOKEN_FIXED_SPACE);
+		return clean;
 	}
 
 	public static String quote() {
@@ -44,8 +56,10 @@ public class HF implements MappingFunctions {
 
 	public static String[] splitSubjects(String multisubject) {
 		if(multisubject.contains(">,  <"))
-			return multisubject.split(",\\s+");
-		return new String[] {multisubject};
+			return multisubject.trim().split(",\\s+");
+		if(multisubject.matches("[^>]+>\\s+<.+"))
+			return multisubject.trim().split("\\s+");
+		return new String[] {multisubject.trim()};
 	}
 
 

@@ -8,6 +8,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
+import javax.sql.DataSource;
+
 import org.apache.jena.rdf.model.Model;
 
 import com.google.gson.Gson;
@@ -27,7 +29,7 @@ public class Utils {
 				  .excludeFieldsWithoutExposeAnnotation()
 				  .create();
 	}
-	
+
 	private Utils() {
 		super();
 	}
@@ -110,9 +112,9 @@ public class Utils {
 	public static String mapTranslationRulesId(String rulesId) {
 		return String.valueOf(rulesId.hashCode()).replace('-', '0');
 	}
-	
 
-	
+
+
 
 	public static JsonObject toJsonObject(String jsonObject) {
 		return GSON.fromJson(jsonObject, JsonObject.class);

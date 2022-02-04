@@ -7,7 +7,8 @@ import org.apache.jena.sparql.resultset.ResultsFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import helio.bleprints.mappings.Mapping;
+import helio.blueprints.exceptions.IncorrectMappingException;
+import helio.blueprints.mappings.Mapping;
 import helio.exceptions.SparqlQuerySyntaxException;
 import helio.exceptions.SparqlRemoteEndpointException;
 import helio.sparql.Sparql;
@@ -18,7 +19,7 @@ import helio.translation.TranslationManager;
  * @author Andrea Cimmino
  *
  */
-public class Helio extends AbstractIgnition {
+public class Helio {
 
 	public static Logger logger = LoggerFactory.getLogger(Helio.class);
 
@@ -32,10 +33,10 @@ public class Helio extends AbstractIgnition {
 	}
 
 	// TODO: TEST ASYNC AND SCHEDULED
-	public static void addTranslationsTasks(Mapping mapping) {
+	public static void addTranslationsTasks(Mapping mapping) throws IncorrectMappingException {
 		if(mapping==null)
-			throw new IllegalArgumentException("Provided mapping can not be null");
-
+			throw new IncorrectMappingException("Provided mapping can not be null");
+		mapping.checkMapping();
 		translationManager.createFrom(mapping);
 	}
 

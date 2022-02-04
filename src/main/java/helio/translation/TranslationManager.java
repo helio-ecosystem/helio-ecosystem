@@ -7,12 +7,18 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import helio.bleprints.mappings.Datasource;
-import helio.bleprints.mappings.LinkRule;
-import helio.bleprints.mappings.Mapping;
-import helio.bleprints.mappings.TranslationRules;
-import helio.bleprints.mappings.TranslationUnit;
-import helio.bleprints.mappings.UnitType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import helio.Helio;
+import helio.Mappings;
+import helio.blueprints.mappings.Datasource;
+import helio.blueprints.mappings.LinkRule;
+import helio.blueprints.mappings.Mapping;
+import helio.blueprints.mappings.TranslationRules;
+import helio.blueprints.mappings.TranslationUnit;
+import helio.blueprints.mappings.UnitType;
+
 
 
 /**
@@ -22,13 +28,14 @@ import helio.bleprints.mappings.UnitType;
  */
 public class TranslationManager {
 
+	public static Logger logger = LoggerFactory.getLogger(TranslationManager.class);
 
 	private Set<AsyncronousTranslationTask> asyncExecutors = new HashSet<>();
 	private Set<SyncronousTranslationTask> syncExecutors= new HashSet<>();
 	private Set<ScheduledTranslationTask> schedExecutors= new HashSet<>();
 
 	protected List<LinkRule> linkingRules = new ArrayList<>();
-	
+
 	public TranslationManager() {
 		super();
 	}
@@ -55,9 +62,12 @@ public class TranslationManager {
 			for (TranslationRules translationRule : translationRulesList) {
 				if(translationRule.hasDataSourceId(datasource.getId())) {
 					boolean markedForLinking = mapping.getLinkRules().stream().anyMatch(lrules -> lrules.getSourceNamedGraph().equals(translationRule.getId()) || lrules.getTargetNamedGraph().equals(translationRule.getId()));
-					TranslationUnit unit = new TranslationUnitImpl(datasource, translationRule, markedForLinking);
-					registerTranslationUnit(unit, translationRule.getSubject());
-					
+					try {
+						TranslationUnit unit = new TranslationUnitImpl(datasource, translationRule, markedForLinking);
+						registerTranslationUnit(unit, translationRule.getSubject());
+					}catch(Exception e) {
+						logger.error(e.toString());
+					}
 				}
 			}
 		}

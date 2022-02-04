@@ -22,12 +22,14 @@ import org.slf4j.LoggerFactory;
 
 import helio.Helio;
 import helio.Utils;
-import helio.bleprints.mappings.Datasource;
-import helio.bleprints.mappings.Expresions;
-import helio.bleprints.mappings.TranslationRules;
-import helio.bleprints.mappings.TranslationUnit;
-import helio.bleprints.mappings.UnitType;
 import helio.blueprints.components.AsyncDataProvider;
+import helio.blueprints.exceptions.IncorrectMappingException;
+import helio.blueprints.mappings.Datasource;
+import helio.blueprints.mappings.Expresions;
+import helio.blueprints.mappings.TranslationRules;
+import helio.blueprints.mappings.TranslationUnit;
+import helio.blueprints.mappings.UnitType;
+import helio.components.handlers.RDFHandler;
 import helio.exceptions.SparqlQuerySyntaxException;
 import helio.exceptions.SparqlRemoteEndpointException;
 import helio.sparql.Sparql;
@@ -47,30 +49,37 @@ class TranslationUnitImpl implements TranslationUnit{
 
 	private static Map<String, List<String>> linkMatrix = new HashMap<>();
 	private Boolean markedForLinking = false;
-	
-	public TranslationUnitImpl(Datasource datasource, TranslationRules rules, Boolean markedForLinking){
+
+	public TranslationUnitImpl(Datasource datasource, TranslationRules rules, Boolean markedForLinking) throws IncorrectMappingException{
+
 		this.markedForLinking = markedForLinking;
 		this.datasource = datasource;
-		this.dataReferences.addAll(Expresions.extractDataReferences(rules));
 		instantiateUnitType();
-		// Register current translation rules
-		velocityTemplateName = VelocityEvaluator.registerVelocityTemplate(rules);
-		subjectRegex = rules.getSubject();
-		Expresions.extractDataReferences(rules.getSubject()).parallelStream().forEach(dReference -> subjectRegex.replaceAll(dReference, ".+"));
+		if(datasource.getDataHandler() instanceof RDFHandler) {
+			subjectRegex = ".+";
+		}else {
+			this.dataReferences.addAll(Expresions.extractDataReferences(rules));
+			velocityTemplateName = VelocityEvaluator.registerVelocityTemplate(rules);
+			subjectRegex = rules.getSubject();
+			Expresions.extractDataReferences(rules.getSubject()).parallelStream().forEach(dReference -> subjectRegex.replaceAll(dReference, ".+"));
+		}
 		id = UUID.randomUUID().toString();
 		representation = Utils.concatenate("id: ",id," translates datasource '",datasource.getId(),"' with rules '", rules.getId(),"'");
-		// TODO: si el datasource es RDFhandler cambia todo aqui, para el subjectRegex habrá que poner .* porque no hay forma de saber que sujetos se generarán
 		// TODO:linking
 	}
 
 	private void instantiateUnitType() {
-		if(datasource.getDataProvider() instanceof AsyncDataProvider) {
-			((AsyncDataProvider) datasource.getDataProvider()).setTranslationUnit(this);
-			type = UnitType.Asyc;
-		}else if(datasource.getRefresh()!=null && datasource.getRefresh()>0) {
-			type = UnitType.Scheduled;
-		}else {
-			type = UnitType.Sync;
+		try {
+			if(datasource.getDataProvider() instanceof AsyncDataProvider) {
+				((AsyncDataProvider) datasource.getDataProvider()).setTranslationUnit(this);
+				type = UnitType.Asyc;
+			}else if(datasource.getRefresh()!=null && datasource.getRefresh()>0) {
+				type = UnitType.Scheduled;
+			}else {
+				type = UnitType.Sync;
+			}
+		}catch(Exception e) {
+			logger.error(e.toString());
 		}
 	}
 
@@ -92,27 +101,32 @@ class TranslationUnitImpl implements TranslationUnit{
 	@Override
 	public void translate() {
 		try {
-			datasource.getDataHandler().splitData(datasource.getDataProvider().getData()).parallelStream()
-					.map(chunk -> toTranslationMatrix(chunk))
-					.map(matrix -> solveMatrix(matrix))
-					.forEach(query -> sendQuery(query));
-			service.awaitTermination(5, TimeUnit.SECONDS);
-		} catch (Exception e) {
-			e.printStackTrace();
+			InputStream stream = datasource.getDataProvider().getData();
+			translate(stream);
+		}catch(Exception e) {
+			logger.error(e.toString());
 		}
+	}
+
+	private void translateRDF() {
+		//datasource.getDataHandler().splitData()
 	}
 
 	@Override
 	public void translate(InputStream stream) {
 		try {
-			datasource.getDataHandler().splitData(stream).parallelStream()
-					.map(chunk -> toTranslationMatrix(chunk))
-					.map(matrix -> solveMatrix(matrix))
-					.forEach(query -> sendQuery(query));
-			service.awaitTermination(5, TimeUnit.SECONDS);
+			if(datasource.getDataHandler() instanceof RDFHandler) {
+				//TODO: prepare RDF query
+				translateRDF();
+			}else {
+				datasource.getDataHandler().splitData(stream).parallelStream()
+				.map(chunk -> toTranslationMatrix(chunk))
+				.map(matrix -> solveMatrix(matrix))
+				.forEach(query -> sendQuery(query));
+				service.awaitTermination(5, TimeUnit.SECONDS);
+			}
 		} catch (Exception e) {
-
-			e.printStackTrace();
+			logger.error(e.toString());
 		}
 	}
 
@@ -140,7 +154,7 @@ class TranslationUnitImpl implements TranslationUnit{
 		}
 		return new AbstractMap.SimpleEntry<>(reference, cleanedValues);
 	}
-	
+
 	private Entry<String,List<String>> markForLinking(Entry<String, List<String>> column){
 		// add the column to the linking column
 		if(markedForLinking)

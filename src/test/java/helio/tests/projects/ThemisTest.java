@@ -1,4 +1,4 @@
- package tests.projects;
+ package helio.tests.projects;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import helio.exceptions.SparqlQuerySyntaxException;
 import helio.exceptions.SparqlRemoteEndpointException;
-import helio.materialiser.test.utils.TestUtils;
+import helio.tests.TestUtils;
 
 public class ThemisTest {
 

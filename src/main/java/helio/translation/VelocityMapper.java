@@ -5,10 +5,10 @@ import java.util.List;
 import org.apache.commons.lang.StringUtils;
 
 import helio.Utils;
-import helio.bleprints.mappings.Expresions;
-import helio.bleprints.mappings.LinkRule;
-import helio.bleprints.mappings.TranslationRule;
-import helio.bleprints.mappings.TranslationRules;
+import helio.blueprints.mappings.Expresions;
+import helio.blueprints.mappings.LinkRule;
+import helio.blueprints.mappings.TranslationRule;
+import helio.blueprints.mappings.TranslationRules;
 
 class VelocityMapper {
 	private static final String SUBJECT_VARIABLE = "$subject";
@@ -42,7 +42,7 @@ class VelocityMapper {
 	}
 
 	// link rules
-	
+
 	protected static String toVelocityTemplate(TranslationRules rulesSource, TranslationRules rulesTarget, LinkRule rule) {
 		StringBuilder triplet = new StringBuilder();
 		String graphId = Utils.concatenate("${HF.formatGraphRepository(",SUBJECT_VARIABLE,",\"?links=", Utils.mapTranslationRulesId(rulesSource.getId()), "\")}");
@@ -52,12 +52,12 @@ class VelocityMapper {
 		triplet.append("#set( $subjectSourceSet = \"").append(sourceSubject).append(VARIABLE_POSTAMBLE);
 		triplet.append("#set($subjectsSource = $HF.splitSubjects($subjectSourceSet) )");
 		triplet.append("#foreach( $subject in $subjects )");
-		
+
 		triplet.append("#end");
 		return triplet.toString();
 	}
 
-	
+
 	// Translation rules
 
 	protected static String toVelocityTemplate(TranslationRules rules) {
@@ -76,12 +76,12 @@ class VelocityMapper {
 							 .forEach(elem -> triplet.append(elem));
 		triplet.append("\n} } WHERE { ?s ?p ?o } ; \n");
 		triplet.append("#end");
-		
+		//System.out.println(triplet);
 		return triplet.toString();
 	}
 
 
-	
+
 
 
 
@@ -102,7 +102,7 @@ class VelocityMapper {
 		builder.append(PREDICATE_VARIABLE_PREAMBLE).append(predicateHash).append(VARIABLE_ASSIGNMENT).append(predicate).append(VARIABLE_POSTAMBLE);
 		builder.append(OBJECT_VARIABLE_PREAMBLE).append(objectHash).append(VARIABLE_ASSIGNMENT).append(object).append(VARIABLE_POSTAMBLE);
 		builder.append(IF_STATEMENT_PREAMBLE).append(predicateHash).append(IF_STATEMENT_MIDAMBLE).append(objectHash).append(IF_STATEMENT_POSTAMBLE);
-		builder.append("$HF.formatNewURI($subject) $HF.formatNewURI($predicate").append(predicateHash).append(") $HF.format($object").append(objectHash).append(",").append(rule.getIsLiteral()).append(") .\n");
+		builder.append("$HF.formatNewURI($subject) $HF.formatNewURI($predicate").append(predicateHash).append(") $HF.format($object").append(objectHash).append(",").append(rule.getIsLiteral()).append(",").append(rule.getDataType()!=null).append(",").append(rule.getLanguage()!=null).append(") .\n");
 
 		builder.append(VELOCITY_FOR_POSTAMBLE_NEWLINE);
 
@@ -142,7 +142,7 @@ class VelocityMapper {
 			String normalisedReference = normaliseReference(reference,false);
 			String replacedTemplate = StringUtils.replace(template, wrapString(reference,KEY_OPEN_TOKEN,KEY_CLOSE_TOKEN), wrapString(normalisedReference,VELOCITY_VARIABLE_OPEN_TOKEN,KEY_CLOSE_TOKEN));
 			velocityTemplate.append(VELOCITY_FOR_PREAMBLE).append(normalisedReference).append(VELOCITY_FOR_MIDAMBLE_1).append(normalisedReference).append(VELOCITY_FOR_MIDAMBLE_2);
-			velocityTemplate.append(computeVelocityTemplate4Rule(replacedTemplate, dataReferences, rule)).append("#if ( $foreach.count < $").append(normalisedReference).append("SET.size()),#end");
+			velocityTemplate.append(computeVelocityTemplate4Rule(replacedTemplate, dataReferences, rule)).append(" #if( ($foreach.count) && ($foreach.count <= $").append(normalisedReference).append("SET.size()) ), #end");
 			velocityTemplate.append(VELOCITY_FOR_POSTAMBLE);
 		}
 		return velocityTemplate.toString();
