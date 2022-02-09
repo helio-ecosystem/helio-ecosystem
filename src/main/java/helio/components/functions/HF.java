@@ -2,29 +2,27 @@ package helio.components.functions;
 
 import java.util.Date;
 
-import org.apache.commons.digester.RegexMatcher;
-import org.apache.commons.lang3.RegExUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import helio.blueprints.components.MappingFunctions;
 
 public class HF implements MappingFunctions {
 
-	// RDF generation functions
+	
 
-	private static final String QUOTATION = "\"";
+
+
+
 	public static String format(String node, Boolean isLiteral, Boolean hasDatatype, Boolean hasLanguage) {
 		node = node.trim();
-		if(isLiteral && !hasDatatype && !hasLanguage)
-			System.out.println("here");
 		if(!isLiteral) {
 			return formatNewURI(node);
-		}else if(isLiteral && !hasDatatype && !hasLanguage && node.matches("\"[^\"]*\"\s+\"[^\"]*\".*")) {
-			return node.replaceAll("\"\s+\"", "\", \"");
-		}else if(isLiteral && !hasDatatype && hasLanguage && node.matches("\"[^\"]*\"@[A-z]{2}\s*.+")) {
-			return node.replaceAll("\s+\"", ", \"");
-		}else if(isLiteral && hasDatatype && !hasLanguage && node.matches("\"[^\"]*\"[^>]+>\s*.+")){
-			return node.replaceAll(">\s+\"", ">, \"");
+		}else if(isLiteral && !hasDatatype && !hasLanguage && node.matches("\"[^\"]*\"\\s+\"[^\"]*\".*")) {
+			return node.replaceAll( "\"\\s+\"",  "\", \"");
+		}else if(isLiteral && !hasDatatype && hasLanguage && node.matches("\"[^\"]*\"@[A-z]{2}\\s*.+")) {
+			return node.replaceAll("\\s+\"", ", \"");
+		}else if(isLiteral && hasDatatype && !hasLanguage && node.matches("\"[^\"]*\"[^>]+>\\s*.+")){
+			return node.replaceAll(">\\s+\"", ">, \"");
 		}else{
 			return node;
 		}
@@ -37,7 +35,7 @@ public class HF implements MappingFunctions {
 		return formatNewURI(format.toString());
 	}
 
-	private static final String TOKEN_SPACE = "\s+";
+	private static final String TOKEN_SPACE = "\\s+";
 	private static final String TOKEN_UNDERSCORE = "_";
 	private static final String TOKEN_WRONG_SPACE = ">,?[_]+<";
 	private static final String TOKEN_FIXED_SPACE = ">, <";
@@ -47,7 +45,7 @@ public class HF implements MappingFunctions {
 	}
 
 	public static String quote() {
-		return QUOTATION;
+		return "\"";
 	}
 
 	public static boolean notBlank(String str) {

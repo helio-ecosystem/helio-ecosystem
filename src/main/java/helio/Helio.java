@@ -15,7 +15,7 @@ import helio.sparql.Sparql;
 import helio.translation.TranslationManager;
 
 /**
- * This class is an implementation of the interface {@link MaterialiserEngine}
+ * This class is an implementation of Helio
  * @author Andrea Cimmino
  *
  */
@@ -73,11 +73,11 @@ public class Helio {
 	private static final String BULK_QUERY_2_FILTER_2 ="\")";
 	/**
 	 * This method retrieves only RDF that is generated as result of a {@link Mapping}
-	 * @param mapping
-	 * @param format
-	 * @return
-	 * @throws SparqlQuerySyntaxException
-	 * @throws SparqlRemoteEndpointException
+	 * @param mapping a mapping
+	 * @param format the format of the output
+	 * @return the RDF associated to the mapping
+	 * @throws SparqlQuerySyntaxException if the query has errors
+	 * @throws SparqlRemoteEndpointException if there is a problem with the remote endpoint
 	 */
 	public static ByteArrayOutputStream getRDF(Mapping mapping, ResultsFormat format) throws SparqlQuerySyntaxException, SparqlRemoteEndpointException {
 		StringBuilder builder = new StringBuilder(BULK_QUERY_2_1);

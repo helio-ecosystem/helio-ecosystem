@@ -10,8 +10,6 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import helio.Helio;
-import helio.Mappings;
 import helio.blueprints.mappings.Datasource;
 import helio.blueprints.mappings.LinkRule;
 import helio.blueprints.mappings.Mapping;

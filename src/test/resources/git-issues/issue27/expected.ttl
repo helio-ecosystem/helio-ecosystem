@@ -1,0 +1,28 @@
+<http://www.oeg.es/contract#UpgradeabilityProxy>
+        a       <http://www.oeg.es/Contract> ;
+        <http://www.oeg.es/contract#hasFunction>
+                <http://www.oeg.es/contract/function/_implementation> , <http://www.oeg.es/contract/function/_upgradeTo> , <http://www.oeg.es/contract/function/_setImplementation> ;
+        <http://www.oeg.es/contract#hasInheritance>
+                "Proxy" , "A" ;
+        <http://www.oeg.es/contract#name>
+                "UpgradeabilityProxy"^^<xsd:string> ;
+        <http://www.oeg.es/contract#version>
+                "la version es pragma solidity ^ 0.6.2 ;"@es .
+
+<http://www.oeg.es/contract#Proxy>
+        a       <http://www.oeg.es/Contract> ;
+        <http://www.oeg.es/contract#hasFunction>
+                <http://www.oeg.es/contract/function/_implementation> , <http://www.oeg.es/contract/function/_delegate> , <http://www.oeg.es/contract/function/_willFallback> , <http://www.oeg.es/contract/function/_fallback> ;
+        <http://www.oeg.es/contract#name>
+                "Proxy"^^<xsd:string> ;
+        <http://www.oeg.es/contract#version>
+                "la version es pragma solidity ^ 0.6.2 ;"@es .
+
+<http://www.oeg.es/contract#Address>
+        a       <http://www.oeg.es/Contract> ;
+        <http://www.oeg.es/contract#hasFunction>
+                <http://www.oeg.es/contract/function/isContract> ;
+        <http://www.oeg.es/contract#name>
+                "Address"^^<xsd:string> ;
+        <http://www.oeg.es/contract#version>
+                "la version es pragma solidity ^ 0.6.2 ;"@es .

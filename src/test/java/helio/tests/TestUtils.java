@@ -159,7 +159,8 @@ public class TestUtils {
 	public static Boolean compareModels(Model model1, Model model2) {
 		if(model1==null || model2==null || model1.isEmpty() || model2.isEmpty())
 			return false;
-		Boolean model2Contains1 = contains(model1, model2);	
+		Boolean model2Contains1 = contains(model1, model2);
+		System.out.println("-----");
 		Boolean model1Contains2 = contains(model2, model1);
 
 		return model2Contains1 && model1Contains2;
@@ -169,17 +170,17 @@ public class TestUtils {
 		Writer writer = new StringWriter();
 		model1.write(writer, "NT");
 		String[] triplet = writer.toString().split("\n");
-		Boolean result = true;
-		for(int index=0; index < triplet.length; index++) {
-			String query = Utils.concatenate("ASK {\n", triplet[index], "\n}");
+		boolean result = true;
+		for (String element : triplet) {
+			String query = Utils.concatenate("ASK {\n", element, "\n}");
 			Boolean aux = QueryExecutionFactory.create(query, model2).execAsk();
 			if(!aux) {
 				result = false;
-				System.out.println("Not present in model 2:"+ triplet[index]);
-				break;
+				System.out.println("Not present in model 2:"+ element);
+				//break;
 			}
 		}
-		return result;	
+		return result;
 	}
 
 	private static boolean compare(RDFNode obj1, RDFNode obj2) {

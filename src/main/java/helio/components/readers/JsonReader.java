@@ -19,7 +19,7 @@ public class JsonReader implements MappingReader {
 		}
 	}
 
-	
+
 
 
 

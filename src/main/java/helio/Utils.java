@@ -16,6 +16,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 
+import helio.blueprints.mappings.TranslationRules;
+
 /**
  * This class provides a set of methods that ease the code writing
  * @author Andrea Cimmino
@@ -65,11 +67,11 @@ public class Utils {
 	  }
 
 	/**
-	 * This method creates the a graph name for a subject taking into account its related {@link DataSource} and {@link RuleSet} ids.<p>
+	 * This method creates the a graph name for a subject taking into account its related datasource and translation rules ids.<p>
 	 * The graph identifier created should be used to name a graph that contains all the triples related to the subject.
 	 * @param subject an RDF subject, i.e., a valid URI
-	 * @param datasourceId the id of a {@link DataSource}
-	 * @param ruleSetId the id of a {@link RuleSet}
+	 * @param datasourceId the id of a datasource
+	 * @param ruleSetId the id of a set of translation rules
 	 * @return a valid URI that identifies the graph where all the triples related to a subject should be stored
 	 */
 	public static String createGraphIdentifier(String subject, String datasourceId, String ruleSetId) {
