@@ -1,4 +1,4 @@
-package helio.translation;
+package helio;
 
 import helio.blueprints.mappings.TranslationUnit;
 
@@ -7,15 +7,15 @@ import helio.blueprints.mappings.TranslationUnit;
  * @author Andrea Cimmino
  *
  */
-class AsyncronousTranslationTask {
+class SyncronousTranslationTask {
 
 	private TranslationUnit unit;
 
 	/**
-	 * This constructor wraps the provided {@link TranslationUnit} into an {@link AsyncronousTranslationTask} that will be executed timely with a certain interval
+	 * This constructor wraps the provided {@link TranslationUnit} into an {@link SyncronousTranslationTask} that will be executed timely with a certain interval
 	 * @param synchronousTask a {@link TranslationUnit} to be executed according to a certain interval
 	 */
-	public AsyncronousTranslationTask(TranslationUnit unit) {
+	public SyncronousTranslationTask(TranslationUnit unit) {
 		this.unit = unit;
 	}
 
@@ -24,8 +24,8 @@ class AsyncronousTranslationTask {
 		unit.translate();
 	}
 
-	public static AsyncronousTranslationTask create(TranslationUnit unit) {
-		return new AsyncronousTranslationTask(unit);
+	public static SyncronousTranslationTask create(TranslationUnit unit) {
+		return new SyncronousTranslationTask(unit);
 	}
 
 	public TranslationUnit getTranslationUnit() {

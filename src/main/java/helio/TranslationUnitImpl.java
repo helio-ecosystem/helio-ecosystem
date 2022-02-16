@@ -1,4 +1,4 @@
-package helio.translation;
+package helio;
 
 
 
@@ -20,9 +20,8 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import helio.Helio;
-import helio.Utils;
 import helio.blueprints.components.AsyncDataProvider;
+import helio.blueprints.exceptions.ExtensionNotFoundException;
 import helio.blueprints.exceptions.IncorrectMappingException;
 import helio.blueprints.mappings.Datasource;
 import helio.blueprints.mappings.Expresions;
@@ -30,13 +29,15 @@ import helio.blueprints.mappings.TranslationRules;
 import helio.blueprints.mappings.TranslationUnit;
 import helio.blueprints.mappings.UnitType;
 import helio.components.handlers.RDFHandler;
+import helio.configuration.HelioImpl;
 import helio.exceptions.SparqlQuerySyntaxException;
 import helio.exceptions.SparqlRemoteEndpointException;
 import helio.sparql.Sparql;
 
 class TranslationUnitImpl implements TranslationUnit{
 
-	private static ExecutorService service = Executors.newFixedThreadPool(Helio.configuration.getThreads());
+	
+	private static ExecutorService service = Executors.newFixedThreadPool(HelioImpl.configuration.getThreads());
 	Logger logger = LoggerFactory.getLogger(TranslationUnitImpl.class);
 
 	private String id;
@@ -50,7 +51,7 @@ class TranslationUnitImpl implements TranslationUnit{
 	private static Map<String, List<String>> linkMatrix = new HashMap<>();
 	private Boolean markedForLinking = false;
 
-	public TranslationUnitImpl(Datasource datasource, TranslationRules rules, Boolean markedForLinking) throws IncorrectMappingException{
+	public TranslationUnitImpl(Datasource datasource, TranslationRules rules, Boolean markedForLinking) throws IncorrectMappingException, ExtensionNotFoundException{
 
 		this.markedForLinking = markedForLinking;
 		this.datasource = datasource;

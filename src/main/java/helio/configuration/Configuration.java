@@ -1,7 +1,8 @@
-package helio;
+package helio.configuration;
 
 import org.apache.jena.shared.impl.JenaParameters;
 
+import helio.Utils;
 import helio.sparql.SparqlConfiguration;
 
 /**

@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.helio-ecosystem</groupId>
 	<artifactId>helio-core</artifactId>
-	<version>0.4.1</version>
+	<version>0.4.2</version>
 	<url>https://github.com/helio-ecosystem/helio-core</url>
 	<name>Helio core</name>
 	<description>The maven dependency of Helio</description>
@@ -23,6 +23,13 @@
 			<organizationUrl>https://www.oeg-upm.net/</organizationUrl>
 		</developer>
 	</developers>
+	
+	<licenses>
+		<license>
+			<name>The Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
 
 	<scm>
 		<connection>scm:git:git://github.com/helio-ecosystem/helio-core.git</connection>
@@ -48,7 +55,7 @@
 		<dependency>
 			<groupId>io.github.helio-ecosystem</groupId>
 			<artifactId>helio-blueprints</artifactId>
-			<version>0.4.2</version>
+			<version>0.4.3</version>
 		</dependency>
 		
 		<!-- Loggin -->
@@ -115,14 +122,10 @@
 	</dependencies>
 
 
-	<licenses>
-		<license>
-			<name>The Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-		</license>
-	</licenses>
+	
+	
 	<build>
-		 <sourceDirectory>src/main/java</sourceDirectory>
+		<sourceDirectory>src/main/java</sourceDirectory>
 	    <testSourceDirectory>src/test/java</testSourceDirectory>
 		<plugins>
 			<plugin>

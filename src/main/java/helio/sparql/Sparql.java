@@ -25,18 +25,27 @@ import org.apache.jena.update.UpdateRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import helio.Helio;
+import helio.configuration.HelioImpl;
 import helio.exceptions.SparqlQuerySyntaxException;
 import helio.exceptions.SparqlRemoteEndpointException;
 
 public class Sparql {
 
-	static Logger logger = LoggerFactory.getLogger(Sparql.class);
-
+	private static SparqlConfiguration configuration;
 
 	private Sparql() {
 		super();
 	}
+
+	public static SparqlConfiguration getConfiguration() {
+		return configuration;
+	}
+
+	public static void setConfiguration(SparqlConfiguration configuration) {
+		Sparql.configuration = configuration;
+	}
+
+
 
 	public static ResultsFormat guess(String str) {
 		return ResultsFormat.lookup(str);
@@ -46,9 +55,9 @@ public class Sparql {
 	// query methods
 
 	public static ByteArrayOutputStream query(String sparql, ResultsFormat format) throws SparqlQuerySyntaxException, SparqlRemoteEndpointException {
-		String sparqlQuery = Helio.configuration.getSparql().getSparqlQuery();
-		String username = Helio.configuration.getSparql().getUsername();
-		String password = Helio.configuration.getSparql().getPassword();
+		String sparqlQuery = HelioImpl.configuration.getSparql().getSparqlQuery();
+		String username = HelioImpl.configuration.getSparql().getUsername();
+		String password = HelioImpl.configuration.getSparql().getPassword();
 		return  query(sparql, format, sparqlQuery, username, password);
 	}
 
@@ -69,10 +78,10 @@ public class Sparql {
 				ResultSetFormatter.output(stream, qexec.execAsk(), ResultsFormat.convert(format));
 	        }else if(query.isConstructType()) {
 	        	RDFFormat formatOutput = toRDFFormat(format);
-	        	RDFWriter.create().source(qexec.execConstruct()).format(formatOutput).base(Helio.configuration.getNamespace()).output(stream);
+	        	RDFWriter.create().source(qexec.execConstruct()).format(formatOutput).base(HelioImpl.configuration.getNamespace()).output(stream);
 	        }else if(query.isDescribeType()) {
 	        	RDFFormat formatOutput = toRDFFormat(format);
-	        	RDFWriter.create().source(qexec.execDescribe()).format(formatOutput).base(Helio.configuration.getNamespace()).output(stream);
+	        	RDFWriter.create().source(qexec.execDescribe()).format(formatOutput).base(HelioImpl.configuration.getNamespace()).output(stream);
 	        }else {
 	        	throw new SparqlRemoteEndpointException("Query not supported, provided one query SELECT, ASK, DESCRIBE or CONSTRUCT");
 	        }
@@ -103,9 +112,9 @@ public class Sparql {
     }
 
 	public static void update(String sparql ) throws SparqlRemoteEndpointException, SparqlQuerySyntaxException {
-		String sparqlUpdate = Helio.configuration.getSparql().getSparqlUpdate();
-		String username = Helio.configuration.getSparql().getUsername();
-		String password = Helio.configuration.getSparql().getPassword();
+		String sparqlUpdate = HelioImpl.configuration.getSparql().getSparqlUpdate();
+		String username = HelioImpl.configuration.getSparql().getUsername();
+		String password = HelioImpl.configuration.getSparql().getPassword();
 
 		update(sparql,  sparqlUpdate, username, password);
 	}

@@ -1,10 +1,9 @@
-package helio.translation;
+package helio;
 
 import java.util.List;
 
 import org.apache.commons.lang.StringUtils;
 
-import helio.Utils;
 import helio.blueprints.mappings.Expresions;
 import helio.blueprints.mappings.LinkRule;
 import helio.blueprints.mappings.TranslationRule;

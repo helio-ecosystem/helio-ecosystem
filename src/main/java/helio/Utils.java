@@ -8,15 +8,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
-import javax.sql.DataSource;
-
 import org.apache.jena.rdf.model.Model;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
-
-import helio.blueprints.mappings.TranslationRules;
 
 /**
  * This class provides a set of methods that ease the code writing

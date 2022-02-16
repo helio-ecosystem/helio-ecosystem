@@ -1,4 +1,4 @@
-package helio.translation;
+package helio;
 
 import java.io.IOException;
 import java.io.StringWriter;
@@ -15,7 +15,6 @@ import org.apache.velocity.runtime.RuntimeConstants;
 import org.apache.velocity.runtime.resource.loader.StringResourceLoader;
 import org.apache.velocity.runtime.resource.util.StringResourceRepository;
 
-import helio.Utils;
 import helio.blueprints.Components;
 import helio.blueprints.mappings.TranslationRules;
 

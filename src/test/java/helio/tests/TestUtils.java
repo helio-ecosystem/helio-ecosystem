@@ -17,13 +17,16 @@ import org.apache.jena.sparql.resultset.ResultsFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import helio.Configuration;
-import helio.Helio;
 import helio.Mappings;
 import helio.Utils;
+import helio.blueprints.ComponentType;
 import helio.blueprints.Components;
+import helio.blueprints.components.MappingReader;
 import helio.blueprints.exceptions.ExtensionNotFoundException;
 import helio.blueprints.mappings.Mapping;
+import helio.configuration.Configuration;
+import helio.configuration.HelioImpl;
+import helio.sparql.SparqlConfiguration;
 
 public class TestUtils {
 
@@ -32,53 +35,55 @@ public class TestUtils {
 
 	static {
 		try {
-			Components.registerComponent("/Users/andreacimmino/Desktop/helio-handler-csv-0.0.2.jar", "handlers.CsvHandler", Components.EXTENSION_TYPE_HANDLER);
+			Components.registerAndLoad("/Users/andreacimmino/Desktop/helio-handler-csv-0.0.2.jar", "handlers.CsvHandler",ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerComponent("https://github.com/helio-ecosystem/helio-handler-jayway/releases/download/v0.0.2/helio-handler-jayway-0.0.2.jar", "handlers.JsonHandler", Components.EXTENSION_TYPE_HANDLER);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-jayway/releases/download/v0.0.2/helio-handler-jayway-0.0.2.jar", "handlers.JsonHandler",ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerComponent("https://github.com/helio-ecosystem/helio-handler-jsoup/releases/download/v0.0.1/helio-handler-jsoup-0.0.1.jar", "handlers.JsoupHandler", Components.EXTENSION_TYPE_HANDLER);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-jsoup/releases/download/v0.0.1/helio-handler-jsoup-0.0.1.jar", "handlers.JsoupHandler",ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerComponent("https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.0.1/helio-provider-url-0.0.1.jar", "provider.URLProvider", Components.EXTENSION_TYPE_PROVIDER);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.0.1/helio-provider-url-0.0.1.jar", "provider.URLProvider", ComponentType.PROVIDER); 
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerComponent("https://github.com/helio-ecosystem/helio-handler-regex/releases/download/v0.0.1/helio-handler-regex-0.0.1.jar", "handlers.RegexHandler", Components.EXTENSION_TYPE_HANDLER);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-regex/releases/download/v0.0.1/helio-handler-regex-0.0.1.jar", "handlers.RegexHandler",ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerComponent("https://github.com/helio-ecosystem/helio-handler-xml/releases/download/v0.0.1/helio-handler-xml-0.0.1.jar", "handlers.XmlHandler", Components.EXTENSION_TYPE_HANDLER);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-xml/releases/download/v0.0.1/helio-handler-xml-0.0.1.jar", "handlers.XmlHandler",ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerComponent("https://github.com/helio-ecosystem/helio-reader-rml/releases/download/v0.0.4/helio-reader-rml-0.0.4.jar", "readers.RmlReader", Components.EXTENSION_TYPE_READER);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-reader-rml/releases/download/v0.0.4/helio-reader-rml-0.0.4.jar", "readers.RmlReader", ComponentType.READER);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerComponent("https://github.com/helio-ecosystem/helio-provider-file/releases/download/v.0.0.1/helio-provider-file-0.0.1.jar",  "providers.FileProvider", Components.EXTENSION_TYPE_PROVIDER);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-provider-file/releases/download/v.0.0.1/helio-provider-file-0.0.1.jar",  "providers.FileProvider", ComponentType.PROVIDER);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerComponent(null, "helio.components.functions.HF", Components.EXTENSION_TYPE_FUNCTION);
-			Components.registerComponent(null, "helio.components.handlers.RDFHandler", Components.EXTENSION_TYPE_HANDLER);
-			Components.registerComponent(null, "helio.components.readers.JsonReader", Components.EXTENSION_TYPE_READER);
+			Components.registerAndLoad(null, "helio.components.functions.HF", ComponentType.FUNCTION);
+			Components.registerAndLoad(null, "helio.components.handlers.RDFHandler", ComponentType.HANDLER);
+			Components.registerAndLoad(null, "helio.components.readers.JsonReader", ComponentType.READER);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		Helio.configuration = Configuration.createDefault();
+	
+		HelioImpl.configuration = Configuration.createDefault();
+		
 	}
 
 
@@ -88,7 +93,7 @@ public class TestUtils {
 		try {
 			out = new FileInputStream(file);
 			expected = ModelFactory.createDefaultModel();
-			expected.read(out, Helio.configuration.getNamespace(), "TURTLE");
+			expected.read(out, HelioImpl.configuration.getNamespace(), "TURTLE");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -131,24 +136,24 @@ public class TestUtils {
 			line.append(SEPARATOR).append(duration11);
 
 			long startTime2 = System.nanoTime();
-			Helio.addTranslationsTasks(mapping);
+			HelioImpl.addTranslationsTasks(mapping);
 			long endTime2 = System.nanoTime();
 			long duration2 = (endTime2 - startTime2) / 1000000;  //divide by 1000000 to get milliseconds.
 			line.append(SEPARATOR).append(duration2);
 
 			long startTime4 = System.nanoTime();
-			Helio.translate();
+			HelioImpl.translate();
 			long endTime4 = System.nanoTime();
 			long duration4 = (endTime4 - startTime4) / 1000000;  //divide by 1000000 to get milliseconds.
 			line.append(SEPARATOR).append(duration4);
 
 			long startTime3 = System.nanoTime();
-			model.read(new ByteArrayInputStream(Helio.getRDF(mapping, ResultsFormat.FMT_RDF_NT).toByteArray()), Helio.configuration.getNamespace(), "NT");
+			model.read(new ByteArrayInputStream(HelioImpl.getRDF(mapping, ResultsFormat.FMT_RDF_NT).toByteArray()), HelioImpl.configuration.getNamespace(), "NT");
 			long endTime3 = System.nanoTime();
 			long duration3 = (endTime3 - startTime3) / 1000000;  //divide by 1000000 to get milliseconds.
 			line.append(SEPARATOR).append(duration3);
 			logger.info(line.toString());
-			Helio.close();
+			HelioImpl.close();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
