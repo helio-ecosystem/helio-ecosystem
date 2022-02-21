@@ -23,7 +23,7 @@ public class Mappings  {
 		Mapping mapping = null;
 		List<MappingReader> readers = Lists.newArrayList(Components.getMappingReaders().values());
  		if(readers.isEmpty())
-			throw new IllegalArgumentException("No mapping readers are loadded in Helio currently");
+			throw new IllegalArgumentException("No component for reading mappings are loadded currently");
 		for (MappingReader reader : readers) {
 			try {
 				long startTime = System.nanoTime();
