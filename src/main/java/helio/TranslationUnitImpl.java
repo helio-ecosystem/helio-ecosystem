@@ -29,15 +29,13 @@ import helio.blueprints.mappings.TranslationRules;
 import helio.blueprints.mappings.TranslationUnit;
 import helio.blueprints.mappings.UnitType;
 import helio.components.handlers.RDFHandler;
-import helio.configuration.HelioImpl;
-import helio.exceptions.SparqlQuerySyntaxException;
-import helio.exceptions.SparqlRemoteEndpointException;
-import helio.sparql.Sparql;
+import sparql.streamline.core.SparqlEndpoint;
 
-class TranslationUnitImpl implements TranslationUnit{
+class TranslationUnitImpl implements TranslationUnit {
 
-	
-	private static ExecutorService service = Executors.newFixedThreadPool(HelioImpl.configuration.getThreads());
+	// todo: here the problem is that all translation units will have the same threadpool 
+	protected static int threads = 30;
+	private static ExecutorService service = Executors.newFixedThreadPool(threads);
 	Logger logger = LoggerFactory.getLogger(TranslationUnitImpl.class);
 
 	private String id;
@@ -51,8 +49,10 @@ class TranslationUnitImpl implements TranslationUnit{
 	private static Map<String, List<String>> linkMatrix = new HashMap<>();
 	private Boolean markedForLinking = false;
 
-	public TranslationUnitImpl(Datasource datasource, TranslationRules rules, Boolean markedForLinking) throws IncorrectMappingException, ExtensionNotFoundException{
-
+	private SparqlEndpoint endpoint;
+	
+	public TranslationUnitImpl(SparqlEndpoint endpoint, Datasource datasource, TranslationRules rules, Boolean markedForLinking) throws IncorrectMappingException, ExtensionNotFoundException{
+		this.endpoint = endpoint;
 		this.markedForLinking = markedForLinking;
 		this.datasource = datasource;
 		instantiateUnitType();
@@ -174,11 +174,11 @@ class TranslationUnitImpl implements TranslationUnit{
 		    @Override
 			public void run() {
 		    	try {
-					Sparql.update(query);
-				} catch (SparqlRemoteEndpointException | SparqlQuerySyntaxException e) {
+		    		endpoint.update(query);
+				} catch (Exception e) {
 					logger.error(query);
 					logger.error(e.toString());
-				}
+				} 
 		    }
 		};
 		service.submit(th);

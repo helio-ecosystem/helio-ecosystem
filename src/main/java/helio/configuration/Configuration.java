@@ -3,7 +3,6 @@ package helio.configuration;
 import org.apache.jena.shared.impl.JenaParameters;
 
 import helio.Utils;
-import helio.sparql.SparqlConfiguration;
 
 /**
  * This class contains all the configurable elements of the Helio materialiser software
@@ -12,7 +11,6 @@ import helio.sparql.SparqlConfiguration;
  */
 public class Configuration {
 
-	private SparqlConfiguration sparql;
 	private String namespace;
 	private int threads;
 	private boolean silentAcceptanceOfUnknownDatatypes;
@@ -24,13 +22,7 @@ public class Configuration {
 		super();
 	}
 
-	public SparqlConfiguration getSparql() {
-		return sparql;
-	}
-
-	public void setSparql(SparqlConfiguration sparql) {
-		this.sparql = sparql;
-	}
+	
 
 	public String getNamespace() {
 		return namespace;
@@ -90,11 +82,6 @@ public class Configuration {
 		Configuration configuration = new Configuration();
 		configuration.setNamespace("http://helio.linkeddata.es/resource/");
 		configuration.setThreads(30);
-
-		SparqlConfiguration sparql = new SparqlConfiguration();
-		sparql.setSparqlQuery("http://localhost:7200/repositories/app");
-		sparql.setSparqlUpdate("http://localhost:7200/repositories/app/statements");
-		configuration.setSparql(sparql);
 
 		configuration.setSilentAcceptanceOfUnknownDatatypes(true);
 		configuration.setEagerLiteralValidation(false);

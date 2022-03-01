@@ -18,6 +18,9 @@ import helio.blueprints.mappings.Mapping;
 import helio.blueprints.mappings.TranslationRules;
 import helio.blueprints.mappings.TranslationUnit;
 import helio.blueprints.mappings.UnitType;
+import helio.configuration.Configuration;
+import helio.exceptions.ConfigurationException;
+import sparql.streamline.exception.SparqlConfigurationException;
 
 
 
@@ -26,22 +29,26 @@ import helio.blueprints.mappings.UnitType;
  * @author Andrea Cimmino
  *
  */
-public class Helio {
+public class Helio extends AbstractHelio {
 
 	public static Logger logger = LoggerFactory.getLogger(Helio.class);
-
+	
 	private Set<AsyncronousTranslationTask> asyncExecutors = new HashSet<>();
 	private Set<SyncronousTranslationTask> syncExecutors= new HashSet<>();
 	private Set<ScheduledTranslationTask> schedExecutors= new HashSet<>();
 
 	protected List<LinkRule> linkingRules = new ArrayList<>();
+
 	//TODO: add static or attribute from which translationUnits can publish events
 	public Helio() {
 		super();
+		setConfiguration(Configuration.createDefault());
 	}
 
-
-
+	
+	
+	// -- 
+		
 	private  void registerTranslationUnit(TranslationUnit unit, String subject) {
 		if(unit.getUnitType().equals(UnitType.Asyc)) {
 			asyncExecutors.add(AsyncronousTranslationTask.create(unit));
@@ -53,8 +60,9 @@ public class Helio {
 		}
 	}
 
-	public void createFrom(Mapping mapping) throws IncorrectMappingException, ExtensionNotFoundException{
+	public void createFrom(Mapping mapping) throws IncorrectMappingException, ExtensionNotFoundException, SparqlConfigurationException, ConfigurationException{
 		mapping.checkMapping();
+		checkValidity();
 		
 		linkingRules.addAll(mapping.getLinkRules());
 		List<Datasource> datasources = mapping.getDatasources();
@@ -64,7 +72,7 @@ public class Helio {
 				if(translationRule.hasDataSourceId(datasource.getId())) {
 					boolean markedForLinking = mapping.getLinkRules().stream().anyMatch(lrules -> lrules.getSourceNamedGraph().equals(translationRule.getId()) || lrules.getTargetNamedGraph().equals(translationRule.getId()));
 					try {
-						TranslationUnit unit = new TranslationUnitImpl(datasource, translationRule, markedForLinking);
+						TranslationUnit unit = new TranslationUnitImpl(endpoint, datasource, translationRule, markedForLinking);
 						registerTranslationUnit(unit, translationRule.getSubject());
 					}catch(Exception e) {
 						logger.error(e.toString());

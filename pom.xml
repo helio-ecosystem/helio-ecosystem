@@ -1,8 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.helio-ecosystem</groupId>
 	<artifactId>helio-core</artifactId>
-	<version>0.4.2</version>
+	<version>0.4.3</version>
 	<url>https://github.com/helio-ecosystem/helio-core</url>
 	<name>Helio core</name>
 	<description>The maven dependency of Helio</description>
@@ -23,7 +25,7 @@
 			<organizationUrl>https://www.oeg-upm.net/</organizationUrl>
 		</developer>
 	</developers>
-	
+
 	<licenses>
 		<license>
 			<name>The Apache License, Version 2.0</name>
@@ -57,7 +59,11 @@
 			<artifactId>helio-blueprints</artifactId>
 			<version>0.4.3</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>io.github.andreacimminoarriaga</groupId>
+			<artifactId>sparql-streamline</artifactId>
+			<version>0.1.2</version>
+		</dependency>
 		<!-- Loggin -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -78,32 +84,13 @@
 			<artifactId>velocity-tools</artifactId>
 			<version>2.0</version>
 			<exclusions>
-		        <exclusion>
-		            <groupId>javax.servlet</groupId>
-		            <artifactId>servlet-api</artifactId>
-		        </exclusion>
-		    </exclusions>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
-		<dependency>
-			<groupId>info.debatty</groupId>
-			<artifactId>java-string-similarity</artifactId>
-			<version>RELEASE</version>
-		</dependency>
-		
-		<!-- JsonPath: https://github.com/json-path/JsonPath -->
-		<dependency>
-			<groupId>com.jayway.jsonpath</groupId>
-			<artifactId>json-path</artifactId>
-			<version>2.3.0</version>
-		</dependency>
-		
-		<!-- tuples -->
-		<dependency>
-			<groupId>org.javatuples</groupId>
-			<artifactId>javatuples</artifactId>
-			<version>1.2</version>
-		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
 		<dependency>
@@ -111,22 +98,22 @@
 			<artifactId>jena-arq</artifactId>
 			<version>4.3.2</version>
 		</dependency>
-		
+
 		<dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <!-- <scope>test</scope> -->
-        </dependency>
-				
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+
 	</dependencies>
 
 
-	
-	
+
+
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
-	    <testSourceDirectory>src/test/java</testSourceDirectory>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
