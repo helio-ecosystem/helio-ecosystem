@@ -40,6 +40,9 @@ public class Helio extends AbstractHelio {
 	protected List<LinkRule> linkingRules = new ArrayList<>();
 
 	//TODO: add static or attribute from which translationUnits can publish events
+	/**
+	 * This constructor creates a Helio object with the default {@link Configuration}
+	 */
 	public Helio() {
 		super();
 		setConfiguration(Configuration.createDefault());
@@ -53,14 +56,13 @@ public class Helio extends AbstractHelio {
 		if(unit.getUnitType().equals(UnitType.Asyc)) {
 			asyncExecutors.add(AsyncronousTranslationTask.create(unit));
 		}else if(unit.getUnitType().equals(UnitType.Scheduled)) {
-
-			schedExecutors.add(ScheduledTranslationTask.create(unit));
+			schedExecutors.add(ScheduledTranslationTask.create(unit, unit.getDatasource().getRefresh()));
 		}else {
 			syncExecutors.add(SyncronousTranslationTask.create(unit));
 		}
 	}
 
-	public void createFrom(Mapping mapping) throws IncorrectMappingException, ExtensionNotFoundException, SparqlConfigurationException, ConfigurationException{
+	public void addMapping(Mapping mapping) throws IncorrectMappingException, ExtensionNotFoundException, SparqlConfigurationException, ConfigurationException{
 		mapping.checkMapping();
 		checkValidity();
 		
@@ -72,7 +74,10 @@ public class Helio extends AbstractHelio {
 				if(translationRule.hasDataSourceId(datasource.getId())) {
 					boolean markedForLinking = mapping.getLinkRules().stream().anyMatch(lrules -> lrules.getSourceNamedGraph().equals(translationRule.getId()) || lrules.getTargetNamedGraph().equals(translationRule.getId()));
 					try {
-						TranslationUnit unit = new TranslationUnitImpl(endpoint, datasource, translationRule, markedForLinking);
+						Mapping subMapping = new Mapping();
+						subMapping.getDatasources().add(datasource);
+						subMapping.getTranslationRules().add(translationRule);
+						TranslationUnitLambda unit = new TranslationUnitLambda(endpoint, subMapping, markedForLinking);
 						registerTranslationUnit(unit, translationRule.getSubject());
 					}catch(Exception e) {
 						logger.error(e.toString());
@@ -126,7 +131,11 @@ public class Helio extends AbstractHelio {
 
 
 	public  void runSynchronous() {
+		long startTime = System.currentTimeMillis();
 		syncExecutors.parallelStream().forEach(sync -> sync.run());
+		long endTime = System.currentTimeMillis();
+		System.out.println("That took " + (endTime - startTime) + " milliseconds");
+
 	}
 
 	public  void runSynchronous(String subject) {

@@ -12,7 +12,7 @@ class AsyncronousTranslationTask {
 	private TranslationUnit unit;
 
 	/**
-	 * This constructor wraps the provided {@link TranslationUnit} into an {@link AsyncronousTranslationTask} that will be executed timely with a certain interval
+	 * This constructor wraps the provided {@link TranslationUnitLambda} into an {@link AsyncronousTranslationTask} that will be executed timely with a certain interval
 	 * @param synchronousTask a {@link TranslationUnit} to be executed according to a certain interval
 	 */
 	public AsyncronousTranslationTask(TranslationUnit unit) {

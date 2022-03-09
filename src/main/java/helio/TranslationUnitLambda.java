@@ -25,18 +25,19 @@ import helio.blueprints.exceptions.ExtensionNotFoundException;
 import helio.blueprints.exceptions.IncorrectMappingException;
 import helio.blueprints.mappings.Datasource;
 import helio.blueprints.mappings.Expresions;
+import helio.blueprints.mappings.Mapping;
 import helio.blueprints.mappings.TranslationRules;
 import helio.blueprints.mappings.TranslationUnit;
 import helio.blueprints.mappings.UnitType;
 import helio.components.handlers.RDFHandler;
 import sparql.streamline.core.SparqlEndpoint;
 
-class TranslationUnitImpl implements TranslationUnit {
+class TranslationUnitLambda implements TranslationUnit{
 
 	// todo: here the problem is that all translation units will have the same threadpool 
 	protected static int threads = 30;
-	private static ExecutorService service = Executors.newFixedThreadPool(threads);
-	Logger logger = LoggerFactory.getLogger(TranslationUnitImpl.class);
+	private ExecutorService service = Executors.newFixedThreadPool(threads);
+	Logger logger = LoggerFactory.getLogger(TranslationUnitLambda.class);
 
 	private String id;
 	private String representation;
@@ -51,10 +52,11 @@ class TranslationUnitImpl implements TranslationUnit {
 
 	private SparqlEndpoint endpoint;
 	
-	public TranslationUnitImpl(SparqlEndpoint endpoint, Datasource datasource, TranslationRules rules, Boolean markedForLinking) throws IncorrectMappingException, ExtensionNotFoundException{
+	public TranslationUnitLambda(SparqlEndpoint endpoint, Mapping mapping, Boolean markedForLinking) throws IncorrectMappingException, ExtensionNotFoundException{
 		this.endpoint = endpoint;
 		this.markedForLinking = markedForLinking;
-		this.datasource = datasource;
+		this.datasource = mapping.getDatasources().get(0);
+		TranslationRules rules = mapping.getTranslationRules().get(0);
 		instantiateUnitType();
 		if(datasource.getDataHandler() instanceof RDFHandler) {
 			subjectRegex = ".+";
@@ -68,6 +70,17 @@ class TranslationUnitImpl implements TranslationUnit {
 		representation = Utils.concatenate("id: ",id," translates datasource '",datasource.getId(),"' with rules '", rules.getId(),"'");
 		// TODO:linking
 	}
+
+
+	public Datasource getDatasource() {
+		return datasource;
+	}
+
+
+	public void setDatasource(Datasource datasource) {
+		this.datasource = datasource;
+	}
+
 
 	private void instantiateUnitType() {
 		try {
@@ -115,6 +128,7 @@ class TranslationUnitImpl implements TranslationUnit {
 
 	@Override
 	public void translate(InputStream stream) {
+		long startTime = System.currentTimeMillis();
 		try {
 			if(datasource.getDataHandler() instanceof RDFHandler) {
 				//TODO: prepare RDF query
@@ -124,11 +138,14 @@ class TranslationUnitImpl implements TranslationUnit {
 				.map(chunk -> toTranslationMatrix(chunk))
 				.map(matrix -> solveMatrix(matrix))
 				.forEach(query -> sendQuery(query));
-				service.awaitTermination(5, TimeUnit.SECONDS);
+				service.awaitTermination(1, TimeUnit.NANOSECONDS);
+				//service.shutdown();
 			}
 		} catch (Exception e) {
 			logger.error(e.toString());
 		}
+		long endTime = (System.currentTimeMillis() - startTime);
+		logger.debug("translation " + (endTime - startTime) + " milliseconds");
 	}
 
 	/**
@@ -170,6 +187,8 @@ class TranslationUnitImpl implements TranslationUnit {
 
 	private void sendQuery(String query) {
 		//System.out.println(query);
+		long startTime = System.currentTimeMillis();
+		
 		Thread th = new Thread(){
 		    @Override
 			public void run() {
@@ -182,6 +201,8 @@ class TranslationUnitImpl implements TranslationUnit {
 		    }
 		};
 		service.submit(th);
+		long endTime = (System.currentTimeMillis() - startTime);
+		logger.debug(Utils.concatenate("Query:",String.valueOf(endTime)," ms"));
 	}
 
 	@Override

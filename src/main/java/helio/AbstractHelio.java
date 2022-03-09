@@ -31,7 +31,7 @@ public abstract class AbstractHelio {
 	}
 
 	public void setConfiguration(Configuration configuration) {
-		TranslationUnitImpl.threads = configuration.getThreads();
+		TranslationUnitLambda.threads = configuration.getThreads();
 		this.configuration = configuration;
 	}
 
