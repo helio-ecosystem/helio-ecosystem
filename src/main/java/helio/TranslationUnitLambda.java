@@ -154,10 +154,11 @@ class TranslationUnitLambda implements TranslationUnit{
 	 * @return
 	 */
 	private Map<String, List<String>> toTranslationMatrix(String chunk) {
-		return this.dataReferences.parallelStream()
+		Map<String, List<String>> v =  this.dataReferences.parallelStream()
 				.map(reference -> toMatrixColumn(reference, chunk))
 				.map(column -> markForLinking(column))
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
+		return v;
 	}
 
 	private Entry<String, List<String>> toMatrixColumn(String reference, String chunk) {
