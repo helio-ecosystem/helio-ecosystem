@@ -16,9 +16,7 @@
     "resource_rules": [
         {
             "id": "Building sync",
-            "datasource_ids": [
-                "OccupantBehavior Datasource"
-            ],
+            "datasource":"OccupantBehavior Datasource",
             "subject": "https://www.data.bimerr.occupancy.es/resource/sync/{$.Buildings.Building._ID}",
             "properties": [
                 {

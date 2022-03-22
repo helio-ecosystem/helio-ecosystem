@@ -39,7 +39,7 @@ class VelocityEvaluator {
 			e.printStackTrace();
 		}
 		templateRepository = (StringResourceRepository) velocityEngine.getApplicationAttribute(StringResourceLoader.REPOSITORY_NAME_DEFAULT);
-
+		
 	}
 
 

@@ -62,7 +62,7 @@
 		<dependency>
 			<groupId>io.github.andreacimminoarriaga</groupId>
 			<artifactId>sparql-streamline</artifactId>
-			<version>0.1.3</version>
+			<version>0.1.5</version>
 		</dependency>
 		<!-- Loggin -->
 		<dependency>
@@ -78,7 +78,6 @@
 		</dependency>
 
 		<!-- Velocity -->
-
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity-tools</artifactId>

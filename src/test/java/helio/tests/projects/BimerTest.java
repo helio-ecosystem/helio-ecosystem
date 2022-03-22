@@ -1,25 +1,26 @@
-//package helio.tests.projects;
-//
-//import java.io.IOException;
-//
-//import org.apache.jena.rdf.model.Model;
-//import org.junit.Assert;
-//import org.junit.Test;
-//
-//import helio.exceptions.SparqlQuerySyntaxException;
-//import helio.exceptions.SparqlRemoteEndpointException;
-//import helio.tests.TestUtils;
-//
-//public class BimerTest {
-//
-//	@Test
-//	public void test1() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException {
-//
-//		Model expected = TestUtils.readModel("./src/test/resources/bimr-tests/helio-1-expected.ttl");
-//		Model generated = TestUtils.generateRDFSynchronously("./src/test/resources/bimr-tests/helio-1-mapping.json");
-//
-//		Assert.assertTrue(TestUtils.compareModels(generated, expected));
-//	}
+package helio.tests.projects;
+
+import java.io.IOException;
+
+import org.apache.jena.rdf.model.Model;
+import org.junit.Assert;
+import org.junit.Test;
+
+import helio.tests.TestUtils;
+import sparql.streamline.exception.SparqlQuerySyntaxException;
+import sparql.streamline.exception.SparqlRemoteEndpointException;
+
+public class BimerTest {
+
+	@Test
+	public void test1() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException {
+
+		Model expected = TestUtils.readModel("./src/test/resources/bimr-tests/helio-1-expected.ttl");
+		Model generated = TestUtils.generateRDFSynchronously("./src/test/resources/bimr-tests/helio-1-mapping.json");
+
+		Assert.assertTrue(TestUtils.compareModels(generated, expected));
+	}
+}
 //
 //
 //	/**
