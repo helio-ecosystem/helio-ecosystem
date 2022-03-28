@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import helio.blueprints.mappings.TranslationUnit;
+import helio.blueprints.objects.TranslationUnit;
 
 
 /**

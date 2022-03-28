@@ -7,8 +7,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 import java.util.UUID;
-
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -17,80 +19,102 @@ import org.apache.jena.sparql.resultset.ResultsFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import helio.AbstractHelio;
 import helio.Helio;
-import helio.Mappings;
+import helio.TranslationUnitAlfa;
 import helio.Utils;
 import helio.blueprints.ComponentType;
 import helio.blueprints.Components;
-import helio.blueprints.components.MappingReader;
+import helio.blueprints.components.MappingProcessor;
 import helio.blueprints.exceptions.ExtensionNotFoundException;
-import helio.blueprints.mappings.Mapping;
-import helio.configuration.Configuration;
+import helio.blueprints.exceptions.IncompatibleMappingException;
+import helio.blueprints.exceptions.IncorrectMappingException;
+import helio.blueprints.exceptions.MappingExecutionException;
+import helio.blueprints.mappings.TripleMapping;
+import helio.blueprints.objects.TranslationUnit;
+import sparql.streamline.core.SparqlEndpoint;
 import sparql.streamline.core.SparqlEndpointConfiguration;
 
 public class TestUtils {
 
 	static Logger logger = LoggerFactory.getLogger(TestUtils.class);
-	static 	String file = "./src/test/resources/test-"+UUID.randomUUID().toString()+".md";
+	static String file = "./src/test/resources/test-" + UUID.randomUUID().toString() + ".md";
 	static Helio helio;
+	static SparqlEndpointConfiguration conf = new SparqlEndpointConfiguration();
+	static SparqlEndpoint sparql;
 	static {
 		try {
-			Components.registerAndLoad("/Users/andreacimmino/Desktop/helio-handler-csv-0.0.2.jar", "handlers.CsvHandler",ComponentType.HANDLER);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-csv/releases/download/v0.0.3/helio-handler-csv-0.0.3.jar",
+					"handlers.CsvHandler", ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-jayway/releases/download/v0.0.2/helio-handler-jayway-0.0.2.jar", "handlers.JsonHandler",ComponentType.HANDLER);
+			Components.registerAndLoad(
+					"https://github.com/helio-ecosystem/helio-handler-jayway/releases/download/v0.0.2/helio-handler-jayway-0.0.2.jar",
+					"handlers.JsonHandler", ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-jsoup/releases/download/v0.0.1/helio-handler-jsoup-0.0.1.jar", "handlers.JsoupHandler",ComponentType.HANDLER);
+			Components.registerAndLoad(
+					"https://github.com/helio-ecosystem/helio-handler-jsoup/releases/download/v0.0.1/helio-handler-jsoup-0.0.1.jar",
+					"handlers.JsoupHandler", ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.0.1/helio-provider-url-0.0.1.jar", "provider.URLProvider", ComponentType.PROVIDER); 
+			Components.registerAndLoad(
+					"https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.0.1/helio-provider-url-0.0.1.jar",
+					"provider.URLProvider", ComponentType.PROVIDER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-regex/releases/download/v0.0.1/helio-handler-regex-0.0.1.jar", "handlers.RegexHandler",ComponentType.HANDLER);
+			Components.registerAndLoad(
+					"https://github.com/helio-ecosystem/helio-handler-regex/releases/download/v0.0.1/helio-handler-regex-0.0.1.jar",
+					"handlers.RegexHandler", ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-xml/releases/download/v0.0.1/helio-handler-xml-0.0.1.jar", "handlers.XmlHandler",ComponentType.HANDLER);
+			Components.registerAndLoad(
+					"https://github.com/helio-ecosystem/helio-handler-xml/releases/download/v0.0.1/helio-handler-xml-0.0.1.jar",
+					"handlers.XmlHandler", ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
+
 		try {
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-reader-rml/releases/download/v0.0.4/helio-reader-rml-0.0.4.jar", "readers.RmlReader", ComponentType.READER);
-		}catch(Exception e) {
+			Components.registerAndLoad(
+					"https://github.com/helio-ecosystem/helio-provider-file/releases/download/v.0.0.1/helio-provider-file-0.0.1.jar",
+					"providers.FileProvider", ComponentType.PROVIDER);
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		try {
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-provider-file/releases/download/v.0.0.1/helio-provider-file-0.0.1.jar",  "providers.FileProvider", ComponentType.PROVIDER);
-		}catch(Exception e) {
+			Components.registerAndLoad(
+					"https://github.com/helio-ecosystem/helio-processor-jmapping/releases/download/v0.2.0/helio-processor-jmapping-0.2.0.jar",
+					"helio.jmapping.processor.JMappingProcessor", ComponentType.PROCESSOR);
+			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-processor-jmapping/releases/download/v0.2.0/helio-processor-jmapping-0.2.0.jar", "helio.jmapping.functions.HF", ComponentType.FUNCTION);
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 		try {
-			Components.registerAndLoad(null, "helio.components.functions.HF", ComponentType.FUNCTION);
 			Components.registerAndLoad(null, "helio.components.handlers.RDFHandler", ComponentType.HANDLER);
-			Components.registerAndLoad(null, "helio.components.readers.JsonReader", ComponentType.READER);
-		}catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 		helio = new Helio();
-		SparqlEndpointConfiguration conf = new SparqlEndpointConfiguration();
 		conf.setEndpointQuery("http://localhost:7200/repositories/app");
 		conf.setEndpointUpdate("http://localhost:7200/repositories/app/statements");
-		helio.setSparqlEndpointConfiguration(conf);
-		helio.getConfiguration().setEagerLiteralValidation(false);
-		helio.getConfiguration().setSilentAcceptanceOfUnknownDatatypes(true);
+		sparql = new SparqlEndpoint(conf);
+		AbstractHelio.setEagerLiteralValidation(false);
+		AbstractHelio.setSilentAcceptanceOfUnknownDatatypes(true);
 	}
-
 
 	public static Model readModel(String file) {
 		FileInputStream out;
@@ -106,67 +130,80 @@ public class TestUtils {
 		return expected;
 	}
 
-	 public static String readFile(String fileName) {
-		 StringBuilder data = new StringBuilder();
-			// 1. Read the file
-			try {
-				FileReader file = new FileReader(fileName);
-				BufferedReader bf = new BufferedReader(file);
-				// 2. Accumulate its lines in the data var
-				bf.lines().forEach( line -> data.append(line).append("\n"));
-				bf.close();
-				file.close();
-			}catch(Exception e) {
-				e.printStackTrace();
-			}
-			return data.toString();
-	 }
-
-	 private static final String SEPARATOR = ";";
-	public static Model generateRDFSynchronously(String mappingFile) {
-		Model model = ModelFactory.createDefaultModel();
-
+	public static String readFile(String fileName) {
+		StringBuilder data = new StringBuilder();
+		// 1. Read the file
 		try {
-			StringBuilder line = new StringBuilder();
-			line.append("Reading mapping file; Instantiating mapping; Creating unit; Translating; Fetching RDF ## ");
-			long startTime1 = System.nanoTime();
-			String mappingContent = readFile(mappingFile);
-			long endTime1 = System.nanoTime();
-			long duration1 = (endTime1 - startTime1) / 1000000;  //divide by 1000000 to get milliseconds.
-			line.append(duration1);
-			long startTime11 = System.nanoTime();
-			Mapping mapping = Mappings.readMapping(mappingContent);
-			long endTime11 = System.nanoTime();
-			long duration11 = (endTime11 - startTime11) / 1000000;  //divide by 1000000 to get milliseconds.
-			line.append(SEPARATOR).append(duration11);
+			FileReader file = new FileReader(fileName);
+			BufferedReader bf = new BufferedReader(file);
+			// 2. Accumulate its lines in the data var
+			bf.lines().forEach(line -> data.append(line).append("\n"));
+			bf.close();
+			file.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return data.toString();
+	}
 
+	public static List<TranslationUnit> processJMapping(String mappingFile) throws IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+		String mappingContent = readFile(mappingFile);
+		long startTime11 = System.nanoTime();
+		MappingProcessor processor = Components.getMappingProcessors().get("JMappingProcessor");
+		Set<TripleMapping> mapping = processor.parseMapping(mappingContent);
+		long endTime11 = (System.nanoTime() - startTime11) / 1000000; // divide by 1000000 to get milliseconds.
+		System.out.println("To units: "+endTime11);
+		List<TranslationUnit> units = new ArrayList<>();
+		for(TripleMapping tm : mapping) {
+			TranslationUnit unit = new TranslationUnitAlfa(sparql, tm);
+			units.add(unit);
+		}
+		return units;
+	}
+
+	private static final String SEPARATOR = ";";
+
+	public static Model generateRDFSynchronously(List<TranslationUnit> units) {
+		Model model = ModelFactory.createDefaultModel();
+		List<String> ids = units.parallelStream().map( unit -> Utils.concatenate("<",unit.getId(),">")).toList();
+		try {
+			
 			long startTime2 = System.nanoTime();
-			helio.addMapping(mapping);
-			long endTime2 = System.nanoTime();
-			long duration2 = (endTime2 - startTime2) / 1000000;  //divide by 1000000 to get milliseconds.
-			line.append(SEPARATOR).append(duration2);
-
+			units.parallelStream().forEach(unit -> helio.add(unit));
+			long endTime2 = (System.nanoTime()- startTime2) / 1000000;
+			System.out.println("Loading units: "+endTime2);
+			
 			long startTime4 = System.nanoTime();
 			helio.runSynchronous();
-			long endTime4 = System.nanoTime();
-			long duration4 = (endTime4 - startTime4) / 1000000;  //divide by 1000000 to get milliseconds.
-			line.append(SEPARATOR).append(duration4);
-
+			long endTime4 = (System.nanoTime()- startTime4) / 1000000;
+			System.out.println("Generating RDF: "+endTime4);
+			Thread.sleep(1000);
 			long startTime3 = System.nanoTime();
-			model.read(new ByteArrayInputStream(helio.getRDF(mapping, ResultsFormat.FMT_RDF_NT).toByteArray()), helio.getConfiguration().getNamespace(), "NT");
-			long endTime3 = System.nanoTime();
-			long duration3 = (endTime3 - startTime3) / 1000000;  //divide by 1000000 to get milliseconds.
-			line.append(SEPARATOR).append(duration3);
-			logger.info(line.toString());
-		}catch(Exception e) {
+			model = fetchData(ids);
+			
+			long endTime3 = (System.nanoTime() - startTime3) / 1000000;
+			System.out.println("Reading RDF: "+endTime3);
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return model;
 	}
-
+	
+	public static Model fetchData(List<String> ids) {
+		Model model = ModelFactory.createDefaultModel();
+		String query = Utils.concatenate("CONSTRUCT {?s ?p ?o} WHERE { GRAPH ?g { ?s ?p ?o} VALUES ?g ",ids.toString().replace('[', '{').replace(']', '}').replace(',', ' '),"}");
+		try {
+			model.read(new ByteArrayInputStream(sparql.query(query, ResultsFormat.FMT_RDF_NT).toByteArray()),null,"NT");
+		}catch(Exception e) {
+			System.out.println(query);
+			e.printStackTrace();
+		}
+			return model;
+	}
 
 	public static Boolean compareModels(Model model1, Model model2) {
-		if(model1==null || model2==null || model1.isEmpty() || model2.isEmpty())
+		if (model1 == null || model2 == null || model1.isEmpty() || model2.isEmpty())
 			return false;
 		Boolean model2Contains1 = contains(model1, model2);
 		System.out.println("-----");
@@ -183,12 +220,13 @@ public class TestUtils {
 		for (String element : triplet) {
 			String query = Utils.concatenate("ASK {\n", element, "\n}");
 			try {
-			Boolean aux = QueryExecutionFactory.create(query, model2).execAsk();
-			if(!aux) {
-				result = false;
-				//System.out.println("Not present in model 2:"+ element);
-				//break;
-			}}catch(Exception e) {
+				Boolean aux = QueryExecutionFactory.create(query, model2).execAsk();
+				if (!aux) {
+					result = false;
+					// System.out.println("Not present in model 2:"+ element);
+					// break;
+				}
+			} catch (Exception e) {
 				System.out.println(element);
 				System.out.println(query);
 				System.out.println(e.toString());
@@ -199,11 +237,12 @@ public class TestUtils {
 
 	private static boolean compare(RDFNode obj1, RDFNode obj2) {
 		Boolean equal = false;
-		if(obj1.isLiteral() && obj2.isLiteral()) {
+		if (obj1.isLiteral() && obj2.isLiteral()) {
 			equal = obj1.asLiteral().getLexicalForm().equals(obj2.asLiteral().getLexicalForm());
-		}else if(obj1.isResource() && obj2.isResource() && !obj1.isAnon() && !obj2.isAnon()){
+		} else if (obj1.isResource() && obj2.isResource() && !obj1.isAnon() && !obj2.isAnon()) {
 			equal = obj1.equals(obj2);
-		}if( obj1.isAnon() && obj2.isAnon()) {
+		}
+		if (obj1.isAnon() && obj2.isAnon()) {
 			equal = true;
 		}
 

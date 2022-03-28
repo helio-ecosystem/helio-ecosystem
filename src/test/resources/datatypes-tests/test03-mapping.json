@@ -15,9 +15,7 @@
   "resource_rules": [
     {
       "id": "OneDataType",
-      "datasource_ids": [
-        "DataType Source"
-      ],
+      "datasource": "DataType Source",
       "subject": "http://example.org",
       "properties": [
         {

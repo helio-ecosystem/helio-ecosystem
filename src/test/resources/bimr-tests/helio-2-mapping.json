@@ -15,9 +15,7 @@
     "resource_rules": [
         {
             "id": "Building async",
-            "datasource_ids": [
-                "OccupantBehavior Datasource"
-            ],
+            "datasource": "OccupantBehavior Datasource",
             "subject": "https://www.data.bimerr.occupancy.es/resource/async/$HF.regex_replace($HF.now(),' ','_')/$HF.trim({$.Buildings.Building._ID})",
             "properties": [
                 {

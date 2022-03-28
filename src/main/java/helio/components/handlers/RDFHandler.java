@@ -12,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import com.google.gson.JsonObject;
 
 import helio.blueprints.components.DataHandler;
-import helio.configuration.Configuration;
 
 
 /**
@@ -26,7 +25,7 @@ public class RDFHandler implements DataHandler {
 	private static final String MIME_KEY = "format";
 	private static final long serialVersionUID = 1L;
 	private String format;
-	Logger logger = LoggerFactory.getLogger(Configuration.class);
+	Logger logger = LoggerFactory.getLogger(RDFHandler.class);
 
 	/**
 	 * This constructor creates an empty {@link RDFHandler} that will need to be configured using a valid {@link JsonObject}

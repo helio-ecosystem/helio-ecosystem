@@ -5,7 +5,7 @@ import java.io.InputStream;
 import com.google.gson.JsonObject;
 
 import helio.blueprints.components.AsyncDataProvider;
-import helio.blueprints.mappings.TranslationUnit;
+import helio.blueprints.objects.TranslationUnit;
 
 public class FileChangeProvider implements AsyncDataProvider{
 

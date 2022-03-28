@@ -1,6 +1,5 @@
 package helio;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
@@ -10,17 +9,8 @@ import java.util.stream.Collectors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import helio.blueprints.exceptions.ExtensionNotFoundException;
-import helio.blueprints.exceptions.IncorrectMappingException;
-import helio.blueprints.mappings.Datasource;
-import helio.blueprints.mappings.LinkRule;
-import helio.blueprints.mappings.Mapping;
-import helio.blueprints.mappings.TranslationRules;
-import helio.blueprints.mappings.TranslationUnit;
-import helio.blueprints.mappings.UnitType;
-import helio.configuration.Configuration;
-import helio.exceptions.ConfigurationException;
-import sparql.streamline.exception.SparqlConfigurationException;
+import helio.blueprints.objects.TranslationUnit;
+import helio.blueprints.objects.UnitType;
 
 
 
@@ -37,7 +27,6 @@ public class Helio extends AbstractHelio {
 	private Set<SyncronousTranslationTask> syncExecutors= new HashSet<>();
 	private Set<ScheduledTranslationTask> schedExecutors= new HashSet<>();
 
-	protected List<LinkRule> linkingRules = new ArrayList<>();
 
 	//TODO: add static or attribute from which translationUnits can publish events
 	/**
@@ -45,14 +34,17 @@ public class Helio extends AbstractHelio {
 	 */
 	public Helio() {
 		super();
-		setConfiguration(Configuration.createDefault());
+		AbstractHelio.setSilentAcceptanceOfUnknownDatatypes(true);
+		AbstractHelio.setEagerLiteralValidation(false);
+		AbstractHelio.setbNodeUIDGeneration(true);
+		AbstractHelio.setOwlRuleOverOWLRuleWarnings(true);
 	}
 
 	
 	
 	// -- 
 		
-	private  void registerTranslationUnit(TranslationUnit unit, String subject) {
+	public void add(TranslationUnit unit) {
 		if(unit.getUnitType().equals(UnitType.Asyc)) {
 			asyncExecutors.add(AsyncronousTranslationTask.create(unit));
 		}else if(unit.getUnitType().equals(UnitType.Scheduled)) {
@@ -62,45 +54,20 @@ public class Helio extends AbstractHelio {
 		}
 	}
 
-	public void addMapping(Mapping mapping) throws IncorrectMappingException, ExtensionNotFoundException, SparqlConfigurationException, ConfigurationException{
-		mapping.checkMapping();
-		checkValidity();
-		
-		linkingRules.addAll(mapping.getLinkRules());
-		List<Datasource> datasources = mapping.getDatasources();
-		List<TranslationRules> translationRulesList = mapping.getTranslationRules();
-		for (Datasource datasource : datasources) {
-			for (TranslationRules translationRule : translationRulesList) {
-				if(translationRule.hasDataSourceId(datasource.getId())) {
-					boolean markedForLinking = mapping.getLinkRules().stream().anyMatch(lrules -> lrules.getSourceNamedGraph().equals(translationRule.getId()) || lrules.getTargetNamedGraph().equals(translationRule.getId()));
-					try {
-						Mapping subMapping = new Mapping();
-						subMapping.getDatasources().add(datasource);
-						subMapping.getTranslationRules().add(translationRule);
-						TranslationUnitLambda unit = new TranslationUnitLambda(endpoint, subMapping, markedForLinking);
-						registerTranslationUnit(unit, translationRule.getSubject());
-					}catch(Exception e) {
-						logger.error(e.toString());
-					}
-				}
-			}
-		}
-
-	}
-
-	public  boolean delete(String id) {
+	
+	public  boolean remove(String translationUnitId) {
 		boolean found = false;
-		Optional<SyncronousTranslationTask> opt2 = syncExecutors.parallelStream().filter(exec -> exec.getTranslationUnit().getId().equals(id)).findFirst();
+		Optional<SyncronousTranslationTask> opt2 = syncExecutors.parallelStream().filter(exec -> exec.getTranslationUnit().getId().equals(translationUnitId)).findFirst();
 		if(opt2.isPresent()) {
 			found = true;
 			syncExecutors.remove(opt2.get());
 		}else {
-			Optional<AsyncronousTranslationTask> opt1 = asyncExecutors.parallelStream().filter(exec -> exec.getTranslationUnit().getId().equals(id)).findFirst();
+			Optional<AsyncronousTranslationTask> opt1 = asyncExecutors.parallelStream().filter(exec -> exec.getTranslationUnit().getId().equals(translationUnitId)).findFirst();
 			if(opt1.isPresent()) {
 				found = true;
 				asyncExecutors.remove(opt1.get());
 			}else {
-				Optional<ScheduledTranslationTask> opt3 = schedExecutors.parallelStream().filter(exec -> exec.getTranslationUnit().getId().equals(id)).findFirst();
+				Optional<ScheduledTranslationTask> opt3 = schedExecutors.parallelStream().filter(exec -> exec.getTranslationUnit().getId().equals(translationUnitId)).findFirst();
 				if(opt3.isPresent()) {
 					found = true;
 					schedExecutors.remove(opt3.get());
@@ -121,6 +88,12 @@ public class Helio extends AbstractHelio {
 	public  List<String> listScheduledIds() {
 		return schedExecutors.parallelStream().map(exec -> exec.getTranslationUnit().getId()).collect(Collectors.toList());
 	}
+	
+	public void clearExecutors() {
+		syncExecutors.clear();
+		asyncExecutors.clear();
+		schedExecutors.clear();
+	}
 
 	public  List<String> listIds() {
 		List<String> ids = listSyncronousIds();
@@ -135,13 +108,6 @@ public class Helio extends AbstractHelio {
 		syncExecutors.parallelStream().forEach(sync -> sync.run());
 		long endTime = System.currentTimeMillis();
 		System.out.println("That took " + (endTime - startTime) + " milliseconds");
-
 	}
-
-	public  void runSynchronous(String subject) {
-		syncExecutors.parallelStream().filter(unit -> unit.getTranslationUnit().generatesSubject(subject)).forEach(sync -> sync.run());
-	}
-
-
 
 }

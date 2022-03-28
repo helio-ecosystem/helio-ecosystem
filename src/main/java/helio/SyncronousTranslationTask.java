@@ -1,6 +1,6 @@
 package helio;
 
-import helio.blueprints.mappings.TranslationUnit;
+import helio.blueprints.objects.TranslationUnit;
 
 /**
  * This class wraps {@link AsyncronousTranslationTask} in order for them to be executed asynchronously.

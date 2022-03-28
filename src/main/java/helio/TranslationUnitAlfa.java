@@ -5,13 +5,12 @@ package helio;
 import java.io.InputStream;
 import java.util.AbstractMap;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Objects;
 import java.util.Set;
-import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -24,64 +23,57 @@ import helio.blueprints.components.AsyncDataProvider;
 import helio.blueprints.exceptions.ExtensionNotFoundException;
 import helio.blueprints.exceptions.IncorrectMappingException;
 import helio.blueprints.mappings.Datasource;
-import helio.blueprints.mappings.Expresions;
-import helio.blueprints.mappings.Mapping;
-import helio.blueprints.mappings.TranslationRules;
-import helio.blueprints.mappings.TranslationUnit;
-import helio.blueprints.mappings.UnitType;
+import helio.blueprints.mappings.TripleMapping;
+import helio.blueprints.mappings.VelocityEvaluator;
+import helio.blueprints.objects.TranslationUnit;
+import helio.blueprints.objects.UnitType;
 import helio.components.handlers.RDFHandler;
 import sparql.streamline.core.SparqlEndpoint;
 
-class TranslationUnitLambda implements TranslationUnit{
+public class TranslationUnitAlfa implements TranslationUnit{
 
-	// todo: here the problem is that all translation units will have the same threadpool 
-	protected static int threads = 30;
-	private ExecutorService service = Executors.newFixedThreadPool(threads);
-	Logger logger = LoggerFactory.getLogger(TranslationUnitLambda.class);
+	Logger logger = LoggerFactory.getLogger(TranslationUnitAlfa.class);
 
+	// -- Attributes
+	
 	private String id;
-	private String representation;
 	private Datasource datasource;
-	private Set<String> dataReferences = new HashSet<>();
 	private UnitType type;
-	private String velocityTemplateName;
-	private String subjectRegex;
-
-	private static Map<String, List<String>> linkMatrix = new HashMap<>();
-	private Boolean markedForLinking = false;
+	private Set<String> dataReferences = new HashSet<>();
 
 	private SparqlEndpoint endpoint;
 	
-	public TranslationUnitLambda(SparqlEndpoint endpoint, Mapping mapping, Boolean markedForLinking) throws IncorrectMappingException, ExtensionNotFoundException{
+	private int threads = 30;
+	private ExecutorService service = Executors.newFixedThreadPool(threads);
+	
+	// -- Constructor
+	
+	public TranslationUnitAlfa(SparqlEndpoint endpoint, TripleMapping mapping, int threads) throws IncorrectMappingException, ExtensionNotFoundException {
+		this.threads = threads;
+		init(null, endpoint,  mapping);
+	}
+	public TranslationUnitAlfa(SparqlEndpoint endpoint, TripleMapping mapping) throws IncorrectMappingException, ExtensionNotFoundException{
+		init(null, endpoint,  mapping);
+	}
+	
+	private void init(String id, SparqlEndpoint endpoint, TripleMapping mapping) throws IncorrectMappingException, ExtensionNotFoundException {
+		
+		
 		this.endpoint = endpoint;
-		this.markedForLinking = markedForLinking;
-		this.datasource = mapping.getDatasources().get(0);
-		TranslationRules rules = mapping.getTranslationRules().get(0);
+		this.datasource = mapping.getDatasource();
 		instantiateUnitType();
-		if(datasource.getDataHandler() instanceof RDFHandler) {
-			subjectRegex = ".+";
-		}else {
-			this.dataReferences.addAll(Expresions.extractDataReferences(rules));
-			velocityTemplateName = VelocityEvaluator.registerVelocityTemplate(rules);
-			subjectRegex = rules.getSubject();
-			Expresions.extractDataReferences(rules.getSubject()).parallelStream().forEach(dReference -> subjectRegex.replaceAll(dReference, ".+"));
-		}
-		id = UUID.randomUUID().toString();
-		representation = Utils.concatenate("id: ",id," translates datasource '",datasource.getId(),"' with rules '", rules.getId(),"'");
-		// TODO:linking
+		
+		if(!(datasource.getDataHandler() instanceof RDFHandler))
+			this.dataReferences.addAll(mapping.getDataReferences());
+		
+		this.id=id;
+		if(this.id==null)
+			this.id = Utils.concatenate("urn:id:"+String.valueOf(this.hashCode()).replace("-", "A"));
+		if(mapping.getTemplate()!=null)
+			VelocityEvaluator.registerVelocityTemplate(this.id, mapping.getTemplate());
+
 	}
-
-
-	public Datasource getDatasource() {
-		return datasource;
-	}
-
-
-	public void setDatasource(Datasource datasource) {
-		this.datasource = datasource;
-	}
-
-
+	
 	private void instantiateUnitType() {
 		try {
 			if(datasource.getDataProvider() instanceof AsyncDataProvider) {
@@ -97,14 +89,19 @@ class TranslationUnitLambda implements TranslationUnit{
 		}
 	}
 
-	@Override
-	public String getId() {
-		return id;
+	// -- Getters and Setters
+	
+	public Datasource getDatasource() {
+		return datasource;
+	}
+
+	public void setDatasource(Datasource datasource) {
+		this.datasource = datasource;
 	}
 
 	@Override
-	public boolean generatesSubject(String subject) {
-		return subject.matches(subjectRegex);
+	public String getId() {
+		return id;
 	}
 
 	@Override
@@ -122,10 +119,6 @@ class TranslationUnitLambda implements TranslationUnit{
 		}
 	}
 
-	private void translateRDF() {
-		//datasource.getDataHandler().splitData()
-	}
-
 	@Override
 	public void translate(InputStream stream) {
 		long startTime = System.currentTimeMillis();
@@ -137,7 +130,7 @@ class TranslationUnitLambda implements TranslationUnit{
 				datasource.getDataHandler().splitData(stream).parallelStream()
 				.map(chunk -> toTranslationMatrix(chunk))
 				.map(matrix -> solveMatrix(matrix))
-				.forEach(query -> sendQuery(query));
+				.forEach(nt -> sendQuery(nt));
 				service.awaitTermination(1, TimeUnit.NANOSECONDS);
 				//service.shutdown();
 			}
@@ -148,6 +141,10 @@ class TranslationUnitLambda implements TranslationUnit{
 		logger.debug("translation " + (endTime - startTime) + " milliseconds");
 	}
 
+	private void translateRDF() {
+		//datasource.getDataHandler().splitData()
+	}
+	
 	/**
 	 * The matrix has has column header the dataReference, and as cell a list of values extracted from the raw data
 	 * @param chunk
@@ -156,7 +153,7 @@ class TranslationUnitLambda implements TranslationUnit{
 	private Map<String, List<String>> toTranslationMatrix(String chunk) {
 		Map<String, List<String>> v =  this.dataReferences.parallelStream()
 				.map(reference -> toMatrixColumn(reference, chunk))
-				.map(column -> markForLinking(column))
+				//.map(column -> markForLinking(column))
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue));
 		return v;
 	}
@@ -174,22 +171,16 @@ class TranslationUnitLambda implements TranslationUnit{
 		return new AbstractMap.SimpleEntry<>(reference, cleanedValues);
 	}
 
-	private Entry<String,List<String>> markForLinking(Entry<String, List<String>> column){
-		// add the column to the linking column
-		if(markedForLinking)
-			linkMatrix.put(column.getKey(), column.getValue());
-		return column;
-	}
 
 	private String solveMatrix(Map<String, List<String>> matrix) {
-		return (VelocityEvaluator.evaluateTemplate(velocityTemplateName, matrix)).toString();
+		return (VelocityEvaluator.evaluateTemplate(this.id, matrix)).toString();
 	}
 
-
-	private void sendQuery(String query) {
+	
+	private void sendQuery(String nt) {
 		//System.out.println(query);
 		long startTime = System.currentTimeMillis();
-		
+		String query = Utils.concatenate("CLEAR GRAPH <",this.id,">; INSERT { GRAPH <",this.id,"> { \n",nt,"\n} } WHERE {?s ?p ?o }");
 		Thread th = new Thread(){
 		    @Override
 			public void run() {
@@ -208,6 +199,26 @@ class TranslationUnitLambda implements TranslationUnit{
 
 	@Override
 	public String toString() {
-		return representation;
+		return "";
 	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(dataReferences, datasource, endpoint, type);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TranslationUnitAlfa other = (TranslationUnitAlfa) obj;
+		return Objects.equals(dataReferences, other.dataReferences) && Objects.equals(datasource, other.datasource)
+				&& Objects.equals(endpoint, other.endpoint)
+				&& type == other.type;
+	}
+
+	
+
 }

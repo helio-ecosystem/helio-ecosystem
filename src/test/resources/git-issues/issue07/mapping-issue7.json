@@ -15,9 +15,7 @@
   "resource_rules": [
     {
       "id": "Test Linking",
-      "datasource_ids": [
-        "Linking test"
-      ],
+      "datasource": "Linking test",
       "subject": "https://example.test.es/test",
       "properties": [
         {

@@ -15,9 +15,7 @@
 	"resource_rules": [
         {
             "id": "Building",
-            "datasource_ids": [
-                "OccupantBehavior Datasource"
-            ],
+            "datasource":"OccupantBehavior Datasource",
             "subject": "https://www.data.bimerr.occupancy.es/resource/{$.Buildings.Building._ID}",
             "properties": [
                 {
@@ -40,9 +38,7 @@
         },
         {
             "id": "BuildingSpace",
-            "datasource_ids": [
-                "OccupantBehavior Datasource"
-            ],
+            "datasource": "OccupantBehavior Datasource",
             "subject": "https://www.data.bimerr.occupancy.es/resource/{$.Buildings.Building.Spaces.Space._ID}",
             "properties": [
                 {
