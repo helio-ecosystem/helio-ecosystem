@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.UUID;
+import java.util.stream.Collectors;
+
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -21,17 +23,15 @@ import org.slf4j.LoggerFactory;
 
 import helio.AbstractHelio;
 import helio.Helio;
-import helio.TranslationUnitAlfa;
 import helio.Utils;
 import helio.blueprints.ComponentType;
 import helio.blueprints.Components;
 import helio.blueprints.components.MappingProcessor;
+import helio.blueprints.components.TranslationUnit;
 import helio.blueprints.exceptions.ExtensionNotFoundException;
 import helio.blueprints.exceptions.IncompatibleMappingException;
 import helio.blueprints.exceptions.IncorrectMappingException;
 import helio.blueprints.exceptions.MappingExecutionException;
-import helio.blueprints.mappings.TripleMapping;
-import helio.blueprints.objects.TranslationUnit;
 import sparql.streamline.core.SparqlEndpoint;
 import sparql.streamline.core.SparqlEndpointConfiguration;
 
@@ -44,7 +44,7 @@ public class TestUtils {
 	static SparqlEndpoint sparql;
 	static {
 		try {
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-handler-csv/releases/download/v0.0.3/helio-handler-csv-0.0.3.jar",
+			Components.registerAndLoad("/Users/andreacimmino/Desktop/helio-handler-csv-0.0.3.jar",
 					"handlers.CsvHandler", ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
@@ -94,9 +94,10 @@ public class TestUtils {
 		}
 		try {
 			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-processor-jmapping/releases/download/v0.2.0/helio-processor-jmapping-0.2.0.jar",
+					"/Users/andreacimmino/Desktop/Lab/json-mapping/target/helio-processor-jmapping-0.2.1-jar-with-dependencies.jar",
 					"helio.jmapping.processor.JMappingProcessor", ComponentType.PROCESSOR);
-			Components.registerAndLoad("https://github.com/helio-ecosystem/helio-processor-jmapping/releases/download/v0.2.0/helio-processor-jmapping-0.2.0.jar", "helio.jmapping.functions.HF", ComponentType.FUNCTION);
+			Components.registerAndLoad("/Users/andreacimmino/Desktop/Lab/json-mapping/target/helio-processor-jmapping-0.2.1-jar-with-dependencies.jar", "helio.jmapping.functions.HF", ComponentType.FUNCTION);
+			Components.registerAndLoad("/Users/andreacimmino/Desktop/Lab/json-mapping/target/helio-processor-jmapping-0.2.1-jar-with-dependencies.jar", "helio.jmapping.RDFHandler", ComponentType.HANDLER);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -146,26 +147,15 @@ public class TestUtils {
 		return data.toString();
 	}
 
-	public static List<TranslationUnit> processJMapping(String mappingFile) throws IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+	public static Set<TranslationUnit> processJMapping(String mappingFile) throws IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
 		String mappingContent = readFile(mappingFile);
-		long startTime11 = System.nanoTime();
 		MappingProcessor processor = Components.getMappingProcessors().get("JMappingProcessor");
-		Set<TripleMapping> mapping = processor.parseMapping(mappingContent);
-		long endTime11 = (System.nanoTime() - startTime11) / 1000000; // divide by 1000000 to get milliseconds.
-		System.out.println("To units: "+endTime11);
-		List<TranslationUnit> units = new ArrayList<>();
-		for(TripleMapping tm : mapping) {
-			TranslationUnit unit = new TranslationUnitAlfa(sparql, tm);
-			units.add(unit);
-		}
-		return units;
+		return processor.parseMapping(mappingContent);
+		
 	}
 
-	private static final String SEPARATOR = ";";
-
-	public static Model generateRDFSynchronously(List<TranslationUnit> units) {
+	public static Model generateRDFSynchronously(Set<TranslationUnit> units) {
 		Model model = ModelFactory.createDefaultModel();
-		List<String> ids = units.parallelStream().map( unit -> Utils.concatenate("<",unit.getId(),">")).toList();
 		try {
 			
 			long startTime2 = System.nanoTime();
@@ -174,12 +164,11 @@ public class TestUtils {
 			System.out.println("Loading units: "+endTime2);
 			
 			long startTime4 = System.nanoTime();
-			helio.runSynchronous();
+			model = helio.runSynchronous();
 			long endTime4 = (System.nanoTime()- startTime4) / 1000000;
 			System.out.println("Generating RDF: "+endTime4);
-			Thread.sleep(1000);
+			
 			long startTime3 = System.nanoTime();
-			model = fetchData(ids);
 			
 			long endTime3 = (System.nanoTime() - startTime3) / 1000000;
 			System.out.println("Reading RDF: "+endTime3);

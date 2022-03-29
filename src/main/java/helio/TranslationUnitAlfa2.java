@@ -2,9 +2,12 @@
 //
 //
 //
+//import java.io.BufferedReader;
 //import java.io.ByteArrayInputStream;
 //import java.io.InputStream;
+//import java.io.InputStreamReader;
 //import java.nio.channels.Selector;
+//import java.nio.charset.StandardCharsets;
 //import java.util.AbstractMap;
 //import java.util.ArrayList;
 //import java.util.HashSet;
@@ -34,9 +37,9 @@
 //import helio.jmapping.processor.VelocityEvaluator;
 //import sparql.streamline.core.SparqlEndpoint;
 //
-//public class TranslationUnitAlfa implements TranslationUnit{
+//public class TranslationUnitAlfa2 implements TranslationUnit{
 //
-//	Logger logger = LoggerFactory.getLogger(TranslationUnitAlfa.class);
+//	Logger logger = LoggerFactory.getLogger(TranslationUnitAlfa2.class);
 //
 //	// -- Attributes
 //	
@@ -44,24 +47,18 @@
 //	private Datasource datasource;
 //	private UnitType type;
 //	private Set<String> dataReferences = new HashSet<>();
-//
-//	private SparqlEndpoint endpoint;
-//	
-//	private int threads = 30;
-//	private ExecutorService service = Executors.newFixedThreadPool(threads);
+//	private Model model;
 //	
 //	// -- Constructor
 //	
-//	public TranslationUnitAlfa(SparqlEndpoint endpoint, TripleMapping mapping, int threads) throws IncorrectMappingException, ExtensionNotFoundException {
-//		this.threads = threads;
-//		init(null, endpoint,  mapping);
+//	public TranslationUnitAlfa2(TripleMapping mapping) throws IncorrectMappingException, ExtensionNotFoundException {
+//		init(null,  mapping);
 //	}
-//	public TranslationUnitAlfa(SparqlEndpoint endpoint, TripleMapping mapping) throws IncorrectMappingException, ExtensionNotFoundException{
-//		init(null, endpoint,  mapping);
+//	public TranslationUnitAlfa2(String id, TripleMapping mapping) throws IncorrectMappingException, ExtensionNotFoundException{
+//		init(id,  mapping);
 //	}
 //	
-//	private void init(String id, SparqlEndpoint endpoint, TripleMapping mapping) throws IncorrectMappingException, ExtensionNotFoundException {
-//		this.endpoint = endpoint;
+//	private void init(String id, TripleMapping mapping) throws IncorrectMappingException, ExtensionNotFoundException {
 //		this.datasource = mapping.getDatasource();
 //		instantiateUnitType();
 //		
@@ -76,6 +73,9 @@
 //
 //	}
 //	
+//	public Model getModel() {
+//		return this.model;
+//	}
 //	private void instantiateUnitType() {
 //		try {
 //			if(datasource.getDataProvider() instanceof AsyncDataProvider) {
@@ -114,6 +114,7 @@
 //	@Override
 //	public void translate() {
 //		try {
+//			model = ModelFactory.createDefaultModel();
 //			InputStream stream = datasource.getDataProvider().getData();
 //			translate(stream);
 //		}catch(Exception e) {
@@ -125,16 +126,18 @@
 //	public void translate(InputStream stream) {
 //		long startTime = System.currentTimeMillis();
 //		try {
+//			model = ModelFactory.createDefaultModel();
 //			if(datasource.getDataHandler() instanceof RDFHandler) {
-//				//TODO: prepare RDF query
-//				translateRDF();
+//				new BufferedReader(
+//					      new InputStreamReader(stream, StandardCharsets.UTF_8))
+//					        .lines()
+//					        .forEach(nt -> sendQuery(nt));
 //			}else {
 //				datasource.getDataHandler().splitData(stream).parallelStream()
 //				.map(chunk -> toTranslationMatrix(chunk))
 //				.map(matrix -> solveMatrix(matrix))
 //				.forEach(nt -> sendQuery(nt));
-//				service.awaitTermination(1, TimeUnit.NANOSECONDS);
-//				//service.shutdown();
+//				
 //			}
 //		} catch (Exception e) {
 //			logger.error(e.toString());
@@ -183,9 +186,9 @@
 //		//System.out.println(query);
 //		long startTime = System.currentTimeMillis();
 //		//Model model = ModelFactory.createDefaultModel();
-//		//model.read(new ByteArrayInputStream(nt.getBytes()), null, "NT");
+//		model.read(new ByteArrayInputStream(nt.getBytes()), null, "NT");
 //		counter ++;
-//		String query = Utils.concatenate("CLEAR GRAPH <",this.id,"/",String.valueOf(counter),">; INSERT { GRAPH <",this.id,"> { \n",nt,"\n} } WHERE {?s ?p ?o }");
+//		/*String query = Utils.concatenate("CLEAR GRAPH <",this.id,"/",String.valueOf(counter),">; INSERT { GRAPH <",this.id,"> { \n",nt,"\n} } WHERE {?s ?p ?o }");
 //		Thread th = new Thread(){
 //		    @Override
 //			public void run() {
@@ -197,7 +200,7 @@
 //				} 
 //		    }
 //		};
-//		service.submit(th);
+//		service.submit(th);*/
 //		long endTime = (System.currentTimeMillis() - startTime);
 //		logger.debug(Utils.concatenate("Query:",String.valueOf(endTime)," ms"));
 //	}
@@ -208,7 +211,7 @@
 //	}
 //	@Override
 //	public int hashCode() {
-//		return Objects.hash(dataReferences, datasource, endpoint, type);
+//		return Objects.hash(dataReferences, datasource,  type);
 //	}
 //	@Override
 //	public boolean equals(Object obj) {
@@ -218,9 +221,8 @@
 //			return false;
 //		if (getClass() != obj.getClass())
 //			return false;
-//		TranslationUnitAlfa other = (TranslationUnitAlfa) obj;
+//		TranslationUnitAlfa2 other = (TranslationUnitAlfa2) obj;
 //		return Objects.equals(dataReferences, other.dataReferences) && Objects.equals(datasource, other.datasource)
-//				&& Objects.equals(endpoint, other.endpoint)
 //				&& type == other.type;
 //	}
 //

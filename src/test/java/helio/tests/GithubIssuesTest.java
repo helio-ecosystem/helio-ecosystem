@@ -1,11 +1,17 @@
 package helio.tests;
 
+import java.io.FileWriter;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ResourceFactory;
 import org.apache.jena.vocabulary.RDF;
 import org.junit.Assert;
 import org.junit.Test;
 
+import helio.Helio;
+import helio.blueprints.components.TranslationUnit;
 import helio.blueprints.exceptions.ExtensionNotFoundException;
 import helio.blueprints.exceptions.IncompatibleMappingException;
 import helio.blueprints.exceptions.IncorrectMappingException;
@@ -48,12 +54,22 @@ public class GithubIssuesTest {
 	// This test takes ~1h to be ran
 	@Test
 	public void testIssue14() throws SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException  {
-		Model expected = TestUtils.readModel("./src/test/resources/git-issues/issue14/expected-rdf.ttl");
-		Model generated =  TestUtils.generateRDFSynchronously(TestUtils.processJMapping("./src/test/resources/git-issues/issue14/rml-mapping.txt"));
-		//generated.write(System.out, "Turtle");
-		Assert.assertTrue(TestUtils.compareModels(generated, expected));
+		
+		List<Long> times = new ArrayList<>();
+		for(int index=0; index < 10; index++) {
+			long startTime2 = System.nanoTime();
+			Model expected = TestUtils.readModel("./src/test/resources/git-issues/issue14/expected-rdf.ttl");
+			Model generated =  TestUtils.generateRDFSynchronously(TestUtils.processJMapping("./src/test/resources/git-issues/issue14/rml-mapping.txt"));
+			
+			//generated.write(writer, "Turtle");
+			//Assert.assertTrue(TestUtils.compareModels(generated, expected));
+			long endTime2 = (System.nanoTime()- startTime2) / 1000000;
+			times.add(endTime2);
+		}
+		System.out.println(">>>>Loading units: "+times);
 	}
-
+	
+	
 
 	@Test
 	public void testIssue26() throws IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException  {
