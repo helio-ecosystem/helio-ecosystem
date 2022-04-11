@@ -21,100 +21,60 @@ import org.apache.jena.sparql.resultset.ResultsFormat;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import helio.AbstractHelio;
 import helio.Helio;
-import helio.Utils;
-import helio.blueprints.ComponentType;
-import helio.blueprints.Components;
-import helio.blueprints.components.MappingProcessor;
-import helio.blueprints.components.TranslationUnit;
+import helio.blueprints.TranslationUnit;
+import helio.blueprints.UnitBuilder;
+import helio.blueprints.components.ComponentType;
+import helio.blueprints.components.Components;
 import helio.blueprints.exceptions.ExtensionNotFoundException;
 import helio.blueprints.exceptions.IncompatibleMappingException;
 import helio.blueprints.exceptions.IncorrectMappingException;
-import helio.blueprints.exceptions.MappingExecutionException;
-import sparql.streamline.core.SparqlEndpoint;
-import sparql.streamline.core.SparqlEndpointConfiguration;
+import helio.blueprints.exceptions.TranslationUnitExecutionException;
 
 public class TestUtils {
 
 	static Logger logger = LoggerFactory.getLogger(TestUtils.class);
-	static String file = "./src/test/resources/test-" + UUID.randomUUID().toString() + ".md";
-	static Helio helio;
-	static SparqlEndpointConfiguration conf = new SparqlEndpointConfiguration();
-	static SparqlEndpoint sparql;
+
 	static {
 		try {
-			Components.registerAndLoad("/Users/andreacimmino/Desktop/helio-handler-csv-0.0.3.jar",
-					"handlers.CsvHandler", ComponentType.HANDLER);
+			Components.registerAndLoad(
+					"/Users/andreacimmino/Desktop/helio-handler-csv-0.1.0.jar",
+					"handlers.CsvHandler", 
+					ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
 			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-handler-jayway/releases/download/v0.0.2/helio-handler-jayway-0.0.2.jar",
+					"https://github.com/helio-ecosystem/helio-handler-jayway/releases/download/v0.1.0/helio-handler-jayway-0.1.0.jar",
 					"handlers.JsonHandler", ComponentType.HANDLER);
 		} catch (ExtensionNotFoundException e) {
 			e.printStackTrace();
 		}
+		
 		try {
 			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-handler-jsoup/releases/download/v0.0.1/helio-handler-jsoup-0.0.1.jar",
-					"handlers.JsoupHandler", ComponentType.HANDLER);
-		} catch (ExtensionNotFoundException e) {
-			e.printStackTrace();
-		}
-		try {
-			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.0.1/helio-provider-url-0.0.1.jar",
-					"provider.URLProvider", ComponentType.PROVIDER);
-		} catch (ExtensionNotFoundException e) {
-			e.printStackTrace();
-		}
-		try {
-			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-handler-regex/releases/download/v0.0.1/helio-handler-regex-0.0.1.jar",
-					"handlers.RegexHandler", ComponentType.HANDLER);
-		} catch (ExtensionNotFoundException e) {
-			e.printStackTrace();
-		}
-		try {
-			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-handler-xml/releases/download/v0.0.1/helio-handler-xml-0.0.1.jar",
-					"handlers.XmlHandler", ComponentType.HANDLER);
-		} catch (ExtensionNotFoundException e) {
-			e.printStackTrace();
-		}
-
-		try {
-			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-provider-file/releases/download/v.0.0.1/helio-provider-file-0.0.1.jar",
-					"providers.FileProvider", ComponentType.PROVIDER);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		try {
-			Components.registerAndLoad(
-					"/Users/andreacimmino/Desktop/Lab/json-mapping/target/helio-processor-jmapping-0.2.1-jar-with-dependencies.jar",
-					"helio.jmapping.processor.JMappingProcessor", ComponentType.PROCESSOR);
-			Components.registerAndLoad("/Users/andreacimmino/Desktop/Lab/json-mapping/target/helio-processor-jmapping-0.2.1-jar-with-dependencies.jar", "helio.jmapping.functions.HF", ComponentType.FUNCTION);
-			Components.registerAndLoad("/Users/andreacimmino/Desktop/Lab/json-mapping/target/helio-processor-jmapping-0.2.1-jar-with-dependencies.jar", "helio.jmapping.RDFHandler", ComponentType.HANDLER);
+					"https://github.com/helio-ecosystem/helio-processor-jmapping/releases/download/v0.2.2/helio-processor-jmapping-0.2.2.jar",
+					"helio.jmapping.processor.JMappingProcessor", ComponentType.BUILDER);
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 
 		try {
-			Components.registerAndLoad(null, "helio.components.handlers.RDFHandler", ComponentType.HANDLER);
+			Components.registerAndLoad(
+					"https://github.com/helio-ecosystem/helio-provider-files/releases/download/v0.1.0/helio-provider-files-0.1.0.jar",
+					"helio.providers.files.FileProvider", ComponentType.PROVIDER);
+			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-		helio = new Helio();
-		conf.setEndpointQuery("http://localhost:7200/repositories/app");
-		conf.setEndpointUpdate("http://localhost:7200/repositories/app/statements");
-		sparql = new SparqlEndpoint(conf);
-		AbstractHelio.setEagerLiteralValidation(false);
-		AbstractHelio.setSilentAcceptanceOfUnknownDatatypes(true);
+		
+		
+		
 	}
 
 	public static Model readModel(String file) {
@@ -147,15 +107,24 @@ public class TestUtils {
 		return data.toString();
 	}
 
-	public static Set<TranslationUnit> processJMapping(String mappingFile) throws IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+	public static Set<TranslationUnit> processJMapping(String mappingFile){
+		try {
+		long startTime2 = System.nanoTime();
 		String mappingContent = readFile(mappingFile);
-		MappingProcessor processor = Components.getMappingProcessors().get("JMappingProcessor");
-		return processor.parseMapping(mappingContent);
-		
+		UnitBuilder processor = Components.getMappingProcessors().get("JMappingProcessor");
+		Set<TranslationUnit> units = processor.parseMapping(mappingContent);
+		long endTime2 = (System.nanoTime()- startTime2) / 1000000;
+		System.out.println("Building units: "+endTime2);
+		return units;
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	public static Model generateRDFSynchronously(Set<TranslationUnit> units) {
 		Model model = ModelFactory.createDefaultModel();
+		Helio helio = new Helio(10);
 		try {
 			
 			long startTime2 = System.nanoTime();
@@ -164,7 +133,8 @@ public class TestUtils {
 			System.out.println("Loading units: "+endTime2);
 			
 			long startTime4 = System.nanoTime();
-			model = helio.runSynchronous();
+			helio.readAndFlushAll().forEach(data -> model.read(new ByteArrayInputStream(data.getBytes()), "", "TURTLE"));
+			
 			long endTime4 = (System.nanoTime()- startTime4) / 1000000;
 			System.out.println("Generating RDF: "+endTime4);
 			
@@ -179,17 +149,6 @@ public class TestUtils {
 		return model;
 	}
 	
-	public static Model fetchData(List<String> ids) {
-		Model model = ModelFactory.createDefaultModel();
-		String query = Utils.concatenate("CONSTRUCT {?s ?p ?o} WHERE { GRAPH ?g { ?s ?p ?o} VALUES ?g ",ids.toString().replace('[', '{').replace(']', '}').replace(',', ' '),"}");
-		try {
-			model.read(new ByteArrayInputStream(sparql.query(query, ResultsFormat.FMT_RDF_NT).toByteArray()),null,"NT");
-		}catch(Exception e) {
-			System.out.println(query);
-			e.printStackTrace();
-		}
-			return model;
-	}
 
 	public static Boolean compareModels(Model model1, Model model2) {
 		if (model1 == null || model2 == null || model1.isEmpty() || model2.isEmpty())
@@ -207,7 +166,7 @@ public class TestUtils {
 		String[] triplet = writer.toString().split("\n");
 		boolean result = true;
 		for (String element : triplet) {
-			String query = Utils.concatenate("ASK {\n", element, "\n}");
+			String query = "ASK {\n"+ element+ "\n}";
 			try {
 				Boolean aux = QueryExecutionFactory.create(query, model2).execAsk();
 				if (!aux) {

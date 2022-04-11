@@ -1,80 +1,121 @@
 package helio;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.Map;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import helio.blueprints.components.TranslationUnit;
-import helio.blueprints.components.UnitType;
-
-
+import helio.blueprints.TranslationUnit;
+import helio.blueprints.UnitType;
 
 /**
- * This class implements the methods required to generate RDF either following a synchronous or an asynchronous approach
+ * This class implements the methods required to generate RDF either following a
+ * synchronous or an asynchronous approach
+ * 
  * @author Andrea Cimmino
  *
  */
-public class Helio extends AbstractHelio {
+public class Helio {
 
 	public static Logger logger = LoggerFactory.getLogger(Helio.class);
-	
-	private Set<AsyncronousTranslationTask> asyncExecutors = new HashSet<>();
-	private Set<SyncronousTranslationTask> syncExecutors= new HashSet<>();
-	private Set<ScheduledTranslationTask> schedExecutors= new HashSet<>();
 
+	private ScheduledExecutorService scheduledExecutorService;
+	private Map<String, PairUnitFuture> futures;
 
-	//TODO: add static or attribute from which translationUnits can publish events
 	/**
 	 * This constructor creates a Helio object
 	 */
 	public Helio() {
 		super();
-		AbstractHelio.setSilentAcceptanceOfUnknownDatatypes(true);
-		AbstractHelio.setEagerLiteralValidation(false);
-		AbstractHelio.setbNodeUIDGeneration(true);
-		AbstractHelio.setOwlRuleOverOWLRuleWarnings(true);
+		scheduledExecutorService = Executors.newScheduledThreadPool(10);
+		futures = new HashMap<>();
 	}
 
+	public Helio(int threads) {
+		super();
+		scheduledExecutorService = Executors.newScheduledThreadPool(threads);
+		futures = new HashMap<>();
+	}
 	
-	
-	// -- 
-	
-	
-		
+	// --
+
 	public void add(TranslationUnit unit) {
-		if(unit.getUnitType().equals(UnitType.Asyc)) {
-			asyncExecutors.add(AsyncronousTranslationTask.create(unit));
-		}else if(unit.getUnitType().equals(UnitType.Scheduled)) {
-			schedExecutors.add(ScheduledTranslationTask.create(unit, unit.getScheduledTime()));
-		}else {
-			syncExecutors.add(SyncronousTranslationTask.create(unit));
+		PairUnitFuture uFuture = null;
+		if (UnitType.isAsync(unit)) {
+			uFuture = new PairUnitFuture(unit, scheduledExecutorService.submit(unit.getTask()));
+		} else if (UnitType.isSync(unit)) {
+			uFuture = new PairUnitFuture(unit, scheduledExecutorService.submit(unit.getTask()));
+		} else if (UnitType.isScheduled(unit)) {
+			uFuture = new PairUnitFuture(unit, scheduledExecutorService.scheduleAtFixedRate(unit.getTask(), 0, unit.getScheduledTime(), TimeUnit.MILLISECONDS));
+		} else {
+			// TODO: throw exception
 		}
+		if (uFuture != null)
+			this.futures.put(unit.getId(), uFuture);
+	}
+
+	public List<TranslationUnit> getTranslationUnits(){
+		return this.futures.entrySet().parallelStream().map(entry -> entry.getValue().getUnit()).collect(Collectors.toList());	
+	}
+	
+	public List<TranslationUnit> getFilteredTranslationUnits(UnitType type){
+		if(type==null)
+			return getTranslationUnits();
+		return this.futures.entrySet().parallelStream().map(entry -> entry.getValue().getUnit()).filter(unit -> type.equals(unit.getUnitType())).collect(Collectors.toList());	
+	}
+		
+	public List<String> readAndFlush(String id) {
+		List<String> translations = new ArrayList<>();
+		PairUnitFuture pair =  this.futures.get(id);
+		if(pair!=null) {
+			TranslationUnit unit = pair.getUnit();
+			if(UnitType.isSync(unit)) {
+				try {
+					pair.getFuture().get();
+					add(pair.getUnit());
+				} catch (InterruptedException | ExecutionException e) {
+					e.printStackTrace();
+				}
+			}else if(UnitType.isScheduled(unit)) {
+				
+			}
+			translations.addAll(unit.getTranslations());
+			unit.flush();
+		}else {
+			//TODO: THROW EXCEPTION
+		}
+		return translations;
+	}
+	
+	public List<String> readAndFlushAll() {
+		return this.futures.entrySet().parallelStream().flatMap(entry -> readAndFlush(entry.getKey()).stream()).collect(Collectors.toList());	
 	}
 
 	
-	
 
-	public  List<TranslationUnit> getSyncronousUnits() {
-		return syncExecutors.parallelStream().map(exec -> exec.getTranslationUnit()).collect(Collectors.toList());
+	public void stop(String id) {
+		PairUnitFuture pair =  this.futures.get(id);
+		if(pair!=null) {
+			pair.getFuture().cancel(true);
+		}else {
+			//TODO: THROW EXCEPTION
+		}	
 	}
 	
-	public void clearExecutors() {
-		syncExecutors.clear();
-		asyncExecutors.clear();
-		schedExecutors.clear();
+	public void stopAll() {
+		this.futures.entrySet().parallelStream().forEach(entry -> stop(entry.getKey()));
 	}
 
-	public  Model runSynchronous() {
-		Model model = ModelFactory.createDefaultModel();
-		syncExecutors.parallelStream().map(sync -> sync.getTranslationUnit().translate()).forEach(modelAux -> model.add(model));
-		return model;
+	public void close() {
+		this.scheduledExecutorService.shutdownNow();
 	}
-
+	
 }

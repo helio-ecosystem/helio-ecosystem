@@ -8,7 +8,7 @@
       },
       "provider": {
         "type": "FileProvider",
-        "file": "./src/test/resources/linking-tests/test-linking-1-data-1.json"
+        "file": "./src/test/resources/git-issues/issue07/data-issue7.json"
       }
     }
   ],

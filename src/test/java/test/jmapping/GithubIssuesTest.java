@@ -1,4 +1,4 @@
-package helio.tests;
+package test.jmapping;
 
 import java.io.FileWriter;
 import java.util.ArrayList;

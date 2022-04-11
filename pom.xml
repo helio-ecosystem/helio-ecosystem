@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.helio-ecosystem</groupId>
 	<artifactId>helio-core</artifactId>
-	<version>0.4.7</version>
+	<version>0.4.8</version>
 	<url>https://github.com/helio-ecosystem/helio-core</url>
 	<name>Helio core</name>
 	<description>The maven dependency of Helio</description>
@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>io.github.helio-ecosystem</groupId>
 			<artifactId>helio-blueprints</artifactId>
-			<version>0.4.9</version>
+			<version>0.4.11</version>
 		</dependency>
 		<dependency>
 			<groupId>io.github.andreacimminoarriaga</groupId>
@@ -76,7 +76,13 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>${slf4jVersion}</version>
 		</dependency>
-
+			<!-- https://mvnrepository.com/artifact/org.apache.jena/jena-arq -->
+		<dependency>
+		    <groupId>org.apache.jena</groupId>
+		    <artifactId>jena-arq</artifactId>
+		    <version>4.4.0</version>
+		</dependency>
+			
 		
 
 		

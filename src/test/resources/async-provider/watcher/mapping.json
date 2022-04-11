@@ -1,0 +1,28 @@
+{
+  "datasources": [
+    {
+      "id": "Linking test",
+      "handler": {
+        "type": "JsonHandler",
+        "iterator": "$"
+      },
+      "provider": {
+        "type": "FileWatcherProvider",
+      }
+    }
+  ],
+  "resource_rules": [
+    {
+      "id": "Test Linking",
+      "datasource": "Linking test",
+      "subject": "https://example.test.es/test/{$.id}",
+      "properties": [
+        {
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "object": "https://example.test.org/Test",
+          "is_literal": "False"
+        }
+      ]
+    }
+  ]
+}

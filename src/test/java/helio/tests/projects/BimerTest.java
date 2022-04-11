@@ -9,7 +9,6 @@ import org.junit.Test;
 import helio.blueprints.exceptions.ExtensionNotFoundException;
 import helio.blueprints.exceptions.IncompatibleMappingException;
 import helio.blueprints.exceptions.IncorrectMappingException;
-import helio.blueprints.exceptions.MappingExecutionException;
 import helio.tests.TestUtils;
 import sparql.streamline.exception.SparqlQuerySyntaxException;
 import sparql.streamline.exception.SparqlRemoteEndpointException;
@@ -17,7 +16,7 @@ import sparql.streamline.exception.SparqlRemoteEndpointException;
 public class BimerTest {
 
 	@Test
-	public void test1() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+	public void test1() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException, IncorrectMappingException, ExtensionNotFoundException {
 
 		Model expected = TestUtils.readModel("./src/test/resources/bimr-tests/helio-1-expected.ttl");
 		Model generated = TestUtils.generateRDFSynchronously(TestUtils.processJMapping("./src/test/resources/bimr-tests/helio-1-mapping.json"));
@@ -40,7 +39,7 @@ public class BimerTest {
 	 * @throws IncompatibleMappingException 
 	 */
 	@Test
-	public void test2() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+	public void test2() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException,  IncorrectMappingException, ExtensionNotFoundException {
 		Model expected = TestUtils.readModel("./src/test/resources/bimr-tests/helio-1-expected.ttl");
 		Model generated = TestUtils.generateRDFSynchronously(TestUtils.processJMapping("./src/test/resources/bimr-tests/helio-2-mapping.json"));
 
@@ -49,16 +48,20 @@ public class BimerTest {
 						.map(st -> generated.contains(null, st.getPredicate(), st.getObject()))
 						.allMatch( elem -> elem);
 		Assert.assertTrue(equivalent);
-
+		
 	}
 
 
 	@Test
-	public void test3() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+	public void test3() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException,  IncorrectMappingException, ExtensionNotFoundException {
+		
 		Model expected = TestUtils.readModel("./src/test/resources/bimr-tests/helio-3-expected.ttl");
 		Model generated = TestUtils.generateRDFSynchronously(TestUtils.processJMapping("./src/test/resources/bimr-tests/helio-3-mapping.json"));
 
 
+		generated.write(System.out, "TURTLE");
+		System.out.println("......");
+		expected.write(System.out, "TURTLE");
 
 		Assert.assertTrue(TestUtils.compareModels(generated, expected));
 	}
@@ -75,7 +78,7 @@ public class BimerTest {
 	 * @throws IncompatibleMappingException 
 	 */
 	@Test
-	public void test4() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+	public void test4() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException,  IncorrectMappingException, ExtensionNotFoundException {
 		Model expected = TestUtils.readModel("./src/test/resources/bimr-tests/helio-4-expected.ttl");
 		Model generated = TestUtils.generateRDFSynchronously(TestUtils.processJMapping("./src/test/resources/bimr-tests/helio-4-mapping.json"));
 
@@ -94,7 +97,7 @@ public class BimerTest {
 	 * @throws IncompatibleMappingException 
 	 */
 	@Test
-	public void test5() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+	public void test5() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException,  IncorrectMappingException, ExtensionNotFoundException {
 		Model expected = TestUtils.readModel("./src/test/resources/bimr-tests/helio-5-expected.ttl");
 		Model generated = TestUtils.generateRDFSynchronously(TestUtils.processJMapping("./src/test/resources/bimr-tests/helio-5-mapping.json"));
 
@@ -114,7 +117,7 @@ public class BimerTest {
 	 * @throws IncompatibleMappingException 
 	 */
 	@Test
-	public void test6() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException, MappingExecutionException, IncorrectMappingException, ExtensionNotFoundException {
+	public void test6() throws IOException, InterruptedException, SparqlQuerySyntaxException, SparqlRemoteEndpointException, IncompatibleMappingException,  IncorrectMappingException, ExtensionNotFoundException {
 		Model expected = TestUtils.readModel("./src/test/resources/bimr-tests/helio-6-expected.ttl");
 		Model generated = TestUtils.generateRDFSynchronously(TestUtils.processJMapping("./src/test/resources/bimr-tests/helio-6-mapping.json"));
 
