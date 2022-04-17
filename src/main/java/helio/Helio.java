@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
@@ -14,6 +16,8 @@ import org.slf4j.LoggerFactory;
 
 import helio.blueprints.TranslationUnit;
 import helio.blueprints.UnitType;
+import helio.blueprints.exceptions.HelioExecutionException;
+import helio.blueprints.exceptions.TranslationUnitExecutionException;
 
 /**
  * This class implements the methods required to generate RDF either following a
@@ -26,33 +30,35 @@ public class Helio {
 
 	public static Logger logger = LoggerFactory.getLogger(Helio.class);
 
-	private ExecutorService scheduledExecutorService;
+	private ScheduledExecutorService scheduledExecutorService;
 	private Map<String, PairUnitFuture> futures;
 	/**
 	 * This constructor creates a Helio object
 	 */
 	public Helio() {
 		super();
-		scheduledExecutorService = Executors.newCachedThreadPool();
+		scheduledExecutorService = Executors.newScheduledThreadPool(5);
 		futures = new HashMap<>();
 	}
 
 	public Helio(int threads) {
 		super();
-		scheduledExecutorService = Executors.newFixedThreadPool(threads);
+		scheduledExecutorService = Executors.newScheduledThreadPool(threads);
 		futures = new HashMap<>();
 	}
 	
 	// --
 
-	public void add(TranslationUnit unit) {
+	public void add(TranslationUnit unit) throws TranslationUnitExecutionException {
 		PairUnitFuture uFuture = null;
+		Runnable task = unit.getTask();
 		if (UnitType.isAsync(unit)) {
-			uFuture = new PairUnitFuture(unit, scheduledExecutorService.submit(unit.getTask()));
+			uFuture = new PairUnitFuture(unit, scheduledExecutorService.submit(task));
 		} else if (UnitType.isSync(unit)) {
-			uFuture = new PairUnitFuture(unit, scheduledExecutorService.submit(unit.getTask()));
-		} else {
-			
+			uFuture = new PairUnitFuture(unit, scheduledExecutorService.submit(task));
+		} else if (UnitType.isSync(unit)) {
+			uFuture = new PairUnitFuture(unit, scheduledExecutorService.scheduleAtFixedRate(task, 0, unit.getScheduledTime(), TimeUnit.MILLISECONDS));
+		}else {
 			// TODO: throw exception
 		}
 		if (uFuture != null)
@@ -69,7 +75,7 @@ public class Helio {
 		return this.futures.entrySet().parallelStream().map(entry -> entry.getValue().getUnit()).filter(unit -> type.equals(unit.getUnitType())).collect(Collectors.toList());	
 	}
 		
-	public List<String> readAndFlush(String id) {
+	public List<String> readAndFlush(String id) throws HelioExecutionException, TranslationUnitExecutionException {
 		List<String> translations = new ArrayList<>();
 		PairUnitFuture pair =  this.futures.get(id);
 		if(pair!=null) {
@@ -79,19 +85,23 @@ public class Helio {
 					pair.getFuture().get();
 					add(pair.getUnit());
 				} catch (InterruptedException | ExecutionException e) {
-					e.printStackTrace();
-				}
+					throw new HelioExecutionException(e.getCause().toString());				}
 			}
-			translations.addAll(unit.getTranslations());
-			unit.flush();
+			translations.addAll(unit.getDataTranslated());
+			unit.flushDataTranslated();
 		}else {
 			//TODO: THROW EXCEPTION
 		}
 		return translations;
 	}
 	
-	public List<String> readAndFlushAll() {
-		return this.futures.entrySet().parallelStream().flatMap(entry -> readAndFlush(entry.getKey()).stream()).collect(Collectors.toList());	
+	public List<String> readAndFlushAll() throws HelioExecutionException, TranslationUnitExecutionException{
+		List<String> values = new ArrayList<>();
+		for (Entry<String, PairUnitFuture> entry: this.futures.entrySet()) {
+			values.addAll(readAndFlush(entry.getKey()));
+		}
+		
+		return values;
 	}
 
 	

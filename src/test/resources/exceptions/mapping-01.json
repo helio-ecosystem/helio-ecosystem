@@ -1,0 +1,48 @@
+{
+  "datasources": [
+    {
+      "id": "Linking test",
+      "handler": {
+        "type": "JsonHandler",
+        "iterator": "$"
+      },
+      "provider": {
+        "type": "FileProvider",
+        "file": "./fake_dir/fake_file.json"
+      }
+    }
+  ],
+  "resource_rules": [
+    {
+      "id": "Test Linking",
+      "datasource": "Linking test",
+      "subject": "https://example.test.es/test",
+      "properties": [
+        {
+          "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+          "object": "https://example.test.org/Test",
+          "is_literal": "False"
+        },
+        {
+          "predicate": "http://www.example.org/ontology#key",
+          "object": "{$.*.key}",
+          "is_literal": "True",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+
+        },
+        {
+          "predicate": "http://www.example.org/ontology#number",
+          "object": "{$.[*].number}",
+          "is_literal": "True",
+          "datatype": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        },
+        {
+          "predicate": "http://www.example.org/ontology#text",
+          "object": "{$.[*].text}",
+          "is_literal": "True",
+          "lang": "en"
+        }
+      ]
+    }
+  ]
+}

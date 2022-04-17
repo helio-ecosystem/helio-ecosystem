@@ -54,18 +54,27 @@ public class TestUtils {
 		
 		try {
 			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-processor-jmapping/releases/download/v0.2.2/helio-processor-jmapping-0.2.2.jar",
-					"helio.jmapping.processor.JMappingProcessor", ComponentType.BUILDER);
+					"/Users/andreacimmino/Desktop/helio-processor-jmapping-0.2.4.jar",
+					"helio.jmapping.builder.JMappingBuilder", ComponentType.BUILDER);
 			
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
+		try {
+			Components.registerAndLoad(
+					"/Users/andreacimmino/Desktop/helio-builder-jld11map-0.1.2.jar",
+					"helio.builder.jld11map.JLD11Builder", ComponentType.BUILDER);
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		try {
 			Components.registerAndLoad(
-					"https://github.com/helio-ecosystem/helio-provider-files/releases/download/v0.1.0/helio-provider-files-0.1.0.jar",
+					"/Users/andreacimmino/Desktop/helio-provider-files-0.1.0.jar",
 					"helio.providers.files.FileProvider", ComponentType.PROVIDER);
 			
 
@@ -77,6 +86,10 @@ public class TestUtils {
 		
 	}
 
+	public static void voidMethod() {
+		//
+	}
+	
 	public static Model readModel(String file) {
 		FileInputStream out;
 		Model expected = ModelFactory.createDefaultModel();
@@ -111,7 +124,7 @@ public class TestUtils {
 		try {
 		long startTime2 = System.nanoTime();
 		String mappingContent = readFile(mappingFile);
-		UnitBuilder processor = Components.getMappingProcessors().get("JMappingProcessor");
+		UnitBuilder processor = Components.getMappingProcessors().get("JMappingBuilder");
 		Set<TranslationUnit> units = processor.parseMapping(mappingContent);
 		long endTime2 = (System.nanoTime()- startTime2) / 1000000;
 		System.out.println("Building units: "+endTime2);
@@ -128,7 +141,14 @@ public class TestUtils {
 		try {
 			
 			long startTime2 = System.nanoTime();
-			units.parallelStream().forEach(unit -> helio.add(unit));
+			units.parallelStream().forEach(unit -> {
+				try {
+					helio.add(unit);
+				} catch (TranslationUnitExecutionException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			});
 			long endTime2 = (System.nanoTime()- startTime2) / 1000000;
 			System.out.println("Loading units: "+endTime2);
 			
