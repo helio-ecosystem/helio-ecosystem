@@ -64,7 +64,7 @@ public class TestUtils {
 		
 		try {
 			Components.registerAndLoad(
-					"/Users/andreacimmino/Desktop/helio-builder-jld11map-0.1.2.jar",
+					"/Users/andreacimmino/Desktop/helio-builder-jld11map-0.1.4.jar",
 					"helio.builder.jld11map.JLD11Builder", ComponentType.BUILDER);
 			
 
@@ -74,7 +74,7 @@ public class TestUtils {
 
 		try {
 			Components.registerAndLoad(
-					"/Users/andreacimmino/Desktop/helio-provider-files-0.1.0.jar",
+					"/Users/andreacimmino/Desktop/helio-provider-files-0.1.1.jar",
 					"helio.providers.files.FileProvider", ComponentType.PROVIDER);
 			
 

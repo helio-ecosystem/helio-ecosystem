@@ -90,7 +90,7 @@ public class Helio {
 			translations.addAll(unit.getDataTranslated());
 			unit.flushDataTranslated();
 		}else {
-			//TODO: THROW EXCEPTION
+			throw new HelioExecutionException("Provided id belongs to no TranslationUnit");
 		}
 		return translations;
 	}
