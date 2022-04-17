@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.github.helio-ecosystem</groupId>
 	<artifactId>helio-core</artifactId>
-	<version>0.4.8</version>
+	<version>0.4.10</version>
 	<url>https://github.com/helio-ecosystem/helio-core</url>
 	<name>Helio core</name>
 	<description>The maven dependency of Helio</description>
@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>io.github.helio-ecosystem</groupId>
 			<artifactId>helio-blueprints</artifactId>
-			<version>0.4.11</version>
+			<version>0.4.13</version>
 		</dependency>
 		<dependency>
 			<groupId>io.github.andreacimminoarriaga</groupId>

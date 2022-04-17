@@ -5,9 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
@@ -27,21 +26,20 @@ public class Helio {
 
 	public static Logger logger = LoggerFactory.getLogger(Helio.class);
 
-	private ScheduledExecutorService scheduledExecutorService;
+	private ExecutorService scheduledExecutorService;
 	private Map<String, PairUnitFuture> futures;
-
 	/**
 	 * This constructor creates a Helio object
 	 */
 	public Helio() {
 		super();
-		scheduledExecutorService = Executors.newScheduledThreadPool(10);
+		scheduledExecutorService = Executors.newCachedThreadPool();
 		futures = new HashMap<>();
 	}
 
 	public Helio(int threads) {
 		super();
-		scheduledExecutorService = Executors.newScheduledThreadPool(threads);
+		scheduledExecutorService = Executors.newFixedThreadPool(threads);
 		futures = new HashMap<>();
 	}
 	
@@ -53,9 +51,8 @@ public class Helio {
 			uFuture = new PairUnitFuture(unit, scheduledExecutorService.submit(unit.getTask()));
 		} else if (UnitType.isSync(unit)) {
 			uFuture = new PairUnitFuture(unit, scheduledExecutorService.submit(unit.getTask()));
-		} else if (UnitType.isScheduled(unit)) {
-			uFuture = new PairUnitFuture(unit, scheduledExecutorService.scheduleAtFixedRate(unit.getTask(), 0, unit.getScheduledTime(), TimeUnit.MILLISECONDS));
 		} else {
+			
 			// TODO: throw exception
 		}
 		if (uFuture != null)
@@ -84,8 +81,6 @@ public class Helio {
 				} catch (InterruptedException | ExecutionException e) {
 					e.printStackTrace();
 				}
-			}else if(UnitType.isScheduled(unit)) {
-				
 			}
 			translations.addAll(unit.getTranslations());
 			unit.flush();
