@@ -124,7 +124,7 @@ public class TestUtils {
 		try {
 		long startTime2 = System.nanoTime();
 		String mappingContent = readFile(mappingFile);
-		UnitBuilder processor = Components.getMappingProcessors().get("JMappingBuilder");
+		UnitBuilder processor = Components.newBuilderInstance("JMappingBuilder");
 		Set<TranslationUnit> units = processor.parseMapping(mappingContent);
 		long endTime2 = (System.nanoTime()- startTime2) / 1000000;
 		System.out.println("Building units: "+endTime2);
