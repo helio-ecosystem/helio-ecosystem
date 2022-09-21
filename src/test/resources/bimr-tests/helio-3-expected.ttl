@@ -1,9 +1,0 @@
-<https://www.data.bimerr.occupancy.es/resource/S2_Researcher_Office> a <https://bimerr.iot.linkeddata.es/def/building#BuildingSpace>;
-  <https://bimerr.iot.linkeddata.es/def/building#description> "Shared Office for 4 Researchers";
-  <https://bimerr.iot.linkeddata.es/def/occupancy-profile#hasOccupant> <https://www.data.bimerr.occupancy.es/resource/OC_Researcher_1>,
-    <https://www.data.bimerr.occupancy.es/resource/OC_Researcher_2>;
-  <https://w3id.org/def/saref4bldg#contains> <https://www.data.bimerr.occupancy.es/resource/??????????> .
-
-<https://www.data.bimerr.occupancy.es/resource/Building_1> a <https://bimerr.iot.linkeddata.es/def/building#Building>;
-  <https://bimerr.iot.linkeddata.es/def/building#description> "A office building which contains 12 space and 16 staffs.";
-  <https://w3id.org/def/saref4bldg#hasSpace> <https://www.data.bimerr.occupancy.es/resource/S2_Researcher_Office> .

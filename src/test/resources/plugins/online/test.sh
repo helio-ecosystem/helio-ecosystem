@@ -1,1 +1,0 @@
-cat /src/test/resources/plugins/online/test-data.txt

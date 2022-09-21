@@ -1,2 +1,0 @@
-<http://example.org>  <http://saref/value>
-                "29.99"^^<http://www.w3.org/2001/XMLSchema#double> .
