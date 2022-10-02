@@ -1,0 +1,6 @@
+{
+    "description": "Sample test tour",
+    "user_template": "Helllll wo",
+    "solution_template": "Hello world!",
+    "expected_result": "Hello world!"
+}
