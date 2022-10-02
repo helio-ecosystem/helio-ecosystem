@@ -1,0 +1,37 @@
+[
+  {
+    "source": "https://github.com/helio-ecosystem/helio-provider-files/releases/download/v0.1.1/helio-provider-files-0.1.1.jar",
+    "clazz": "helio.providers.files.FileWatcherProvider",
+    "type": "PROVIDER"
+  },
+  {
+    "source": "https://github.com/helio-ecosystem/helio-provider-files/releases/download/v0.1.1/helio-provider-files-0.1.1.jar",
+    "clazz": "helio.providers.files.FileProvider",
+    "type": "PROVIDER"
+  },
+  {
+    "source": "https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.1.0/helio-provider-url-0.1.0.jar",
+    "clazz": "provider.URLProvider",
+    "type": "PROVIDER"
+  },
+  {
+    "source": "https://github.com/helio-ecosystem/helio-providers-web/releases/download/v0.1.1/helio-providers-web-0.1.1.jar",
+    "clazz": "helio.providers.HttpProvider",
+    "type": "PROVIDER"
+  },
+  {
+    "source": "https://github.com/helio-ecosystem/helio-builder-rmlmapper/releases/download/v0.1.1/helio-builder-rmlmapper-0.1.1.jar",
+    "clazz": "helio.builder.rmlmapper.RmlUnitBuilder",
+    "type": "BUILDER"
+  },
+  {
+    "source": "https://github.com/helio-ecosystem/helio-builder-siot/releases/download/v0.1.9/helio-builder-siot-0.1.9.jar",
+    "clazz": "helio.builder.siot.rx.SIoTRxBuilder",
+    "type": "BUILDER"
+  },
+  {
+    "source": "https://github.com/helio-ecosystem/helio-action-elasticsearch/releases/download/v0.1.0/helio-action-elasticsearch-0.1.0.jar",
+    "clazz": "helio.actions.database.ElasticsearchAction",
+    "type": "ACTION"
+  }
+]
