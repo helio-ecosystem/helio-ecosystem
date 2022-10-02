@@ -11,11 +11,17 @@
   },
   {
     "source": "https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.1.0/helio-provider-url-0.1.0.jar",
+    "https://github.com/helio-ecosystem/helio-provider-url/releases/download/v0.1.0/helio-provider-url-0.1.0.jar"
     "clazz": "provider.URLProvider",
     "type": "PROVIDER"
   },
   {
-    "source": "https://github.com/helio-ecosystem/helio-providers-web/releases/download/v0.1.1/helio-providers-web-0.1.1.jar",
+    "source": "https://github.com/helio-ecosystem/helio-handler-jayway/releases/download/v0.1.1/helio-handler-jayway-0.1.1.jar",
+    "clazz": "handlers.JsonHandler",
+    "type": "HANDLER"
+  },
+  {
+    "source": "https://github.com/helio-ecosystem/helio-providers-web/releases/download/v0.1.2/helio-providers-web-0.1.2.jar",
     "clazz": "helio.providers.HttpProvider",
     "type": "PROVIDER"
   },
