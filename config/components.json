@@ -20,7 +20,7 @@
     "type": "PROVIDER"
   },
   {
-    "source": "https://github.com/helio-ecosystem/helio-builder-rmlmapper/releases/download/v0.1.1/helio-builder-rmlmapper-0.1.1.jar",
+    "source": "https://github.com/helio-ecosystem/helio-builder-rmlmapper/releases/download/v0.1.2/helio-builder-rmlmapper-0.1.2.jar",
     "clazz": "helio.builder.rmlmapper.RmlUnitBuilder",
     "type": "BUILDER"
   },
