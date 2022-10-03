@@ -1,6 +1,6 @@
 {
     "description": "Sample test tour",
-    "user_template": "Helllll wo",
-    "solution_template": "Hello world!",
-    "expected_result": "Hello world!"
+    "user_template": "<#assign people=providers(\"HttpProvider\",  { \"method\" : \"GET\", \"url\" : \"https://raw.githubusercontent.com/helio-ecosystem/helio-ecosystem/main/resources/mappings-data/ldac/people.csv\" })>",
+    "solution_template": "<#assign people=providers(\"HttpProvider\",  { \"method\" : \"GET\", \"url\" : \"https://raw.githubusercontent.com/helio-ecosystem/helio-ecosystem/main/resources/mappings-data/ldac/people.csv\" })>\n[=people]",
+    "expected_result": "ID,Name,Phone,City\n1,\"Lily Dickens\",585-610-2352,Oneonta\n2,\"Chadd Sporer\",+1-352-334-0992,Iowa\n3,\"Katharina Kuvalis\",(272) 642-0684,Alberta\n4,\"Wilhelmine Johns III\",574.747.4829,Bock\n5,\"Sofia Rowe\",+15204328362,Elmhurst"
 }
