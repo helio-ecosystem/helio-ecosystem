@@ -1,3 +1,5 @@
-# Helio Ecosystem
+# Helio Ecosystem 
 
-This repository is the road map for the Helio ecosystem.
+This repository is the road map for the Helio ecosystem and its components.
+
+
