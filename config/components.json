@@ -43,5 +43,10 @@
     "source": "https://github.com/helio-ecosystem/helio-action-elasticsearch/releases/download/v0.1.0/helio-action-elasticsearch-0.1.0.jar",
     "clazz": "helio.actions.database.ElasticsearchAction",
     "type": "ACTION"
+  },
+  {
+    "source": "https://github.com/helio-ecosystem/helio-action-json-cast/releases/download/v0.1.0/helio-action-json-cast-0.1.0.jar",
+    "clazz": "helio.actions.JsonCast",
+    "type": "ACTION"
   }
 ]
