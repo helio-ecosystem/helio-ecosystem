@@ -20,6 +20,11 @@
     "type": "HANDLER"
   },
   {
+    "source": "https://github.com/helio-ecosystem/helio-handler-xml/releases/download/v0.0.2/helio-handler-xml-0.0.2.jar",
+    "clazz": "handlers.XmlHandler",
+    "type": "HANDLER"
+  },
+  {
     "source": "https://github.com/helio-ecosystem/helio-providers-web/releases/download/v0.1.2/helio-providers-web-0.1.2.jar",
     "clazz": "helio.providers.HttpProvider",
     "type": "PROVIDER"
