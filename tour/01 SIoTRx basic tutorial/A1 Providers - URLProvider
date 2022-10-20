@@ -1,0 +1,6 @@
+{
+    "description": "This mapping recover the information provided by an API given an URL.",
+    "user_template": "<#assign weatherConf = \"{\\\"url\\\" : \\\"https://api.open-meteo.com/v1/forecast?latitude=40.4050099&longitude=-3.839519&hourly=temperature_2m,relativehumidity_2m,windspeed_10m\\\"}\">\n<#assign weather=providers(\"URLProvider\", weatherConf)>",
+    "solution_template": "<#assign weatherConf = \"{\\\"url\\\" : \\\"https://api.open-meteo.com/v1/forecast?latitude=40.4050099&longitude=-3.839519&hourly=temperature_2m,relativehumidity_2m,windspeed_10m\\\"}\">\n<#assign weather=providers(\"URLProvider\", weatherConf)>\n[=weather]",
+    "expected_result": "{\n  \"latitude\":52.52,\n  \"longitude\":13.419998,\n  \"elevation\":44.8125,\n  \"hourly\": {\n    \"time\":[\"2022-07-01T00:00\",\"2022-07-01T01:00\", ...],\n    \"windspeed_10m\":[3.16,3.02,3.3,3.14,3.2,2.95, ...],\n    \"temperature_2m\":[13.7,13.3,12.8,12.3,11.8, ...],\n    \"relativehumidity_2m\":[82,83,86,85,88,88,84,76, ...]\n  }\n}"
+}
