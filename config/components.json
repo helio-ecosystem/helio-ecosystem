@@ -35,7 +35,7 @@
     "type": "BUILDER"
   },
   {
-    "source": "https://github.com/helio-ecosystem/helio-builder-siot/releases/download/v0.1.9/helio-builder-siot-0.1.9.jar",
+    "source": "https://github.com/helio-ecosystem/helio-builder-siot/releases/download/v0.1.10/helio-builder-siot-0.1.10.jar",
     "clazz": "helio.builder.siot.rx.SIoTRxBuilder",
     "type": "BUILDER"
   },
