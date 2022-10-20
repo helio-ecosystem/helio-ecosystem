@@ -1,6 +1,0 @@
-{
-    "description": "This mapping recover the HTTP code from a web.",
-    "user_template": "<#assign config=\"{ \\\"method\\\" : \\\"GET\\\", \\\"url\\\" : \\\"https://webscraper.io/test-sites/e-commerce/allinone\\\"}\">\n<#assign scrap=providers(\"HttpProvider\", config)>",
-    "solution_template": "<#assign config=\"{ \\\"method\\\" : \\\"GET\\\", \\\"url\\\" : \\\"https://webscraper.io/test-sites/e-commerce/allinone\\\"}\">\n<#assign scrap=providers(\"HttpProvider\", config)>\n[=scrap]",
-    "expected_result": "The HTTP webpage"
-}
