@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Oneonta",
+    "surface": "90.16",
+    "population": "1812",
+    "latitude": "44.9625428",
+    "longitude": "-74.4168577"
+  },
+  {
+    "name": "Iowa",
+    "surface": "167.2",
+    "population": "133611",
+    "latitude": "29.6862705",
+    "longitude": "-82.319746"
+  },
+  {
+    "name": "Alberta",
+    "surface": "33.75",
+    "population": "1242",
+    "latitude": "41.0816094",
+    "longitude": "-76.4098259"
+  },
+  {
+    "name": "Bock",
+    "surface": "73.74",
+    "population": "52657",
+    "latitude": "41.6908535",
+    "longitude": "-85.9562663"
+  },
+  {
+    "name": "Elmhurst",
+    "surface": "13.42",
+    "population": "5199",
+    "latitude": "31.4199205",
+    "longitude": "-109.9103821"
+  }
+]
