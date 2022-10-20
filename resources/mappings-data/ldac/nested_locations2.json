@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Oneonta",
+    "features": {
+      "surface": {
+        "value": 90.16,
+        "units": "Km2"
+      },
+      "population": {
+        "amount": "1,812",
+        "date": 2018
+      }
+    },
+    "location": {
+      "latitude": "44.9625428",
+      "longitude": "-74.4168577"
+    }
+  },
+  {
+    "name": "Iowa",
+    "features": {
+      "surface": {
+        "value": 167.2,
+        "units": "Km2"
+      },
+      "population": [{
+        "amount": "133,611",
+        "date": 2020
+      }]
+    },
+    "location": {
+      "latitude": "29.6862705",
+      "longitude": "-82.319746"
+    }
+  },
+  {
+    "name": "Alberta",
+    "features": {
+      "surface": {
+        "value": 33.75,
+        "units": "Km2"
+      },
+      "population": [{
+        "amount": "1,242",
+        "date": 2018
+      }]
+    },
+    "location": {
+      "latitude": "41.0816094",
+      "longitude": "-76.4098259"
+    }
+  },
+  {
+    "name": "Bock",
+    "features": {
+      "surface": {
+        "value": 73.74,
+        "units": "Km2"
+      },
+      "population": {
+        "amount": "52,657",
+        "date": 2022
+      }
+    },
+    "location": {
+      "latitude": "41.6908535",
+      "longitude": "-85.9562663"
+    }
+  },
+  {
+    "name": "Elmhurst",
+    "features": {
+      "surface": {
+        "value": 13.42,
+        "units": "Km2"
+      },
+      "population": [{
+        "amount": "5,199",
+        "date": 2020
+      }]
+    },
+    "location": {
+      "latitude": "31.4199205",
+      "longitude": "-109.9103821"
+    }
+  }
+]
