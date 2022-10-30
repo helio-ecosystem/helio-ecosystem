@@ -1,0 +1,14 @@
+ID,Resource_Name,Type,Initials,Max_Units,Cost_Per_Use
+1,Truck_mounted_concrete_boom_pump,Equipment,1,2,2000
+2,Concrete_mixer_truck,Equipment,2,4,1500
+3,Dump_truck,Equipment,1,2,1500
+4,Excavator,Equipment,1,2,1500
+5,Truck_mounted_crane,Equipment,1,1,1500
+6,Concrete_vibrator_machine,Equipment,4,6,200
+7,Finisher,People,2,4,200
+8,Worker,People,5,10,200
+9,Welder,People,2,4,200
+10,Surveyor,People,1,1,300
+11,Site_supervisor,People,1,1,300
+12,Foreman,People,1,1,200
+13,Crane_operator,People,1,1,200
