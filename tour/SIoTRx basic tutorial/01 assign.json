@@ -1,5 +1,5 @@
 {
-    "builder": "SIoTRx",
+    "builder": "SIoTRxBuilder",
     "description": "With \"assign\"  you can create new variables, or replace an existing one. The way to use it is: <#assign name1=value1>, where name is the name of the variable and value the value to store.\n For example, to store a String, we can use <#assign name1=\"value1\">. To print the value of the variable we can use [=name1]. In this case, create a variable with the value \"Hello world!\" and print it.",
     "user_template": "<#assign variable=>\n[=]",
     "solution_template": "<#assign variable=\"Hello world!\">\n[=variable]",
