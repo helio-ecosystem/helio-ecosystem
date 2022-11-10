@@ -1,0 +1,7 @@
+{
+    "builder": "SIoTRxBuilder",
+    "description": "For linking RDF to existing Knowledge Graphs can be easy if they provide a SPARQL endpoint. Complete the mapping below to link the RDF associated to the people with the locations extracted from DBpedia. The object property to relate both should be <http://xmlns.com/foaf/0.1/based_near>.",
+    "user_template": "",
+    "solution_template": "",
+    "expected_result": ""
+}
