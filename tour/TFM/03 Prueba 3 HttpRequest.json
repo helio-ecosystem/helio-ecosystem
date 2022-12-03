@@ -3,5 +3,5 @@
     "description": "Prueba 3 del componente HttpRequest:<br> Petición PUT. Enviará una petición de actualización sobre unos datos ya existentes.",
     "user_template": "<#-- Crea la configuración del componente -->\r<#assign putConfig={ \"url\": \"https://helio-tfm.mocklab.io/update?product=apples\", \"method\": \"PUT\" }>\r\r<#-- Configura los datos que enviará el componente -->\r<#assign data=5>\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición de actualización -->\r<@action type=\"HttpRequest\" data=data conf=putConfig; result>\r    <#-- Muestra el resultado de la petición -->\r    [=result]\r</@action>",
     "solution_template" : "<#-- Crea la configuración del componente -->\r<#assign putConfig={ \"url\": \"https://helio-tfm.mocklab.io/update?product=apples\", \"method\": \"PUT\" }>\r\r<#-- Configura los datos que enviará el componente -->\r<#assign data=5>\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición de actualización -->\r<@action type=\"HttpRequest\" data=data conf=putConfig; result>\r    <#-- Muestra el resultado de la petición -->\r    [=result]\r</@action>",
-    "expected_result": "{\r  \"product\": \"apples\",\r  \"quantity\": 5\r}"
+    "expected_result": "{\r  \"product\": \"apples\",\r  \"quantity\": 5 \r}"
 }
