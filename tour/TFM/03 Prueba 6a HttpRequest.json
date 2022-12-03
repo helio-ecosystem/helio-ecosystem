@@ -1,0 +1,7 @@
+{
+    "builder": "SIoTRxBuilder",
+    "description": "Prueba 6a del componente HttpRequest:<br> Petición con cabeceras personalizadas. Enviará una petición cualquiera con cabeceras personalizadas a modo de autenticación de un usuario, solo que en esta prueba no se enviarán para recibir un error. Al ejecutar la prueba sin cabeceras se obtendrá un código de error indicando que no se puede acceder a los recursos pedidos.",
+    "user_template": "<#-- Configura los datos del usuario -->\r<#assign user=\"Helio Ecosystem\">\r\r<#-- Crea la configuración del componente sin cabeceras -->\r<#assign postConfig={ \"url\": \"https://helio-tfm.mocklab.io/header\",  \"method\": \"POST\" }>\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición sin cabeceras -->\r<@action type=\"HttpRequest\" data=user conf=postConfig; result>\r    <#-- Al provocar el error, no se muestra el resultado -->\r\t[=result]\r</@action>",
+    "solution_template" : "<#-- Configura los datos del usuario -->\r<#assign user=\"Helio Ecosystem\">\r\r<#-- Crea la configuración del componente sin cabeceras -->\r<#assign postConfig={ \"url\": \"https://helio-tfm.mocklab.io/header\",  \"method\": \"POST\" }>\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición sin cabeceras -->\r<@action type=\"HttpRequest\" data=user conf=postConfig; result>\r    <#-- Al provocar el error, no se muestra el resultado -->\r\t[=result]\r</@action>",
+    "expected_result": "-"
+}
