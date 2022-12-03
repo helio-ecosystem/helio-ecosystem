@@ -1,6 +1,6 @@
 {
     "builder": "SIoTRxBuilder",
-    "description": "Prueba 2 del componente HttpRequest:<br> Petición POST. Enviará datos de prueba hacia el servidor externo.",
+    "description": "##Prueba 2 del componente HttpRequest: Petición POST\n Enviará datos de prueba hacia el servidor externo. Esta petición tiene el objetivo de enviar datos y la respuesta será un mensaje con el texto "Hello X!" donde X representa el valor que se envía en la petición.",
     "user_template": "<#-- Crea la configuración del componente -->\r<#assign postConfig={ \"url\": \"https://helio-tfm.mocklab.io/data\", \"method\": \"POST\" }>\r\r<#-- Configura los datos que enviará el componente -->\r<#assign data=\"Helio\">\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición -->\r<@action type=\"HttpRequest\" data=data conf=postConfig; result>\r    <#-- Muestra el resultado de la petición -->\r    [=result]\r</@action>",
     "solution_template" : "<#-- Crea la configuración del componente -->\r<#assign postConfig={ \"url\": \"https://helio-tfm.mocklab.io/data\", \"method\": \"POST\" }>\r\r<#-- Configura los datos que enviará el componente -->\r<#assign data=\"Helio\">\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición -->\r<@action type=\"HttpRequest\" data=data conf=postConfig; result>\r    <#-- Muestra el resultado de la petición -->\r    [=result]\r</@action>",
     "expected_result": "Hello Helio!"
