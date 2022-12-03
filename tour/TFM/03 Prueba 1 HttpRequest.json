@@ -1,6 +1,6 @@
 {
     "builder": "SIoTRxBuilder",
-    "description": "Prueba 1 del componente HttpRequest:<br> Petición GET. Se realizará una petición de consulta para obtener información en cualquier tipo de formato.",
+    "description": "##Prueba 1 del componente HttpRequest: Petición GET\n Se realizará una petición de consulta para obtener información en cualquier tipo de formato. Esta petición representa la obtención de información hacia otros sistemas, y en este caso se recibe un texto plano pero podrían recibirse datos en otro tipo de formato.",
     "user_template": "<#-- Crea la configuración del componente -->\r<#assign getConfig={ \"url\": \"https://helio-tfm.mocklab.io/success\", \"method\": \"GET\" }>\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición -->\r<@action type=\"HttpRequest\" conf=getConfig; result>\r    <#-- Muestra el resultado de la petición -->\r    [=result]\r</@action>",
     "solution_template" : "<#-- Crea la configuración del componente -->\r<#assign getConfig={ \"url\": \"https://helio-tfm.mocklab.io/success\", \"method\": \"GET\" }>\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición -->\r<@action type=\"HttpRequest\" conf=getConfig; result>\r    <#-- Muestra el resultado de la petición -->\r    [=result]\r</@action>",
     "expected_result": "success!"
