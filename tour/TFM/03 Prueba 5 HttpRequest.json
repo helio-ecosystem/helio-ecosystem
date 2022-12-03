@@ -1,0 +1,7 @@
+{
+    "builder": "SIoTRxBuilder",
+    "description": "Prueba 5 del componente HttpRequest:<br> Petición que devuelve error. Simulará mediante el sistema externo que hubo un error al tratar la petición. <br>Al ejecutar esta prueba se espera la obtención de un error, ya que la petición configurada devuelve un código de error 400. Este mismo comportamiento se obtiene también para los códigos de error ya mencionados en un capítulo anterior, por lo que solamente se realizará una prueba. La ejecución de esta prueba será bloqueante y mostrará el error obtenido de la petición, ya que si la petición no ha sido exitosa, no deberíamos de seguir procesando más componentes del documento.",
+    "user_template": "<#-- Crea la configuración del componente -->\r<#assign getConfig={ \"url\": \"https://helio-tfm.mocklab.io/error\", \"method\": \"GET\" }>\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición de error -->\r<@action type=\"HttpRequest\" conf=getConfig; result>\r    <#-- Al provocar el error, no se muestra el resultado -->\r    [=result]\r</@action>",
+    "solution_template" : "<#-- Crea la configuración del componente -->\r<#assign getConfig={ \"url\": \"https://helio-tfm.mocklab.io/error\", \"method\": \"GET\" }>\r\r<#-- Llama al componente HttpRequest de tipo action para enviar la petición de error -->\r<@action type=\"HttpRequest\" conf=getConfig; result>\r    <#-- Al provocar el error, no se muestra el resultado -->\r    [=result]\r</@action>",
+    "expected_result": "-"
+}
