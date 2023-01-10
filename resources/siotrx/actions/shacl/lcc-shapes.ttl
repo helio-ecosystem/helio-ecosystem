@@ -1,0 +1,594 @@
+@prefix schema: <http://schema.org/> .
+@prefix :      <http://smartcity.linkeddata.es/lcc/ontology/EnergyConsumption#> .
+@prefix ero:   <https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/EnergyResourceOntology.owl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix afn:   <http://jena.apache.org/ARQ/function#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix lcc:   <http://smartcity.linkeddata.es/lcc/ontology/EnergyConsumption#> .
+@prefix ssn:   <http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix places: <http://purl.org/ontology/places#> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix admingeo: <http://data.ordnancesurvey.co.uk/ontology/admingeo/> .
+@prefix om:    <http://www.wurvoc.org/vocabularies/om-1.8/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://astrea.linkeddata.es/shapes#8e8ad880ef630e0a6670413b14d3df57>
+        a               sh:NodeShape ;
+        rdfs:label      "OfficeSite" ;
+        sh:description  "Office site" ;
+        sh:name         "OfficeSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:OfficeSite .
+
+<https://astrea.linkeddata.es/shapes#cea45b4a7df6b4546e3513a14e0d9a5f>
+        a               sh:NodeShape ;
+        rdfs:label      "StorageSite" ;
+        sh:description  "Storage Site" ;
+        sh:name         "StorageSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:StorageSite .
+
+<https://astrea.linkeddata.es/shapes#39041a527abb94d917945ca90207a971>
+        a            sh:PropertyShape ;
+        sh:class     ssn:FeatureOfInterest ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ssn:featureOfInterest .
+
+<https://astrea.linkeddata.es/shapes#00e7e1d5b5a577986c05521bd74ae637>
+        a               sh:NodeShape ;
+        rdfs:label      "OneStopCentre" ;
+        sh:description  "One stop centre" ;
+        sh:name         "OneStopCentre" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:OneStopCentre .
+
+<https://astrea.linkeddata.es/shapes#8b81aeac8317e54c2307849a5dfce4ea>
+        a               sh:NodeShape ;
+        rdfs:label      "LeisureSite" ;
+        sh:description  "Leisure site" ;
+        sh:name         "LeisureSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:LeisureSite .
+
+<https://astrea.linkeddata.es/shapes#59bd093de6cd9ee93e26aa4c942fbb92>
+        a               sh:NodeShape ;
+        rdfs:label      "SuspectedFormerWardensUtilities" ;
+        sh:description  "Susprected former warden utilities" ;
+        sh:name         "SuspectedFormerWardensUtilities" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:SuspectedFormerWardensUtilities .
+
+<https://astrea.linkeddata.es/shapes#f894a9939224e80a31ee83d56a79d8c5>
+        a               sh:NodeShape ;
+        rdfs:label      "PublicConvenience" ;
+        sh:description  "Public convenience" ;
+        sh:name         "PublicConvenience" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:PublicConvenience .
+
+<https://astrea.linkeddata.es/shapes#73243e0ff103570b808dfecfd49baedf>
+        a               sh:NodeShape ;
+        rdfs:label      "LeisureCentre" ;
+        sh:description  "Leisure centre" ;
+        sh:name         "LeisureCentre" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:LeisureCentre .
+
+<https://astrea.linkeddata.es/shapes#7be6d3faefad53c8b24f4a86bd28c75e>
+        a            sh:PropertyShape ;
+        sh:class     ero:FinalEnergy ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ero:consumesEnergyType .
+
+<https://astrea.linkeddata.es/report/1243308235>
+        a       <https://w3id.org/def/astrea#ReportEntry> ;
+        <https://w3id.org/def/astrea#message>
+                "Shapes generated with no errors" ;
+        <https://w3id.org/def/astrea#source>
+                "http://smartcity.linkeddata.es/lcc/ontology/EnergyConsumption#" ;
+        <https://w3id.org/def/astrea#statusCode>
+                "200"^^xsd:int .
+
+<https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047>
+        a            sh:PropertyShape ;
+        sh:class     time:Instant ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      time:hasEnd .
+
+<https://astrea.linkeddata.es/shapes#379b01d0dd0058eefa9c2a02bd38b95a>
+        a               sh:NodeShape ;
+        rdfs:label      "CareSite" ;
+        sh:description  "Care site" ;
+        sh:name         "CareSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:CareSite .
+
+<https://astrea.linkeddata.es/shapes#f5f55502576f381123e932569a8afbd0>
+        a               sh:NodeShape ;
+        rdfs:label      "EducationalSite" ;
+        sh:description  "Educational site" ;
+        sh:name         "EducationalSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:EducationalSite .
+
+<https://astrea.linkeddata.es/shapes#ca122ce62a81bf4f1b1fc6af48adaff1>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  ero:FinalEnergy .
+
+<https://astrea.linkeddata.es/shapes#c4d0bad61d5df35bfebcdf511f483370>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#7be6d3faefad53c8b24f4a86bd28c75e> ;
+        sh:targetClass  ero:EnergyConsumerFacility .
+
+<https://astrea.linkeddata.es/shapes#ea4f9a11ad9ac85c15dbb3f00bf05bfe>
+        a               sh:NodeShape ;
+        rdfs:label      "AdministrativeSite" ;
+        sh:description  "Administrative site" ;
+        sh:name         "AdministrativeSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:AdministrativeSite .
+
+<https://astrea.linkeddata.es/shapes#727fe6d372113c77931aaf49d208955a>
+        a               sh:NodeShape ;
+        rdfs:label      "SocialSite" ;
+        sh:description  "Social site" ;
+        sh:name         "SocialSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:SocialSite .
+
+<https://astrea.linkeddata.es/shapes#5e28dac32a72d7af4b3617ad43992795>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasQuantityValue" , "A value observed from sensor output" ;
+        sh:datatype     xsd:decimal ;
+        sh:description  "A value observed from sensor output" ;
+        sh:name         "hasQuantityValue" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         lcc:hasQuantityValue ;
+        sh:pattern      "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)" .
+
+<https://astrea.linkeddata.es/shapes#120768d01cb7930e967f949a3d5ed8bc>
+        a               sh:NodeShape ;
+        rdfs:label      "ChildrensHome" ;
+        sh:description  "Children's home" ;
+        sh:name         "ChildrensHome" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:ChildrensHome .
+
+<https://astrea.linkeddata.es/shapes#94ef15d9485b56643ddaef4435b4ec56>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  om:Unit_of_measure .
+
+<https://astrea.linkeddata.es/shapes#5e91f6d8b87c94feb0e35703f53e260c>
+        a               sh:NodeShape ;
+        rdfs:label      "IndependentLivingProject" ;
+        sh:description  "Independent living project" ;
+        sh:name         "IndependentLivingProject" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:IndependentLivingProject .
+
+<https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98>
+        a            sh:PropertyShape ;
+        sh:class     time:Instant ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      time:hasBeginning .
+
+<https://astrea.linkeddata.es/shapes#1f64067a6193898ba567c3e6cf7688ca>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#5af32f9aeee83ce0418150c41043fc0a> , <https://astrea.linkeddata.es/shapes#39041a527abb94d917945ca90207a971> , <https://astrea.linkeddata.es/shapes#e57608b5ac334a045947af76cf6ac917> , <https://astrea.linkeddata.es/shapes#76e61d44cddd7d72af4c8aa96cfe46cd> ;
+        sh:targetClass  ssn:Observation .
+
+<https://astrea.linkeddata.es/shapes#a0e15d67afd6acc3b8835e48436e865b>
+        a               sh:NodeShape ;
+        rdfs:label      "AccomodationSite" ;
+        sh:description  "Accomodation site" ;
+        sh:name         "AccomodationSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:AccomodationSite .
+
+<https://astrea.linkeddata.es/shapes#68c577cf37c6f87dd1b885e565065b30>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  om:Compound_unit .
+
+<https://astrea.linkeddata.es/shapes#9b95b7376d5a64a3c0083cc7564fb110>
+        a               sh:NodeShape ;
+        rdfs:label      "PupilReferralUnit" ;
+        sh:description  "Pupil referral unit" ;
+        sh:name         "PupilReferralUnit" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:PupilReferralUnit .
+
+<https://astrea.linkeddata.es/shapes#391f0d5fe5966312e3b30ab9a3e7c304>
+        a               sh:NodeShape ;
+        rdfs:label      "CulturalSite" ;
+        sh:description  "Cultural site" ;
+        sh:name         "CulturalSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:CulturalSite .
+
+<https://astrea.linkeddata.es/shapes#d111c6428300393daa9e338a223fe100>
+        a               sh:NodeShape ;
+        rdfs:label      "CouncilOffice" ;
+        sh:description  "Council office " ;
+        sh:name         "CouncilOffice" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:CouncilOffice .
+
+<https://astrea.linkeddata.es/shapes#fea714d8c045434e5f46b5eb0696935c>
+        a            sh:PropertyShape ;
+        sh:class     schema:PostalAddress ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      schema:address .
+
+<https://astrea.linkeddata.es/shapes#bff6009c657427a393a89e116933cfe6>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#cfce5f0cd76172617373ab957372d9bb> , <https://astrea.linkeddata.es/shapes#5e28dac32a72d7af4b3617ad43992795> ;
+        sh:targetClass  ssn:ObservationValue .
+
+<https://astrea.linkeddata.es/shapes#26b4861819e90ac4e65252ef0a74812a>
+        a               sh:NodeShape ;
+        rdfs:label      "SupplySite" ;
+        sh:description  "Supply site" ;
+        sh:name         "SupplySite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:SupplySite .
+
+<https://astrea.linkeddata.es/shapes#19ac7e3c91279986a63e520fdde16ead>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  om:Unit_exponentiation .
+
+<https://astrea.linkeddata.es/shapes#9e597d2ce080d45dbdc6c8ad513c0e57>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:Cemetery .
+
+<https://astrea.linkeddata.es/shapes#682868d51731868e2c41650fc748cc1a>
+        a               sh:NodeShape ;
+        rdfs:label      "EarlyYearsCentre" ;
+        sh:description  "Early years centre" ;
+        sh:name         "EarlyYearsCentre" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:EarlyYearsCentre .
+
+<https://astrea.linkeddata.es/shapes#9b6036e28de0c3ad358243976fbdc150>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#fea714d8c045434e5f46b5eb0696935c> , <https://astrea.linkeddata.es/shapes#10a2b68e090fc22a4421947526be1e64> , <https://astrea.linkeddata.es/shapes#7e0ece6b83f210b60d5aabbc745d87ca> ;
+        sh:targetClass  schema:CivicStructure .
+
+<https://astrea.linkeddata.es/shapes#ad967f0776719520a2cc848c694b3a10>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      schema:addressLocality ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#5fc913e4138e11a61585ea51ff47328f>
+        a               sh:NodeShape ;
+        rdfs:label      "DayCentre\n" ;
+        sh:description  "Day centre" ;
+        sh:name         "DayCentre\n" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:DayCentre .
+
+<https://astrea.linkeddata.es/shapes#af51894d1b217d06aaaee9177432e13a>
+        a               sh:NodeShape ;
+        rdfs:label      "AdultTrainingCentre" ;
+        sh:description  "Adult training centre" ;
+        sh:name         "AdultTrainingCentre" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:AdultTrainingCentre .
+
+<https://astrea.linkeddata.es/shapes#a894cbada6e106ed43414755a564dc18>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  ssn:Property .
+
+<https://astrea.linkeddata.es/shapes#34fceced9613eb068c7b7373f7992237>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:CityHall .
+
+<https://astrea.linkeddata.es/shapes#7bbe49560a36485e7dd9ed2792b05638>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#51fc4d1225f4d5602239ea7c683b3fbb> ;
+        sh:targetClass  schema:Place .
+
+<https://astrea.linkeddata.es/shapes#d08087891b07779f349925b67a926bfe>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  admingeo:MetropolitanDistrict .
+
+<https://astrea.linkeddata.es/shapes#b876469091307fecb1e1652c6fa20f05>
+        a               sh:NodeShape ;
+        rdfs:label      "Library" ;
+        sh:description  "Library" ;
+        sh:name         "Library" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:Library .
+
+<https://astrea.linkeddata.es/shapes#f55f9af59046f17c8f11e50ed5484960>
+        a               sh:NodeShape ;
+        rdfs:label      "CareHome" ;
+        sh:description  "Care home\n" ;
+        sh:name         "CareHome" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:CareHome .
+
+<https://astrea.linkeddata.es/shapes#9cebcc813c74a48249dc8a4ca4bd6879>
+        a               sh:NodeShape ;
+        rdfs:label      "Depot" ;
+        sh:description  "Depot" ;
+        sh:name         "Depot" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:Depot .
+
+<https://astrea.linkeddata.es/shapes#a0ed62741be7e51c0f0f8f7b1d9af2df>
+        a               sh:NodeShape ;
+        rdfs:label      "ChangingPavilion" ;
+        sh:description  "Changing pavilion" ;
+        sh:name         "ChangingPavilion" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:ChangingPavilion .
+
+<https://astrea.linkeddata.es/shapes#7e0ece6b83f210b60d5aabbc745d87ca>
+        a               sh:PropertyShape ;
+        rdfs:label      "uprn" , "Unique Property Reference Number" ;
+        sh:datatype     xsd:string ;
+        sh:description  "Unique Property Reference Number" ;
+        sh:name         "uprn" ;
+        sh:nodeKind     sh:Literal ;
+        sh:path         lcc:uprn ;
+        sh:pattern      ".*" .
+
+<https://astrea.linkeddata.es/shapes#10a2b68e090fc22a4421947526be1e64>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      dc:title ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#61813eca7d4018d64a3f8ac2384deba1>
+        a               sh:NodeShape ;
+        rdfs:label      "YouthCentre" ;
+        sh:description  "Youth centre" ;
+        sh:name         "YouthCentre" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:YouthCentre .
+
+<https://astrea.linkeddata.es/shapes#4fac896d2e964cf82f5010009fd900e3>
+        a               sh:NodeShape ;
+        rdfs:label      "TrafficUnit" ;
+        sh:description  "Traffic signal or camera" ;
+        sh:name         "TrafficUnit" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:TrafficUnit .
+
+<https://astrea.linkeddata.es/shapes#f1ed01ff4ad7e0110c28d4231cd9616c>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98> , <https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047> ;
+        sh:targetClass  time:Interval .
+
+<https://astrea.linkeddata.es/shapes#5fdf6f756dfcdebc4062a698c87f72f4>
+        a               sh:NodeShape ;
+        rdfs:label      "StreetLighting" ;
+        sh:description  "Street lightning" ;
+        sh:name         "StreetLighting" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:StreetLighting .
+
+<https://astrea.linkeddata.es/shapes#6a9eb4d45082f72a784c8b7cd7864664>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      schema:addressRegion ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#4501eb273acd1369b91adba0a0b1d335>
+        a               sh:NodeShape ;
+        rdfs:label      "CommunityCentre" ;
+        sh:description  "Community centre" ;
+        sh:name         "CommunityCentre" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:CommunityCentre .
+
+<https://astrea.linkeddata.es/shapes#00e1cee4bbcaa155cba88f4e23826c24>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      schema:streetAddress ;
+        sh:pattern   ".*" .
+
+<https://astrea.linkeddata.es/shapes#79884a301086f638d731af7901415093>
+        a            sh:PropertyShape ;
+        sh:class     ssn:ObservationValue ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ssn:hasValue .
+
+<https://astrea.linkeddata.es/shapes#e57608b5ac334a045947af76cf6ac917>
+        a            sh:PropertyShape ;
+        sh:class     time:Interval ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ssn:observationSamplingTime .
+
+<https://astrea.linkeddata.es/shapes#506eeb1ffadb9f88753010423f3f0c62>
+        a               sh:NodeShape ;
+        rdfs:label      "Suburb" ;
+        sh:description  "Suburb" ;
+        sh:name         "Suburb" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:Suburb .
+
+<https://astrea.linkeddata.es/shapes#f961255c0100548c68da38d287831dea>
+        a               sh:NodeShape ;
+        rdfs:label      "Crematorium" ;
+        sh:description  "Crematorium" ;
+        sh:name         "Crematorium" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:Crematorium .
+
+<https://astrea.linkeddata.es/shapes#a6d55b164bbc219a2c966199b5078823>
+        a               sh:NodeShape ;
+        rdfs:label      "OpenAirSite" ;
+        sh:description  "Open air site" ;
+        sh:name         "OpenAirSite" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:OpenAirSite .
+
+<https://astrea.linkeddata.es/shapes#747c343e8c462684b47b88550f5e98f3>
+        a               sh:NodeShape ;
+        rdfs:label      "LandlordsSupplyHousing" ;
+        sh:description  "Landlord's supply housing" ;
+        sh:name         "LandlordsSupplyHousing" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:LandlordsSupplyHousing .
+
+<https://astrea.linkeddata.es/shapes#a03bd8d0abc770f9e188f1ababd7667a>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  ssn:FeatureOfInterest .
+
+<https://astrea.linkeddata.es/shapes#cfce5f0cd76172617373ab957372d9bb>
+        a               sh:PropertyShape ;
+        rdfs:label      "hasQuantityUnitOfMeasurement" , "The unit of measurement for the observed value" ;
+        sh:class        om:Unit_of_measure ;
+        sh:description  "The unit of measurement for the observed value" ;
+        sh:name         "hasQuantityUnitOfMeasurement" ;
+        sh:nodeKind     sh:BlankNodeOrIRI ;
+        sh:path         lcc:hasQuantityUnitOfMeasurement .
+
+<https://astrea.linkeddata.es/shapes#76e61d44cddd7d72af4c8aa96cfe46cd>
+        a            sh:PropertyShape ;
+        sh:class     ssn:SensorOutput ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ssn:observationResult .
+
+<https://astrea.linkeddata.es/shapes#cdc982d4937c9581e3e7dafe2ec0fd46>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  om:Unit_multiplication .
+
+<https://astrea.linkeddata.es/shapes#adf2ac73f8e47deedda2519f391af0c2>
+        a               sh:NodeShape ;
+        rdfs:label      "ComputerCentre" ;
+        sh:description  "Computer centre" ;
+        sh:name         "ComputerCentre" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:ComputerCentre .
+
+<https://astrea.linkeddata.es/shapes#b1a789b7d2bc92d8e3b6d36bd0b8d4e3>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  om:Singular_unit .
+
+<https://astrea.linkeddata.es/shapes#9470935c3c27db3261aaf893a29781d4>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:EventVenue .
+
+<http://astrea.linkeddata.es/report>
+        a       <https://w3id.org/def/astrea#ShapeReport> ;
+        <https://w3id.org/def/astrea#contains>
+                <https://astrea.linkeddata.es/shapes#ea4f9a11ad9ac85c15dbb3f00bf05bfe> , <https://astrea.linkeddata.es/shapes#e4a7636032bc7e586e8785014b104d8f> , <https://astrea.linkeddata.es/shapes#19ac7e3c91279986a63e520fdde16ead> , <https://astrea.linkeddata.es/shapes#ce595d774fb84c95e567828c6b936683> , <https://astrea.linkeddata.es/shapes#dad0c23a3b1e18b2c979c5ec6eac0b2a> , <https://astrea.linkeddata.es/shapes#f5f55502576f381123e932569a8afbd0> , <https://astrea.linkeddata.es/shapes#e57608b5ac334a045947af76cf6ac917> , <https://astrea.linkeddata.es/shapes#5fdf6f756dfcdebc4062a698c87f72f4> , <https://astrea.linkeddata.es/shapes#682868d51731868e2c41650fc748cc1a> , <https://astrea.linkeddata.es/shapes#54d31883388335bc143215bf49c965ea> , <https://astrea.linkeddata.es/shapes#7bbe49560a36485e7dd9ed2792b05638> , <https://astrea.linkeddata.es/shapes#a03bd8d0abc770f9e188f1ababd7667a> , <https://astrea.linkeddata.es/shapes#747c343e8c462684b47b88550f5e98f3> , <https://astrea.linkeddata.es/shapes#10a2b68e090fc22a4421947526be1e64> , <https://astrea.linkeddata.es/shapes#5af32f9aeee83ce0418150c41043fc0a> , <https://astrea.linkeddata.es/shapes#b0bc650dd253fca630c71efe917da31e> , <https://astrea.linkeddata.es/shapes#506eeb1ffadb9f88753010423f3f0c62> , <https://astrea.linkeddata.es/shapes#34fceced9613eb068c7b7373f7992237> , <https://astrea.linkeddata.es/shapes#cea45b4a7df6b4546e3513a14e0d9a5f> , <https://astrea.linkeddata.es/shapes#f1ed01ff4ad7e0110c28d4231cd9616c> , <https://astrea.linkeddata.es/shapes#59bd093de6cd9ee93e26aa4c942fbb92> , <https://astrea.linkeddata.es/shapes#b1a789b7d2bc92d8e3b6d36bd0b8d4e3> , <https://astrea.linkeddata.es/shapes#391f0d5fe5966312e3b30ab9a3e7c304> , <https://astrea.linkeddata.es/shapes#2532894d090d3f1667f7f7b6da65df98> , <https://astrea.linkeddata.es/shapes#68c577cf37c6f87dd1b885e565065b30> , <https://astrea.linkeddata.es/shapes#379b01d0dd0058eefa9c2a02bd38b95a> , <https://astrea.linkeddata.es/shapes#bff6009c657427a393a89e116933cfe6> , <https://astrea.linkeddata.es/shapes#9cebcc813c74a48249dc8a4ca4bd6879> , <https://astrea.linkeddata.es/shapes#0f187d232e2482610f668dc01655d19e> , <https://astrea.linkeddata.es/shapes#8e8ad880ef630e0a6670413b14d3df57> , <https://astrea.linkeddata.es/shapes#94ef15d9485b56643ddaef4435b4ec56> , <https://astrea.linkeddata.es/shapes#727fe6d372113c77931aaf49d208955a> , <https://astrea.linkeddata.es/shapes#61813eca7d4018d64a3f8ac2384deba1> , <https://astrea.linkeddata.es/shapes#12c4095d2ca53ef55953630bd3b3e55f> , <https://astrea.linkeddata.es/shapes#73243e0ff103570b808dfecfd49baedf> , <https://astrea.linkeddata.es/shapes#af51894d1b217d06aaaee9177432e13a> , <https://astrea.linkeddata.es/shapes#ad967f0776719520a2cc848c694b3a10> , <https://astrea.linkeddata.es/shapes#39041a527abb94d917945ca90207a971> , <https://astrea.linkeddata.es/shapes#51fc4d1225f4d5602239ea7c683b3fbb> , <https://astrea.linkeddata.es/shapes#b876469091307fecb1e1652c6fa20f05> , <https://astrea.linkeddata.es/shapes#00e7e1d5b5a577986c05521bd74ae637> , <https://astrea.linkeddata.es/shapes#4501eb273acd1369b91adba0a0b1d335> , <https://astrea.linkeddata.es/shapes#9e597d2ce080d45dbdc6c8ad513c0e57> , <https://astrea.linkeddata.es/shapes#8d26f56ec9e75266434f08dc7f5c2047> , <https://astrea.linkeddata.es/shapes#5e28dac32a72d7af4b3617ad43992795> , <https://astrea.linkeddata.es/shapes#cfce5f0cd76172617373ab957372d9bb> , <https://astrea.linkeddata.es/shapes#665fea1d12ca8bddd15917fd58ba3b58> , <https://astrea.linkeddata.es/shapes#d08087891b07779f349925b67a926bfe> , <https://astrea.linkeddata.es/shapes#8b81aeac8317e54c2307849a5dfce4ea> , <https://astrea.linkeddata.es/shapes#f961255c0100548c68da38d287831dea> , <https://astrea.linkeddata.es/shapes#1f64067a6193898ba567c3e6cf7688ca> , <https://astrea.linkeddata.es/shapes#5e91f6d8b87c94feb0e35703f53e260c> , <https://astrea.linkeddata.es/shapes#26b4861819e90ac4e65252ef0a74812a> , <https://astrea.linkeddata.es/shapes#76e61d44cddd7d72af4c8aa96cfe46cd> , <https://astrea.linkeddata.es/shapes#5fc913e4138e11a61585ea51ff47328f> , <https://astrea.linkeddata.es/shapes#cdc982d4937c9581e3e7dafe2ec0fd46> , <https://astrea.linkeddata.es/shapes#9b6036e28de0c3ad358243976fbdc150> , <https://astrea.linkeddata.es/shapes#a0de15f51e854fd59e1288604ed0cb01> , <https://astrea.linkeddata.es/shapes#6a9eb4d45082f72a784c8b7cd7864664> , <https://astrea.linkeddata.es/shapes#a0ed62741be7e51c0f0f8f7b1d9af2df> , <https://astrea.linkeddata.es/shapes#120768d01cb7930e967f949a3d5ed8bc> , <https://astrea.linkeddata.es/shapes#adf2ac73f8e47deedda2519f391af0c2> , <https://astrea.linkeddata.es/shapes#a6d55b164bbc219a2c966199b5078823> , <https://astrea.linkeddata.es/shapes#f55f9af59046f17c8f11e50ed5484960> , <https://astrea.linkeddata.es/shapes#d111c6428300393daa9e338a223fe100> , <https://astrea.linkeddata.es/shapes#4fac896d2e964cf82f5010009fd900e3> , <https://astrea.linkeddata.es/shapes#9b95b7376d5a64a3c0083cc7564fb110> , <https://astrea.linkeddata.es/shapes#9470935c3c27db3261aaf893a29781d4> , <https://astrea.linkeddata.es/shapes#00e1cee4bbcaa155cba88f4e23826c24> , <https://astrea.linkeddata.es/shapes#7e0ece6b83f210b60d5aabbc745d87ca> , <https://astrea.linkeddata.es/shapes#f894a9939224e80a31ee83d56a79d8c5> , <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b> , <https://astrea.linkeddata.es/shapes#fea714d8c045434e5f46b5eb0696935c> , <https://astrea.linkeddata.es/shapes#a0e15d67afd6acc3b8835e48436e865b> , <https://astrea.linkeddata.es/shapes#f8dcf2e97c9d6fe8bc29eb5fe0bc6e2b> , <https://astrea.linkeddata.es/shapes#a894cbada6e106ed43414755a564dc18> , <https://astrea.linkeddata.es/shapes#ca122ce62a81bf4f1b1fc6af48adaff1> , <https://astrea.linkeddata.es/shapes#7be6d3faefad53c8b24f4a86bd28c75e> , <https://astrea.linkeddata.es/shapes#f6761b2bd60198ffda7515badbe44080> , <https://astrea.linkeddata.es/shapes#79884a301086f638d731af7901415093> , <https://astrea.linkeddata.es/shapes#c4d0bad61d5df35bfebcdf511f483370> ;
+        <https://w3id.org/def/astrea#generatedShapesFrom>
+                <https://astrea.linkeddata.es/report/1243308235> .
+
+<https://astrea.linkeddata.es/shapes#a0de15f51e854fd59e1288604ed0cb01>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#79884a301086f638d731af7901415093> ;
+        sh:targetClass  ssn:SensorOutput .
+
+<https://astrea.linkeddata.es/shapes#b0bc650dd253fca630c71efe917da31e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#00e1cee4bbcaa155cba88f4e23826c24> , <https://astrea.linkeddata.es/shapes#f6761b2bd60198ffda7515badbe44080> , <https://astrea.linkeddata.es/shapes#6a9eb4d45082f72a784c8b7cd7864664> , <https://astrea.linkeddata.es/shapes#ad967f0776719520a2cc848c694b3a10> ;
+        sh:targetClass  schema:PostalAddress .
+
+<https://astrea.linkeddata.es/shapes#54d31883388335bc143215bf49c965ea>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:dateTime ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      time:inXSDDateTime ;
+        sh:pattern   "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\\.[0-9]+)?|(24:00:00(\\.0+)?))(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#e4a7636032bc7e586e8785014b104d8f>
+        a               sh:NodeShape ;
+        rdfs:label      "Hostel" ;
+        sh:description  "Hostel" ;
+        sh:name         "Hostel" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:Hostel .
+
+<https://astrea.linkeddata.es/shapes#51fc4d1225f4d5602239ea7c683b3fbb>
+        a            sh:PropertyShape ;
+        sh:class     schema:Place ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      schema:containedIn .
+
+<https://astrea.linkeddata.es/shapes#dad0c23a3b1e18b2c979c5ec6eac0b2a>
+        a            sh:PropertyShape ;
+        sh:class     admingeo:MetropolitanDistrict ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      admingeo:inDistrict .
+
+<https://astrea.linkeddata.es/shapes#12c4095d2ca53ef55953630bd3b3e55f>
+        a               sh:NodeShape ;
+        rdfs:label      "ShelteredHousing" ;
+        sh:description  "Sheltered housing" ;
+        sh:name         "ShelteredHousing" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:ShelteredHousing .
+
+<https://astrea.linkeddata.es/shapes#0f187d232e2482610f668dc01655d19e>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:Museum .
+
+<https://astrea.linkeddata.es/shapes#f8dcf2e97c9d6fe8bc29eb5fe0bc6e2b>
+        a               sh:NodeShape ;
+        rdfs:label      "LandlordsSupplyCommercial" ;
+        sh:description  "Landlord's supply commercial" ;
+        sh:name         "LandlordsSupplyCommercial" ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  lcc:LandlordsSupplyCommercial .
+
+<https://astrea.linkeddata.es/shapes#ce595d774fb84c95e567828c6b936683>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  schema:Park .
+
+<https://astrea.linkeddata.es/shapes#5af32f9aeee83ce0418150c41043fc0a>
+        a            sh:PropertyShape ;
+        sh:class     ssn:Property ;
+        sh:nodeKind  sh:BlankNodeOrIRI ;
+        sh:path      ssn:observedProperty .
+
+<https://astrea.linkeddata.es/shapes#665fea1d12ca8bddd15917fd58ba3b58>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:targetClass  <http://data.ordnancesurvey.co.uk/ontology/50kGazetteer/NamedPlace> .
+
+<https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b>
+        a               sh:NodeShape ;
+        sh:nodeKind     sh:IRI ;
+        sh:property     <https://astrea.linkeddata.es/shapes#54d31883388335bc143215bf49c965ea> ;
+        sh:targetClass  time:Instant .
+
+<https://astrea.linkeddata.es/shapes#f6761b2bd60198ffda7515badbe44080>
+        a            sh:PropertyShape ;
+        sh:datatype  xsd:string ;
+        sh:nodeKind  sh:Literal ;
+        sh:path      schema:postalCode ;
+        sh:pattern   ".*" .
