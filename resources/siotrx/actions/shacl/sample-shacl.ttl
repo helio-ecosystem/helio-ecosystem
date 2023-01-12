@@ -1,0 +1,21 @@
+@prefix ex: <https://helio-playground.linkeddata.es/tour/ex> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:PersonShape 
+  a sh:NodeShape ; 
+  sh:targetClass ex:Person ; 
+  sh:property [			# _:b1
+    sh:path ex:ssn ; 
+    sh:maxCount 1 ; 
+    sh:datatype xsd:string ; 
+    sh:pattern "^\\d{3}-\\d{2}-\\d{4}$" ; 
+  ] ; 
+  sh:property [			# _:b2
+    sh:path ex:worksFor ; 
+    sh:class ex:Company ; 
+    sh:nodeKind sh:IRI ; 
+  ] ; 
+  sh:closed true ; 
+  sh:ignoredProperties ( rdf:type ) .
