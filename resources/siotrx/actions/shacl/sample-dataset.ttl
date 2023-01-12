@@ -1,4 +1,4 @@
-@prefix ex: <https://sample.es/resoruces/> .
+@prefix ex: <https://sample.es/resources/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ex:Alice 
