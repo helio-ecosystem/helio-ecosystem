@@ -1,0 +1,11 @@
+@prefix : <http://example.org/resources/> .
+@prefix schema: <https://schema.org/> .
+
+:alice schema:name      "Alice Cooper" .
+ 
+:bob   schema:givenName "Bob", "Robert" ;
+       schema:lastName  "Smith" .
+
+:carol schema:name      "Carol King" ;
+       schema:givenName "Carol" ;
+       schema:lastName  "King" .
