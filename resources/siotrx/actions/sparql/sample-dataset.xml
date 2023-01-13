@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="https://schema.org/">
+
+  <rdf:Description rdf:about="http://example.org/resources/alice">
+    <ns0:name>Alice Cooper</ns0:name>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/resources/bob">
+    <ns0:givenName>Bob</ns0:givenName>
+    <ns0:givenName>Robert</ns0:givenName>
+    <ns0:lastName>Smith</ns0:lastName>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/resources/carol">
+    <ns0:name>Carol King</ns0:name>
+    <ns0:givenName>Carol</ns0:givenName>
+    <ns0:lastName>King</ns0:lastName>
+  </rdf:Description>
+
+</rdf:RDF>
