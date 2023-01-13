@@ -1,0 +1,7 @@
+<http://example.org/resources/alice> <https://schema.org/name> "Alice Cooper" .
+<http://example.org/resources/bob> <https://schema.org/givenName> "Bob" .
+<http://example.org/resources/bob> <https://schema.org/givenName> "Robert" .
+<http://example.org/resources/bob> <https://schema.org/lastName> "Smith" .
+<http://example.org/resources/carol> <https://schema.org/name> "Carol King" .
+<http://example.org/resources/carol> <https://schema.org/givenName> "Carol" .
+<http://example.org/resources/carol> <https://schema.org/lastName> "King" .
