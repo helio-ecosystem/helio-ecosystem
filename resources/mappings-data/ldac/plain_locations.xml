@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<locations>
+  <place>
+    <name>Oneonta</name>
+    <surface>90.16</surface>
+    <population>1812</population>
+    <latitude>44.9625428</latitude>
+    <longitude>-74.4168577</longitude>
+  </place>
+  <place>
+    <name>Iowa</name>
+    <surface>167.2</surface>
+    <population>133611</population>
+    <latitude>29.6862705</latitude>
+    <longitude>-82.319746</longitude>
+  </place>
+  <place>
+    <name>Alberta</name>
+    <surface>33.75</surface>
+    <population>1242</population>
+    <latitude>41.0816094</latitude>
+    <longitude>-76.4098259</longitude>
+  </place>
+  <place>
+    <name>Bock</name>
+    <surface>73.74</surface>
+    <population>52657</population>
+    <latitude>41.6908535</latitude>
+    <longitude>-85.9562663</longitude>
+  </place>
+  <place>
+    <name>Elmhurst</name>
+    <surface>13.42</surface>
+    <population>5199</population>
+    <latitude>31.4199205</latitude>
+    <longitude>-109.9103821</longitude>
+  </place>
+</locations>
