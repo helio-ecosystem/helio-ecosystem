@@ -1,0 +1,7 @@
+{
+    "builder": "RmlUnitBuilder",
+    "description": "## Theory\r\nAnother type of allowed logical sources are SQL databases. When the data source is a SQL database, the mapping must specify that the dataType is ***rr:SQL2008***. Since tables use the row format, it behaves similarly to CSV files. In addition is not needed to provide an iterator.\r\n\r\n    <#TriplesMap> rml:logicalSource [ \r\n\t\t    rml:source \"databasePath\";\r\n\t\t    rml:referenceFormulation rr:SQL2008 ;\r\n\t\t];\r\n\t\trr:objectMap [ \r\n\t\t\trr:column \"columnName\"\r\n\t\t].\r\n## Hands-on\r\nThis tutorial does not have any task due to the difficulties of mantaining a dedicated service for this purpose.\r\n",
+    "user_template": "",
+    "solution_template": "",
+    "expected_result": ""
+}
