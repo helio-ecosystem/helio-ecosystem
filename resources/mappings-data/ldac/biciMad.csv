@@ -1,0 +1,265 @@
+ID_BIKEST,DISTRICT_NUMBER,DISTRICT_NAME,WIKIDATA_DISTRICT,NEIGHBOURHOOD_NUMBER,NEIGHBOURHOOD_NAME,WIKIDATA_NEIGHBOURHOOD,AD_NAME,AD_NUMBER,CAPACITY,LONGITUDE,LATITUDE
+1a,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,CALLE DE ALCALA,2,30,-3.701998,40.4171107
+1b,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,CALLE DE ALCALA,6,30,-3.7015636,40.4172132
+2,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DE MIGUEL MOYA,1,24,-3.7056739,40.42058
+3,7,Chamberí,http://www.wikidata.org/entity/Q1763370,72,Arapiles,http://www.wikidata.org/entity/Q10856744,PLAZA DEL CONDE DEL VALLE DE SUCHIL,2,18,-3.7072122,40.4303224
+4,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DE MANUELA MALASAÑA,3,24,-3.7026739,40.4285905
+5,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,CALLE DE FUENCARRAL,106,27,-3.7020743,40.428362
+6,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,CALLE DE HORTALEZA,63,24,-3.6984093,40.4241633
+7,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,CALLE DE HORTALEZA,75,21,-3.6977399,40.4252161
+8,7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432,PLAZA DE ALONSO MARTINEZ,6,24,-3.6953067,40.4277143
+9,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,PLAZA DE SAN MIGUEL,9,24,-3.7094093,40.4156134
+10,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,CALLE DEL MARQUES DE LA ENSENADA,16,24,-3.6920816,40.4254027
+11,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DE SAN ANDRES,20,24,-3.7036192,40.4270517
+12,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DE SAN BERNARDO,87,24,-3.7062202,40.4285271
+13,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DEL CONDE DUQUE,22,24,-3.7104727,40.4273652
+14,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874,CALLE DE VENTURA RODRIGUEZ,1,24,-3.7133768,40.4259913
+15,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DEL NORTE,10,21,-3.7073611,40.4262937
+16,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DE SAN BERNARDO,22,21,-3.7074955,40.4229421
+17,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,PLAZA DE CARLOS CAMBRONERO,2,24,-3.7041859,40.4231675
+18,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,PLAZA DE PEDRO ZEROLO,1,24,-3.6995679,40.4209206
+19,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,CALLE DE PRIM,4,24,-3.6953951,40.4218997
+20,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,CALLE DE ALCALA,49,30,-3.6952095,40.4191989
+22,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,CALLE DE JACOMETREZO,1,24,-3.7064995,40.4201452
+23,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,PLAZA DE SANTO DOMINGO,S/N,24,-3.7082901,40.4202137
+24,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,CALLE DE CARLOS III,1,24,-3.7105866,40.417906
+25a,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,PLAZA DEL CELENQUE,1,24,-3.7059978,40.4173416
+25b,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,PLAZA DEL CELENQUE,1,24,-3.7060243,40.4172593
+26,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,PLAZA DE LAS SALESAS,8,24,-3.6945421,40.4238308
+27,1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637,CALLE DE JESUS,6,27,-3.6955803,40.4132831
+28,1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637,CALLE DE ALCALA,26,24,-3.6983662,40.4180695
+29,1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637,CALLE DEL MARQUES DE CUBAS,25,24,-3.6958008,40.416244
+30,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,CALLE DE PAVIA,6,27,-3.7115428,40.4193355
+31,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,CALLE MAYOR,18,27,-3.706625,40.4163446
+32,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,PLAZA DE LA PROVINCIA,1,18,-3.7061355,40.4148511
+33,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,CALLE DE LAS CARRETAS,3,21,-3.7032096,40.4164757
+34,1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637,PLAZA DE JACINTO BENAVENTE,S/N,24,-3.7035044,40.4144117
+35,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,PLAZA DEL CORDON,1,24,-3.7103676,40.4141792
+36,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,PLAZA DE RAMALES,5,24,-3.711764,40.4168229
+37,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,PLAZA DE SAN FRANCISCO,5,24,-3.7141234,40.4108606
+38,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,CARRERA DE SAN FRANCISCO,1,24,-3.7114443,40.4112961
+39,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,PLAZA DE LA CEBADA,16,27,-3.7090043,40.4112662
+40,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,CALLE DEL CONDE DE ROMANONES,2,24,-3.7047463,40.4137865
+41,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,CALLE DE ATOCHA,56,18,-3.6989898,40.412228
+42,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,CALLE DE SANTA ISABEL,32,24,-3.6982294,40.4107714
+43,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,CALLE DE LAVAPIES,36,24,-3.7025446,40.4100889
+44,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,CALLE DEL MESON DE PAREDES,35,21,-3.7039138,40.4098162
+45,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,GLORIETA DE LA PUERTA DE TOLEDO,1,21,-3.7111381,40.4069486
+46,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190,CALLE DE LA RIBERA DE CURTIDORES,28,24,-3.7071178,40.4054496
+47,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190,GLORIETA DE EMBAJADORES,7,24,-3.702755,40.4046233
+48,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,GLORIETA DE EMBAJADORES,2,24,-3.7020997,40.4054473
+49,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,RONDA DE ATOCHA,36,24,-3.6992427,40.4060497
+50,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,CALLE DE SANTA ISABEL,57,24,-3.69322,40.4083102
+51,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,PLAZA DEL EMPERADOR CARLOS V,7,27,-3.6935934,40.4077234
+52,1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637,PLAZA DE SANTA ANA,9,24,-3.7007838,40.4145181
+53,1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844,CALLE DE VALENCIA,2,24,-3.7007295,40.4082802
+54,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,CALLE DE BARCELO,7,21,-3.7003435,40.4266233
+55,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,PLAZA DE SAN ILDEFONSO,8,24,-3.7019295,40.4240716
+56,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,PLAZA DEL CARMEN,1,24,-3.7032875,40.418484
+57,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DE SANTA CRUZ DE MARCENADO,24,24,-3.7128181,40.4296363
+58,1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319,CALLE DE AUGUSTO FIGUEROA,33,24,-3.6979458,40.4222601
+59,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DEL ESPIRITU SANTO,30,21,-3.7041167,40.4254802
+60,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,PLAZA DE LA INDEPENDENCIA,7,24,-3.6881994,40.4194508
+61,3,Retiro,http://www.wikidata.org/entity/Q2002296,34,Ibiza,http://www.wikidata.org/entity/Q15249910,CALLE DE O'DONNELL,30,24,-3.675206,40.4214379
+62,3,Retiro,http://www.wikidata.org/entity/Q2002296,34,Ibiza,http://www.wikidata.org/entity/Q15249910,CALLE DE O'DONNELL,48,24,-3.6724223,40.4212986
+63,3,Retiro,http://www.wikidata.org/entity/Q2002296,34,Ibiza,http://www.wikidata.org/entity/Q15249910,CALLE DE IBIZA,64,24,-3.6706508,40.4178926
+65,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,CALLE DE ANTONIO MAURA,15,24,-3.6893825,40.4166859
+67,1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637,CALLE DE ALMADEN,28,24,-3.6931349,40.410829
+68,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,CALLE DE ESPALTER,1,21,-3.6911649,40.412781
+69,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,CALLE DE ALFONSO XII,54,27,-3.6888669,40.4100609
+70,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,AVENIDA DE MENENDEZ PELAYO,63,24,-3.6777994,40.4152203
+71,3,Retiro,http://www.wikidata.org/entity/Q2002296,36,Niño Jesús,http://www.wikidata.org/entity/Q3773746,CALLE DEL DOCE DE OCTUBRE,28,24,-3.674021,40.4160054
+72,3,Retiro,http://www.wikidata.org/entity/Q2002296,36,Niño Jesús,http://www.wikidata.org/entity/Q3773746,CALLE DEL DOCTOR ESQUERDO,62,24,-3.669623,40.415721
+73,3,Retiro,http://www.wikidata.org/entity/Q2002296,33,Estrella,http://www.wikidata.org/entity/Q3773738,PLAZA DE LOS ASTROS,S/N,24,-3.669099,40.411463
+74,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,AVENIDA DE MENENDEZ PELAYO,S/N,24,-3.6765768,40.4117601
+75,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,AVENIDA DE MENENDEZ PELAYO,S/N,24,-3.6784149,40.4083387
+76,3,Retiro,http://www.wikidata.org/entity/Q2002296,36,Niño Jesús,http://www.wikidata.org/entity/Q3773746,AVENIDA DEL MEDITERRANEO,19,24,-3.6751544,40.4072851
+77,3,Retiro,http://www.wikidata.org/entity/Q2002296,31,Pacífico,http://www.wikidata.org/entity/Q3773753,PLAZA DEL CONDE DE CASAL,8,22,-3.6707742,40.4063347
+78,3,Retiro,http://www.wikidata.org/entity/Q2002296,32,Adelfas,http://www.wikidata.org/entity/Q3774001,CALLE DEL CERRO DE LA PLATA,2,24,-3.6745783,40.4005704
+79,3,Retiro,http://www.wikidata.org/entity/Q2002296,31,Pacífico,http://www.wikidata.org/entity/Q3773753,AVENIDA DE MENENDEZ PELAYO,38,24,-3.6805524,40.4050482
+80a,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,27,Atocha,http://www.wikidata.org/entity/Q3814594,AVENIDA DE LA CIUDAD DE BARCELONA,S/N,24,-3.6904816,40.4074122
+80b,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,27,Atocha,http://www.wikidata.org/entity/Q3814594,AVENIDA DE LA CIUDAD DE BARCELONA,S/N,27,-3.6907238,40.407626
+81,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,CALLE DE CLAUDIO MOYANO,S/N,24,-3.6919663,40.4095758
+82,3,Retiro,http://www.wikidata.org/entity/Q2002296,33,Estrella,http://www.wikidata.org/entity/Q3773738,CALLE DE LA LIRA,2,24,-3.669683,40.4084793
+83,3,Retiro,http://www.wikidata.org/entity/Q2002296,36,Niño Jesús,http://www.wikidata.org/entity/Q3773746,CALLE DE PIO BAROJA,8,24,-3.6745339,40.4132589
+84,3,Retiro,http://www.wikidata.org/entity/Q2002296,32,Adelfas,http://www.wikidata.org/entity/Q3774001,CALLE DEL DOCTOR ESQUERDO,191,24,-3.6726923,40.4033695
+85,3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766,AVENIDA DE MENENDEZ PELAYO,9,27,-3.6799299,40.4211415
+86,1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637,PASEO DEL PRADO,S/N,21,-3.6933298,40.4185779
+87,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE AYALA,44,24,-3.6835631,40.4276717
+88,4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781,CALLE DE VELAZQUEZ,73,24,-3.6837471,40.4312077
+89,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,CALLE DE AYALA,102,24,-3.6751716,40.4272628
+90,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE GOYA,18,30,-3.6837297,40.4250878
+91,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,CALLE DE HERMOSILLA,73,24,-3.6788203,40.4261113
+92,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE CLAUDIO COELLO,45,24,-3.6864821,40.4262237
+93,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE GOYA,3,24,-3.6894124,40.4256984
+94,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,PASEO DE RECOLETOS,22,21,-3.6907044,40.4233686
+95,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE CLAUDIO COELLO,19,24,-3.6869914,40.4226634
+96,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE ALCALA,111,27,-3.6820471,40.4220516
+97,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,AVENIDA DE MENENDEZ PELAYO,1,27,-3.6801515,40.4224846
+98,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,AVENIDA DE FELIPE II,5,24,-3.6754079,40.4241911
+99,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,CALLE DE ALCANTARA,2,24,-3.6739638,40.4261048
+100,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,CALLE DE GOYA,99,24,-3.6738777,40.4247843
+101,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,CALLE DE JORGE JUAN,131,24,-3.6694246,40.4231223
+102,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE ALCALA,95,24,-3.6840806,40.4211552
+103,4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781,CALLE DE JOSE ORTEGA Y GASSET,4,24,-3.6865351,40.4303733
+104,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,PASEO DE LA CASTELLANA,4,21,-3.6895792,40.4267658
+105,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE SERRANO,46,24,-3.6874745,40.4270684
+106a,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE SERRANO,32,18,-3.6878868,40.4248642
+106b,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE SERRANO,34,18,-3.6878604,40.4250085
+107,4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551,CALLE DE SERRANO,8,24,-3.6884243,40.4215952
+108,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,CALLE DE LAS MARTIRES CONCEPCIONISTAS,2,27,-3.670653,40.4274425
+109,4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781,CALLE DE JOSE ORTEGA Y GASSET,32,24,-3.6815253,40.4301281
+110,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,91,Casa de Campo,http://www.wikidata.org/entity/Q16302441,PASEO DE MORET,S/N,24,-3.7201316,40.4347654
+111a,7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587,CALLE DEL ARCIPRESTE DE HITA,8,24,-3.7174896,40.4335742
+111b,7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587,CALLE DEL ARCIPRESTE DE HITA,12,24,-3.7177783,40.433982
+112,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874,PASEO DE MORET,11,24,-3.7248727,40.4326267
+113,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,91,Casa de Campo,http://www.wikidata.org/entity/Q16302441,PASEO DEL PINTOR ROSALES,38,24,-3.7207145,40.4277472
+114,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874,CALLE DE QUINTANA,13,24,-3.7174151,40.4278211
+115,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874,PLAZA DEL MARQUES DE CERRALBO,S/N,24,-3.7169626,40.4253802
+116a,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874,PLAZA DE ESPAÑA,S/N,24,-3.7117588,40.4240632
+116b,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874,PLAZA DE ESPAÑA,S/N,24,-3.7118457,40.4241889
+117,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874,CALLE DE ALTAMIRANO,24,24,-3.7189152,40.4309046
+118,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009,CALLE DE JUAN MARTIN EL EMPECINADO,16,24,-3.688135,40.4007959
+119,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,27,Atocha,http://www.wikidata.org/entity/Q3814594,CALLE DE MENDEZ ALVARO,7,24,-3.6865777,40.4014567
+120,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009,CALLE DE PALOS DE LA FRONTERA,27,24,-3.6947791,40.4030362
+121,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009,PASEO DE SANTA MARIA DE LA CABEZA,58,24,-3.6986046,40.4018356
+122,7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432,CALLE DE SANTA ENGRACIA,16,24,-3.6962626,40.429524
+123,7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587,CALLE DE GUZMAN EL BUENO,2,24,-3.7134685,40.4306386
+124,7,Chamberí,http://www.wikidata.org/entity/Q1763370,73,Trafalgar,http://www.wikidata.org/entity/Q10384027,CALLE DE MANUEL SILVELA,18,24,-3.6993182,40.4308173
+125,7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432,CALLE DE FERNANDEZ DE LA HOZ,29,24,-3.6948316,40.4353128
+126,7,Chamberí,http://www.wikidata.org/entity/Q1763370,73,Trafalgar,http://www.wikidata.org/entity/Q10384027,CALLE DEL GENERAL ALVAREZ DE CASTRO,4,24,-3.7017424,40.4345672
+127,7,Chamberí,http://www.wikidata.org/entity/Q1763370,72,Arapiles,http://www.wikidata.org/entity/Q10856744,CALLE DE FERNANDO EL CATOLICO,19,24,-3.7083987,40.4339055
+128,7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587,CALLE DE CEA BERMUDEZ,59,27,-3.7155506,40.4390329
+129,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,CALLE DE JOSE ABASCAL,33,24,-3.6982818,40.4384684
+130,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,CALLE DE SANTA ENGRACIA,129,20,-3.7017071,40.4417195
+131,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,CALLE DE BRAVO MURILLO,44,24,-3.704022,40.4417543
+132,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,CALLE DE SANTA ENGRACIA,168,24,-3.7035911,40.4463889
+133,6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684,CALLE DE DULCINEA,3,24,-3.7000292,40.4471673
+134,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,CALLE DE MARIA DE GUZMAN,58,24,-3.6955114,40.444027
+135,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,PLAZA DE SAN JUAN DE LA CRUZ,S/N,24,-3.6928901,40.4414845
+136,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,PASEO DE LA CASTELLANA,106,24,-3.6908127,40.4452833
+137,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,PLAZA DE LA REPUBLICA ARGENTINA,6,24,-3.6852925,40.4454958
+138,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,PASEO DE LA CASTELLANA,108,24,-3.6915818,40.4456884
+139,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,CALLE DE JOSE GUTIERREZ ABASCAL,S/N,24,-3.6904495,40.4393558
+140,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,CALLE DE VELAZQUEZ,134,27,-3.6829045,40.438628
+141,7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432,PASEO DE LA CASTELLANA,43,12,-3.6892902,40.4354253
+142,4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781,PASEO DE LA CASTELLANA,S/N,24,-3.6880402,40.4335262
+143,4,Salamanca,http://www.wikidata.org/entity/Q1773521,45,Lista,http://www.wikidata.org/entity/Q4779,CALLE DE DIEGO DE LEON,54,24,-3.6782355,40.434616
+144,4,Salamanca,http://www.wikidata.org/entity/Q1773521,45,Lista,http://www.wikidata.org/entity/Q4779,CALLE DE JUAN BRAVO,50,24,-3.6754628,40.4323192
+145,4,Salamanca,http://www.wikidata.org/entity/Q1773521,45,Lista,http://www.wikidata.org/entity/Q4779,CALLE DE JOSE ORTEGA Y GASSET,87,24,-3.671401,40.4297717
+146,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,CALLE DE MARIA FRANCISCA,1,18,-3.67879,40.4442406
+147,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,AVENIDA DEL DOCTOR ARCE,45,24,-3.6795811,40.4483353
+148,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,CALLE DE SERRANO,210,24,-3.6816993,40.4510203
+149,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,PASEO DE LA HABANA,42,24,-3.6878512,40.4498448
+150,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,PASEO DE LA CASTELLANA,S/N,24,-3.690541,40.4491125
+151,6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684,CALLE DE ORENSE,10,24,-3.6952023,40.4488617
+152,6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684,AVENIDA DEL GENERAL PERON,4,24,-3.6989497,40.4527163
+153,6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684,AVENIDA DEL GENERAL PERON,36,24,-3.6930894,40.45235
+154,6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684,CALLE DE ORENSE,36,24,-3.6946736,40.4547769
+155,6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684,CALLE DE SAN GERMÁN,55,24,-3.700864,40.4572863
+156,6,Tetuán,http://www.wikidata.org/entity/Q1773540,63,Castillejos,http://www.wikidata.org/entity/Q11913212,CALLE DE SOR ANGELA DE LA CRUZ,2,24,-3.6913229,40.4592406
+157,5,Chamartín,http://www.wikidata.org/entity/Q1766348,55,Nueva España,http://www.wikidata.org/entity/Q10338128,PASEO DE LA CASTELLANA,S/N,24,-3.6893305,40.459282
+158,5,Chamartín,http://www.wikidata.org/entity/Q1766348,54,Hispanoamérica,http://www.wikidata.org/entity/Q3814573,AVENIDA DE ALBERTO ALCOCER,22,24,-3.6847049,40.45862
+159,5,Chamartín,http://www.wikidata.org/entity/Q1766348,54,Hispanoamérica,http://www.wikidata.org/entity/Q3814573,PASEO DE LA HABANA,63,24,-3.6837348,40.4542549
+160,5,Chamartín,http://www.wikidata.org/entity/Q1766348,54,Hispanoamérica,http://www.wikidata.org/entity/Q3814573,CALLE DE COLOMBIA,7,24,-3.6766176,40.4571995
+161,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,91,Casa de Campo,http://www.wikidata.org/entity/Q16302441,PASEO DE LA FLORIDA,8,27,-3.7220624,40.4221372
+162,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190,PASEO DE LOS OLMOS,28,24,-3.7107559,40.4035176
+163,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190,PASEO DE LA ESPERANZA,,21,-3.7064372,40.4036349
+164,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,25,Las Delicias,http://www.wikidata.org/entity/Q3773736,PASEO DE LAS DELICIAS,94,24,-3.6944851,40.3971366
+165,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,23,La Chopera,http://www.wikidata.org/entity/Q3773750,PASEO DE LA CHOPERA,49,27,-3.6976134,40.3928841
+166,1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510,CALLE DE SEGOVIA,21,24,-3.7133382,40.4139396
+167,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,21,Imperial,http://www.wikidata.org/entity/Q3773740,CALLE DE SEGOVIA,47,24,-3.7176456,40.4137331
+168,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009,PASEO DE SANTA MARIA DE LA CABEZA,32,24,-3.6959159,40.4045828
+169,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190,CALLE DE TOLEDO,181,24,-3.713846,40.401578
+170,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190,PASEO DE LA ESPERANZA,21,24,-3.704403,40.4011039
+171,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,25,Las Delicias,http://www.wikidata.org/entity/Q3773736,CALLE DE EMBAJADORES,97,24,-3.6984459,40.3997626
+172,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009,CALLE DE BUSTAMANTE,1,24,-3.6935448,40.4008683
+173,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190,PASEO DE LA ESPERANZA,59,24,-3.7023615,40.3981757
+174,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190,PASEO DE LAS YESERIAS,8,27,-3.7063771,40.397417
+175,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,23,La Chopera,http://www.wikidata.org/entity/Q3773750,CALLE DE JAIME EL CONQUISTADOR,30,21,-3.6983033,40.3962687
+176,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,25,Las Delicias,http://www.wikidata.org/entity/Q3773736,CALLE DE ALICANTE,3,24,-3.6936302,40.3942411
+177,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,25,Las Delicias,http://www.wikidata.org/entity/Q3773736,CALLE DE BOLIVAR,3,24,-3.694087,40.3915019
+178,3,Retiro,http://www.wikidata.org/entity/Q2002296,31,Pacífico,http://www.wikidata.org/entity/Q3773753,CALLE DE LEON GIL DE PALACIO,1,24,-3.6788939,40.4030242
+179,13,Puente de Vallecas,http://www.wikidata.org/entity/Q2003054,132,San Diego,http://www.wikidata.org/entity/Q11946851,AUTOVIA M-30,S/N,24,-3.6690602,40.3979341
+180,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,27,Atocha,http://www.wikidata.org/entity/Q3814594,CALLE DE LA RETAMA,5,24,-3.6759244,40.3941252
+181,3,Retiro,http://www.wikidata.org/entity/Q2002296,34,Ibiza,http://www.wikidata.org/entity/Q15249910,CALLE DE IBIZA,18,27,-3.67664,40.4181748
+182,3,Retiro,http://www.wikidata.org/entity/Q2002296,33,Estrella,http://www.wikidata.org/entity/Q3773738,CALLE DEL ALCALDE SAINZ DE BARANDA,90,24,-3.6655023,40.4187145
+183,4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578,CALLE DE HERMOSILLA,135,24,-3.6694506,40.4256358
+184,4,Salamanca,http://www.wikidata.org/entity/Q1773521,43,Fuente del Berro,http://www.wikidata.org/entity/Q3814564,PASEO DEL MARQUES DE ZAFRA,24,24,-3.6653095,40.4260023
+185,4,Salamanca,http://www.wikidata.org/entity/Q1773521,43,Fuente del Berro,http://www.wikidata.org/entity/Q3814564,GLORIETA DEL MARQUES DE ZAFRA,4,24,-3.661533,40.4250682
+186,4,Salamanca,http://www.wikidata.org/entity/Q1773521,45,Lista,http://www.wikidata.org/entity/Q4779,CALLE DEL GENERAL PARDIÑAS,56,24,-3.6782783,40.429069
+187,4,Salamanca,http://www.wikidata.org/entity/Q1773521,43,Fuente del Berro,http://www.wikidata.org/entity/Q3814564,CALLE DE ALEJANDRO GONZALEZ,1,24,-3.6638407,40.4301353
+188,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,151,Ventas,http://www.wikidata.org/entity/Q71762,AVENIDA DE DAROCA,2,27,-3.6589062,40.4311658
+189,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,154,Concepción,http://www.wikidata.org/entity/Q11915156,CALLE DE LA VIRGEN DE LA ALEGRIA,18,24,-3.6555431,40.4350206
+190,4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781,CALLE DE VELAZQUEZ,91,24,-3.6834711,40.4343761
+191,4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559,CALLE DE ALONSO HEREDIA,1,18,-3.6740365,40.4346168
+192,4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559,AVENIDA DE LOS TOREROS,3,27,-3.6714315,40.431855
+193,4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559,AVENIDA DE LOS TOREROS,47,24,-3.665644,40.4325204
+194,4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559,CALLE DE FRANCISCO SILVELA,86,24,-3.6771947,40.4371986
+195,5,Chamartín,http://www.wikidata.org/entity/Q1766348,52,Prosperidad,http://www.wikidata.org/entity/Q4776,CALLE DEL PADRE INDALECIO HERNANDEZ,1,24,-3.6754913,40.4392483
+196,5,Chamartín,http://www.wikidata.org/entity/Q1766348,53,Ciudad Jardín,http://www.wikidata.org/entity/Q3773744,CALLE DE SUERO DE QUIÑONES,2,24,-3.6750918,40.4440957
+197,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,AVENIDA DE CONCHA ESPINA,S/N,24,-3.6780252,40.4515501
+198,7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432,GLORIETA DE RUBEN DARIO,2,24,-3.6915713,40.4331172
+199,7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587,CALLE DE FERNANDO EL CATOLICO,61,27,-3.7148406,40.4343244
+200,7,Chamberí,http://www.wikidata.org/entity/Q1763370,72,Arapiles,http://www.wikidata.org/entity/Q10856744,GLORIETA DE QUEVEDO,4,24,-3.704671,40.4336617
+201,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,CALLE DE JOSE ABASCAL,2,24,-3.7038161,40.4387323
+202,7,Chamberí,http://www.wikidata.org/entity/Q1763370,76,Vallehermoso,http://www.wikidata.org/entity/Q6122685,CALLE DE SANTANDER,S/N,24,-3.7080969,40.4411686
+203,7,Chamberí,http://www.wikidata.org/entity/Q1763370,76,Vallehermoso,http://www.wikidata.org/entity/Q6122685,CALLE DEL GENERAL AMPUDIA,2,24,-3.7144239,40.4417547
+204,6,Tetuán,http://www.wikidata.org/entity/Q1773540,61,Bellas Vistas,http://www.wikidata.org/entity/Q11908929,CALLE DEL DOCTOR SANTERO,1,24,-3.7041702,40.4476606
+205,6,Tetuán,http://www.wikidata.org/entity/Q1773540,61,Bellas Vistas,http://www.wikidata.org/entity/Q11908929,CALLE DE NAVARRA,1,24,-3.7033408,40.4535024
+206,6,Tetuán,http://www.wikidata.org/entity/Q1773540,66,Berruguete,http://www.wikidata.org/entity/Q11909208,CALLE DEL MARQUES DE VIANA,5,24,-3.6990499,40.4607994
+207,6,Tetuán,http://www.wikidata.org/entity/Q1773540,65,Valdeacederas,http://www.wikidata.org/entity/Q10388711,CALLE DE LAS AZUCENAS,1,18,-3.6973991,40.4630291
+208,5,Chamartín,http://www.wikidata.org/entity/Q1766348,56,Castilla,http://www.wikidata.org/entity/Q3813735,PASEO DE LA CASTELLANA,S/N,24,-3.6886852,40.4665125
+209,5,Chamartín,http://www.wikidata.org/entity/Q1766348,55,Nueva España,http://www.wikidata.org/entity/Q10338128,PLAZA DE CASTILLA,9,24,-3.6887875,40.4656872
+210,1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181,CALLE DE LAS TRES CRUCES,9,27,-3.702631,40.4197538
+211,1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767,CALLE DEL DESENGAÑO,3,24,-3.7025369,40.4206168
+212,11,Carabanchel,http://www.wikidata.org/entity/Q1001991,113,San Isidro,http://www.wikidata.org/entity/Q3813733,GLORIETA DEL MARQUES DE VADILLO,9,24,-3.7165313,40.3981605
+213,12,Usera,http://www.wikidata.org/entity/Q953368,125,Moscardó,http://www.wikidata.org/entity/Q11937679,CALLE DE ANTONIO LOPEZ,129,24,-3.7001575,40.3889363
+214,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,155,San Pascual,http://www.wikidata.org/entity/Q165612,CALLE DE LA CONDESA DE VENADITO,2,24,-3.6569597,40.4434012
+215,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,152,Pueblo Nuevo,http://www.wikidata.org/entity/Q71753,CALLE DE GUTIERRE DE CETINA,77,24,-3.6409697,40.4296903
+216,10,Latina,http://www.wikidata.org/entity/Q794954,102,Barrio de Puerta del Ángel,http://www.wikidata.org/entity/Q31142,PLAZA DE LA PUERTA DEL ANGEL,3,24,-3.7288948,40.4140528
+217,8,Fuencarral-El Pardo,http://www.wikidata.org/entity/Q656196,85,La Paz,http://www.wikidata.org/entity/Q5869740,CALLE DE PEDRO RICO,4,24,-3.6891094,40.4810028
+218,14,Moratalaz,http://www.wikidata.org/entity/Q2076109,144,Media Legua,http://www.wikidata.org/entity/Q9031035,CALLE DEL CAMINO DE LOS VINATEROS,28,24,-3.6573999,40.4105519
+219,14,Moratalaz,http://www.wikidata.org/entity/Q2076109,143,Marroquina,http://www.wikidata.org/entity/Q11935636,CALLE DEL CAMINO DE LOS VINATEROS,108,24,-3.6467783,40.4083961
+220,14,Moratalaz,http://www.wikidata.org/entity/Q2076109,144,Media Legua,http://www.wikidata.org/entity/Q9031035,CALLE DEL ARROYO DE LAS PILILLAS,4,24,-3.6514264,40.4061548
+221,14,Moratalaz,http://www.wikidata.org/entity/Q2076109,141,Pavones,http://www.wikidata.org/entity/Q71760,CALLE DE LA HACIENDA DE PAVONES,346,24,-3.6346859,40.4004579
+222,12,Usera,http://www.wikidata.org/entity/Q953368,125,Moscardó,http://www.wikidata.org/entity/Q11937679,CALLE DE EUGENIO CAXES,5,24,-3.7026887,40.3917816
+223,10,Latina,http://www.wikidata.org/entity/Q794954,101,CÁRMENES,,PASEO DE LA ERMITA DEL SANTO,48,24,-3.7245226,40.4064341
+224,10,Latina,http://www.wikidata.org/entity/Q794954,102,Barrio de Puerta del Ángel,http://www.wikidata.org/entity/Q31142,CALLE DE CARAMUEL,52,24,-3.7288262,40.408882
+225,13,Puente de Vallecas,http://www.wikidata.org/entity/Q2003054,136,Numancia,http://www.wikidata.org/entity/Q10338144,CALLE DE LA SIERRA TOLEDANA,33,24,-3.6601933,40.4026388
+226,13,Puente de Vallecas,http://www.wikidata.org/entity/Q2003054,136,Numancia,http://www.wikidata.org/entity/Q10338144,CAMINO DE VALDERRIBAS,94,24,-3.6606789,40.3991986
+227,13,Puente de Vallecas,http://www.wikidata.org/entity/Q2003054,132,San Diego,http://www.wikidata.org/entity/Q11946851,CALLE DEL ARROYO DEL OLIVAR,4,24,-3.6661421,40.3940355
+228,11,Carabanchel,http://www.wikidata.org/entity/Q1001991,111,COMILLA,,CALLE DE SAN DELFIN,9,24,-3.7080437,40.3943842
+229,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,154,Concepción,http://www.wikidata.org/entity/Q11915156,CALLE DE JOSE DEL HIERRO,5,24,-3.6486507,40.4370782
+230,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,155,San Pascual,http://www.wikidata.org/entity/Q165612,CALLE DE CARLOTA O'NEILL,32,24,-3.6491034,40.4436986
+231,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,155,San Pascual,http://www.wikidata.org/entity/Q165612,CALLE DE LOS DERECHOS HUMANOS,14,24,-3.6558172,40.439748
+232,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,151,Ventas,http://www.wikidata.org/entity/Q71762,CALLE DE JOSE MARIA PEREDA,1,24,-3.6485701,40.4328362
+233,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,151,Ventas,http://www.wikidata.org/entity/Q71762,AVENIDA DEL MARQUES DE CORBERA,12,24,-3.655633,40.4229144
+234,15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,151,Ventas,http://www.wikidata.org/entity/Q71762,AVENIDA DEL MARQUES DE CORBERA,52,24,-3.651125,40.426163
+235,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,24,Legazpi,http://www.wikidata.org/entity/Q3773990,CALLE DEL SODIO,1,24,-3.6911834,40.3889853
+236,2,Arganzuela,http://www.wikidata.org/entity/Q2000929,21,Imperial,http://www.wikidata.org/entity/Q3773740,PASEO IMPERIAL,20,24,-3.7171449,40.4074236
+237,6,Tetuán,http://www.wikidata.org/entity/Q1773540,61,Bellas Vistas,http://www.wikidata.org/entity/Q11908929,CALLE DE FRANCISCO BALSEIRO,S/N,24,-3.7105146,40.451395
+238,6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684,CALLE DE SAN GERMÁN,5,24,-3.6932474,40.4562183
+239,6,Tetuán,http://www.wikidata.org/entity/Q1773540,66,Berruguete,http://www.wikidata.org/entity/Q11909208,CALLE DE FRANCOS RODRIGUEZ,62,24,-3.7079276,40.4567345
+240,4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559,AVENIDA DE BRASILIA,9,24,-3.6609886,40.4367138
+241,4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559,AVENIDA DE CAMILO JOSE CELA,23,24,-3.6677796,40.4377568
+242,4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559,AVENIDA DE BRUSELAS,56,24,-3.6629058,40.4394662
+243,4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559,CALLE DE CARTAGENA,38,24,-3.6700894,40.4351648
+244,7,Chamberí,http://www.wikidata.org/entity/Q1763370,76,Vallehermoso,http://www.wikidata.org/entity/Q6122685,CALLE DE ISAAC PERAL,44,24,-3.7175468,40.4398513
+245,7,Chamberí,http://www.wikidata.org/entity/Q1763370,72,Arapiles,http://www.wikidata.org/entity/Q10856744,CALLE DE GALILEO,63,24,-3.7101726,40.4364656
+246,7,Chamberí,http://www.wikidata.org/entity/Q1763370,73,Trafalgar,http://www.wikidata.org/entity/Q10384027,CALLE DE SANTA ENGRACIA,87,24,-3.699252,40.436026
+247,7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270,CALLE DE ZURBANO,90,24,-3.692843,40.4383672
+248,8,Fuencarral-El Pardo,http://www.wikidata.org/entity/Q656196,85,La Paz,http://www.wikidata.org/entity/Q5869740,CALLE DE SINESIO DELGADO,2,24,-3.6878414,40.4743243
+249,5,Chamartín,http://www.wikidata.org/entity/Q1766348,56,Castilla,http://www.wikidata.org/entity/Q3813735,PASEO DE LA CASTELLANA,298,24,-3.6852959,40.4794159
+250,5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778,CALLE DE SERRANO,113,24,-3.6861,40.4408151
+251,5,Chamartín,http://www.wikidata.org/entity/Q1766348,52,Prosperidad,http://www.wikidata.org/entity/Q4776,CALLE DE SANTA HORTENSIA,31,24,-3.6668532,40.444183
+252,5,Chamartín,http://www.wikidata.org/entity/Q1766348,56,Castilla,http://www.wikidata.org/entity/Q3813735,CALLE DE RODRIGUEZ JAEN,S/N,24,-3.6839094,40.4715645
+253,5,Chamartín,http://www.wikidata.org/entity/Q1766348,54,Hispanoamérica,http://www.wikidata.org/entity/Q3814573,CALLE DEL DOCTOR FLEMING,7,24,-3.688443,40.455606
+254,5,Chamartín,http://www.wikidata.org/entity/Q1766348,55,Nueva España,http://www.wikidata.org/entity/Q10338128,AVENIDA DE PIO XII,3,24,-3.6765549,40.4610436
+255,5,Chamartín,http://www.wikidata.org/entity/Q1766348,55,Nueva España,http://www.wikidata.org/entity/Q10338128,CALLE DEL GENERAL LOPEZ POZAS,2,24,-3.6851815,40.4637286
+256,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235,CALLE DE BEATRIZ DE BOBADILLA,2,24,-3.7138353,40.4463599
+257,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235,AVENIDA DE JUAN DE HERRERA,1,24,-3.73029,40.438804
+258,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235,AVENIDA COMPLUTENSE,14,24,-3.7273004,40.449019
+259,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235,PLAZA DE RAMON Y CAJAL,S/N,24,-3.727031,40.4444176
+260,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235,CALLE DE JOSE ANTONIO NOVAIS,S/N,24,-3.7272637,40.4482316
+261,9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235,AVENIDA COMPLUTENSE,7,24,-3.7292576,40.4505032
