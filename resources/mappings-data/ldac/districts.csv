@@ -1,218 +1,50 @@
 DISTRICT_ID,DISTRICT_NAME,WIKIDATA_DISTRICT,NEIGHBOURHOOD_ID,NEIGHBOURHOOD_NAME,WIKIDATA_NEIGHBOURHOOD
 1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
 1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
 7,Chamberí,http://www.wikidata.org/entity/Q1763370,72,Arapiles,http://www.wikidata.org/entity/Q10856744
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
 1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
 7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432
 1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
 9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
 1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637
-1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637
-1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
 1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
 2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637
-1,Centro,http://www.wikidata.org/entity/Q1763376,12,Embajadores,http://www.wikidata.org/entity/Q2449844
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
-1,Centro,http://www.wikidata.org/entity/Q1763376,14,Justicia,http://www.wikidata.org/entity/Q1992319
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
 3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
 3,Retiro,http://www.wikidata.org/entity/Q2002296,34,Ibiza,http://www.wikidata.org/entity/Q15249910
-3,Retiro,http://www.wikidata.org/entity/Q2002296,34,Ibiza,http://www.wikidata.org/entity/Q15249910
-3,Retiro,http://www.wikidata.org/entity/Q2002296,34,Ibiza,http://www.wikidata.org/entity/Q15249910
-3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
-1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637
-3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
-3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
-3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
-3,Retiro,http://www.wikidata.org/entity/Q2002296,36,Niño Jesús,http://www.wikidata.org/entity/Q3773746
 3,Retiro,http://www.wikidata.org/entity/Q2002296,36,Niño Jesús,http://www.wikidata.org/entity/Q3773746
 3,Retiro,http://www.wikidata.org/entity/Q2002296,33,Estrella,http://www.wikidata.org/entity/Q3773738
-3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
-3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
-3,Retiro,http://www.wikidata.org/entity/Q2002296,36,Niño Jesús,http://www.wikidata.org/entity/Q3773746
 3,Retiro,http://www.wikidata.org/entity/Q2002296,31,Pacífico,http://www.wikidata.org/entity/Q3773753
 3,Retiro,http://www.wikidata.org/entity/Q2002296,32,Adelfas,http://www.wikidata.org/entity/Q3774001
-3,Retiro,http://www.wikidata.org/entity/Q2002296,31,Pacífico,http://www.wikidata.org/entity/Q3773753
 2,Arganzuela,http://www.wikidata.org/entity/Q2000929,27,Atocha,http://www.wikidata.org/entity/Q3814594
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,27,Atocha,http://www.wikidata.org/entity/Q3814594
-3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
-3,Retiro,http://www.wikidata.org/entity/Q2002296,33,Estrella,http://www.wikidata.org/entity/Q3773738
-3,Retiro,http://www.wikidata.org/entity/Q2002296,36,Niño Jesús,http://www.wikidata.org/entity/Q3773746
-3,Retiro,http://www.wikidata.org/entity/Q2002296,32,Adelfas,http://www.wikidata.org/entity/Q3774001
-3,Retiro,http://www.wikidata.org/entity/Q2002296,35,Jerónimos,http://www.wikidata.org/entity/Q10306766
-1,Centro,http://www.wikidata.org/entity/Q1763376,13,Cortes,http://www.wikidata.org/entity/Q2535637
 4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
 4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781
 4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,41,Recoletos,http://www.wikidata.org/entity/Q3814551
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781
 9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,91,Casa de Campo,http://www.wikidata.org/entity/Q16302441
 7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,91,Casa de Campo,http://www.wikidata.org/entity/Q16302441
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,92,Argüelles,http://www.wikidata.org/entity/Q64874
 2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,27,Atocha,http://www.wikidata.org/entity/Q3814594
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587
 7,Chamberí,http://www.wikidata.org/entity/Q1763370,73,Trafalgar,http://www.wikidata.org/entity/Q10384027
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,73,Trafalgar,http://www.wikidata.org/entity/Q10384027
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,72,Arapiles,http://www.wikidata.org/entity/Q10856744
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
 7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
 6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
 5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781
 4,Salamanca,http://www.wikidata.org/entity/Q1773521,45,Lista,http://www.wikidata.org/entity/Q4779
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,45,Lista,http://www.wikidata.org/entity/Q4779
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,45,Lista,http://www.wikidata.org/entity/Q4779
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684
 6,Tetuán,http://www.wikidata.org/entity/Q1773540,63,Castillejos,http://www.wikidata.org/entity/Q11913212
 5,Chamartín,http://www.wikidata.org/entity/Q1766348,55,Nueva España,http://www.wikidata.org/entity/Q10338128
 5,Chamartín,http://www.wikidata.org/entity/Q1766348,54,Hispanoamérica,http://www.wikidata.org/entity/Q3814573
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,54,Hispanoamérica,http://www.wikidata.org/entity/Q3814573
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,54,Hispanoamérica,http://www.wikidata.org/entity/Q3814573
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,91,Casa de Campo,http://www.wikidata.org/entity/Q16302441
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190
 2,Arganzuela,http://www.wikidata.org/entity/Q2000929,25,Las Delicias,http://www.wikidata.org/entity/Q3773736
 2,Arganzuela,http://www.wikidata.org/entity/Q2000929,23,La Chopera,http://www.wikidata.org/entity/Q3773750
-1,Centro,http://www.wikidata.org/entity/Q1763376,11,Palacio,http://www.wikidata.org/entity/Q2136510
 2,Arganzuela,http://www.wikidata.org/entity/Q2000929,21,Imperial,http://www.wikidata.org/entity/Q3773740
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,25,Las Delicias,http://www.wikidata.org/entity/Q3773736
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,26,Palos de la Frontera,http://www.wikidata.org/entity/Q521009
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,22,Las Acacias,http://www.wikidata.org/entity/Q3319190
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,23,La Chopera,http://www.wikidata.org/entity/Q3773750
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,25,Las Delicias,http://www.wikidata.org/entity/Q3773736
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,25,Las Delicias,http://www.wikidata.org/entity/Q3773736
-3,Retiro,http://www.wikidata.org/entity/Q2002296,31,Pacífico,http://www.wikidata.org/entity/Q3773753
 13,Puente de Vallecas,http://www.wikidata.org/entity/Q2003054,132,San Diego,http://www.wikidata.org/entity/Q11946851
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,27,Atocha,http://www.wikidata.org/entity/Q3814594
-3,Retiro,http://www.wikidata.org/entity/Q2002296,34,Ibiza,http://www.wikidata.org/entity/Q15249910
-3,Retiro,http://www.wikidata.org/entity/Q2002296,33,Estrella,http://www.wikidata.org/entity/Q3773738
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,42,Goya,http://www.wikidata.org/entity/Q3814578
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,43,Fuente del Berro,http://www.wikidata.org/entity/Q3814564
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,43,Fuente del Berro,http://www.wikidata.org/entity/Q3814564
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,45,Lista,http://www.wikidata.org/entity/Q4779
 4,Salamanca,http://www.wikidata.org/entity/Q1773521,43,Fuente del Berro,http://www.wikidata.org/entity/Q3814564
 15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,151,Ventas,http://www.wikidata.org/entity/Q71762
 15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,154,Concepción,http://www.wikidata.org/entity/Q11915156
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,46,Castellana,http://www.wikidata.org/entity/Q4781
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559
 4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559
 5,Chamartín,http://www.wikidata.org/entity/Q1766348,52,Prosperidad,http://www.wikidata.org/entity/Q4776
 5,Chamartín,http://www.wikidata.org/entity/Q1766348,53,Ciudad Jardín,http://www.wikidata.org/entity/Q3773744
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,74,Almagro,http://www.wikidata.org/entity/Q10954432
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,71,Gaztambide,http://www.wikidata.org/entity/Q10288587
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,72,Arapiles,http://www.wikidata.org/entity/Q10856744
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
 7,Chamberí,http://www.wikidata.org/entity/Q1763370,76,Vallehermoso,http://www.wikidata.org/entity/Q6122685
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,76,Vallehermoso,http://www.wikidata.org/entity/Q6122685
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,61,Bellas Vistas,http://www.wikidata.org/entity/Q11908929
 6,Tetuán,http://www.wikidata.org/entity/Q1773540,61,Bellas Vistas,http://www.wikidata.org/entity/Q11908929
 6,Tetuán,http://www.wikidata.org/entity/Q1773540,66,Berruguete,http://www.wikidata.org/entity/Q11909208
 6,Tetuán,http://www.wikidata.org/entity/Q1773540,65,Valdeacederas,http://www.wikidata.org/entity/Q10388711
 5,Chamartín,http://www.wikidata.org/entity/Q1766348,56,Castilla,http://www.wikidata.org/entity/Q3813735
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,55,Nueva España,http://www.wikidata.org/entity/Q10338128
-1,Centro,http://www.wikidata.org/entity/Q1763376,16,Sol,http://www.wikidata.org/entity/Q2465181
-1,Centro,http://www.wikidata.org/entity/Q1763376,15,Universidad,http://www.wikidata.org/entity/Q10387767
 11,Carabanchel,http://www.wikidata.org/entity/Q1001991,113,San Isidro,http://www.wikidata.org/entity/Q3813733
 12,Usera,http://www.wikidata.org/entity/Q953368,125,Moscardó,http://www.wikidata.org/entity/Q11937679
 15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,155,San Pascual,http://www.wikidata.org/entity/Q165612
@@ -221,45 +53,9 @@ DISTRICT_ID,DISTRICT_NAME,WIKIDATA_DISTRICT,NEIGHBOURHOOD_ID,NEIGHBOURHOOD_NAME,
 8,Fuencarral-El Pardo,http://www.wikidata.org/entity/Q656196,85,La Paz,http://www.wikidata.org/entity/Q5869740
 14,Moratalaz,http://www.wikidata.org/entity/Q2076109,144,Media Legua,http://www.wikidata.org/entity/Q9031035
 14,Moratalaz,http://www.wikidata.org/entity/Q2076109,143,Marroquina,http://www.wikidata.org/entity/Q11935636
-14,Moratalaz,http://www.wikidata.org/entity/Q2076109,144,Media Legua,http://www.wikidata.org/entity/Q9031035
 14,Moratalaz,http://www.wikidata.org/entity/Q2076109,141,Pavones,http://www.wikidata.org/entity/Q71760
-12,Usera,http://www.wikidata.org/entity/Q953368,125,Moscardó,http://www.wikidata.org/entity/Q11937679
 10,Latina,http://www.wikidata.org/entity/Q794954,101,CÁRMENES,
-10,Latina,http://www.wikidata.org/entity/Q794954,102,Barrio de Puerta del Ángel,http://www.wikidata.org/entity/Q31142
 13,Puente de Vallecas,http://www.wikidata.org/entity/Q2003054,136,Numancia,http://www.wikidata.org/entity/Q10338144
-13,Puente de Vallecas,http://www.wikidata.org/entity/Q2003054,136,Numancia,http://www.wikidata.org/entity/Q10338144
-13,Puente de Vallecas,http://www.wikidata.org/entity/Q2003054,132,San Diego,http://www.wikidata.org/entity/Q11946851
 11,Carabanchel,http://www.wikidata.org/entity/Q1001991,111,COMILLA,
-15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,154,Concepción,http://www.wikidata.org/entity/Q11915156
-15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,155,San Pascual,http://www.wikidata.org/entity/Q165612
-15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,155,San Pascual,http://www.wikidata.org/entity/Q165612
-15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,151,Ventas,http://www.wikidata.org/entity/Q71762
-15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,151,Ventas,http://www.wikidata.org/entity/Q71762
-15,Ciudad Lineal,http://www.wikidata.org/entity/Q1763694,151,Ventas,http://www.wikidata.org/entity/Q71762
 2,Arganzuela,http://www.wikidata.org/entity/Q2000929,24,Legazpi,http://www.wikidata.org/entity/Q3773990
-2,Arganzuela,http://www.wikidata.org/entity/Q2000929,21,Imperial,http://www.wikidata.org/entity/Q3773740
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,61,Bellas Vistas,http://www.wikidata.org/entity/Q11908929
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,62,Cuatro Caminos,http://www.wikidata.org/entity/Q5824684
-6,Tetuán,http://www.wikidata.org/entity/Q1773540,66,Berruguete,http://www.wikidata.org/entity/Q11909208
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559
-4,Salamanca,http://www.wikidata.org/entity/Q1773521,44,La Guindalera,http://www.wikidata.org/entity/Q3814559
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,76,Vallehermoso,http://www.wikidata.org/entity/Q6122685
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,72,Arapiles,http://www.wikidata.org/entity/Q10856744
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,73,Trafalgar,http://www.wikidata.org/entity/Q10384027
-7,Chamberí,http://www.wikidata.org/entity/Q1763370,75,Ríos Rosas,http://www.wikidata.org/entity/Q10366270
-8,Fuencarral-El Pardo,http://www.wikidata.org/entity/Q656196,85,La Paz,http://www.wikidata.org/entity/Q5869740
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,56,Castilla,http://www.wikidata.org/entity/Q3813735
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,51,El Viso,http://www.wikidata.org/entity/Q4778
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,52,Prosperidad,http://www.wikidata.org/entity/Q4776
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,56,Castilla,http://www.wikidata.org/entity/Q3813735
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,54,Hispanoamérica,http://www.wikidata.org/entity/Q3814573
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,55,Nueva España,http://www.wikidata.org/entity/Q10338128
-5,Chamartín,http://www.wikidata.org/entity/Q1766348,55,Nueva España,http://www.wikidata.org/entity/Q10338128
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235
-9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235
 9,Moncloa-Aravaca,http://www.wikidata.org/entity/Q2017682,93,Ciudad Universitaria,http://www.wikidata.org/entity/Q3319235
