@@ -1,0 +1,7 @@
+{
+    "builder": "SIoTRxBuilder",
+    "description": "## Theory\r\nThe ***if*** label allows you to determine the rules to be executed in the case the condition is satisfied. The ***elseif*** and ***else*** tags can be used to create the if-else structure. Notice that ***if*** is a pair label that beeds to be closed unlike the other two.\r\n```\r\n<#if condition1>\r\n    <#-- Rules1  -->\r\n<#elseif condition2>\r\n    <#-- Rules2  -->\r\n<#else> \r\n\t<#-- Rules3  -->\r\n<\/#if>\r\n```\r\nBe aware with the > character inside the conditions, it must be escaped or surrounded by ().\r\n## Hands-on\r\n### Task\r\nFill the template in order to print all three values (see expected results) if select is greater than 2, otherwise print the value at the index corresponding to the select value.",
+    "user_template": "<#assign values=[\"Option1\",\"Option2\",\"Option3\"]>\r\n<#assign select=3>\r\n<#-- WRITE BELOW -->",
+    "solution_template": "<#assign values=[\"Option1\",\"Option2\",\"Option3\"]>\r\n<#assign select=3>\r\n<#-- WRITE BELOW -->\r\n<#if (select>2)>\r\n[=values[0]]\r\n[=values[1]]\r\n[=values[2]]\r\n<#else>\r\n[=values[select]]\r\n<\/#if>",
+    "expected_result": "Option1\r\nOption2\r\nOption3"
+}

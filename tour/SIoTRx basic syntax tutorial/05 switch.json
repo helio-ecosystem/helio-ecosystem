@@ -1,0 +1,7 @@
+{
+    "builder": "SIoTRxBuilder",
+    "description": "## Theory\r\nAnother way to write conditionals is with the switch structure. In SIoTRx this structure works in the same way as in many programming languages, but with the difference that the syntax is written using labels as shown below.\r\n```\r\n<#switch value>\r\n\t<#case value1>\r\n\t\tRules to execute\r\n\t    <#break>\r\n\t<#case value2>\r\n\t\tRules to execute\r\n\t    <#break>\r\n\t<#default>\r\n\t    Rules to execute\r\n<\/#switch>\r\n```\r\nNotice that the ***break*** and ***default*** tags are optional.\r\n## Hands-on\r\n### Task\r\nConsidering only the first four letters of the alphabet, complete the template to print the place of each \"values\" character in the alphabet (see expected results).",
+    "user_template": "<#assign values=[\"Y\",\"A\",\"C\",\"D\",\"Z\",\"B\",\"A\",\"E\"]>\r\n<#list values as item>\r\n<#-- WRITE BELOW -->\r\n\r\n<\/#list>",
+    "solution_template": "<#assign values=[\"Y\",\"A\",\"C\",\"D\",\"Z\",\"B\",\"A\",\"E\"]>\r\n<#list values as item>\r\n<#-- WRITE BELOW -->\r\n<#switch item>\r\n<#case \"A\">\r\n1\r\n<#break>\r\n<#case \"B\">\r\n2\r\n<#break>\r\n<#case \"C\">\r\n3\r\n<#break>\r\n<#case \"D\">\r\n4\r\n<#break>\r\n<\/#switch>\r\n<\/#list>",
+    "expected_result": "1\r\n3\r\n4\r\n2\r\n1"
+}
