@@ -1,7 +1,0 @@
-{
-    "builder": "SIoTRxBuilder",
-    "description": "When generating RDF data, the first element to declare is a subject. In addition, these subjects may have a class (defined in an ontology) associated using the property rdf:type or directly a if the RDF is in TURTLE.\nFor the mapping below generate subjects with an URL that is http://sample.com/resource/P{ID} and which class is foaf:Person",
-    "user_template": "<#assign people=providers(\"HttpProvider\", { \"method\" : \"GET\", \"url\" : \"https://raw.githubusercontent.com/helio-ecosystem/helio-ecosystem/main/resources/mappings-data/ldac/people.csv\"})>\n[=people]",
-    "solution_template": "<#assign people=providers(\"HttpProvider\", { \"method\" : \"GET\", \"url\" : \"https://raw.githubusercontent.com/helio-ecosystem/helio-ecosystem/main/resources/mappings-data/ldac/people.csv\"})>\n<#assign peopleRows = people?trim?split(\"\\n\")>\n<#list peopleRows as personRow>\n<#if !personRow?is_first>\n<#assign personColumns = personRow?split(\",\")>\n<http://sample.com/resource/[=personColumns[0]]> a <http://xmlns.com/foaf/0.1/Person> .\n</#if>\n</#list>",
-    "expected_result": "<http://sample.com/resource/1> a <http://xmlns.com/foaf/0.1/Person> .\n<http://sample.com/resource/2> a <http://xmlns.com/foaf/0.1/Person> .\n<http://sample.com/resource/3> a <http://xmlns.com/foaf/0.1/Person> .\n<http://sample.com/resource/4> a <http://xmlns.com/foaf/0.1/Person> .\n<http://sample.com/resource/5> a <http://xmlns.com/foaf/0.1/Person> ."
-}
