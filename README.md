@@ -13,7 +13,7 @@ This repository is the road map for the Helio ecosystem and its components.
 
 ### Acknowledgements
 
-Many of the didactic materials and exercices have been developed thanks to the financial support of:
+#### Many of the didactic materials and exercices have been developed thanks to the financial support of:
 
 | Institution       | Grant |
  |   :---:      |      :---      |
@@ -21,7 +21,7 @@ Many of the didactic materials and exercices have been developed thanks to the f
 
 
 
-This project and some of its plugins have been partially funded by:
+#### This project and some of its plugins have been partially funded by:
 
  | Project       | Grant |
  |   :---:      |      :---      |
