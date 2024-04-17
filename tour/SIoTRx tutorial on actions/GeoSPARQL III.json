@@ -1,7 +1,0 @@
-{
-    "builder": "SIoTRxBuilder",
-    "description": "## Theory\r\nAs explained before, there are several formats for representing geospatial data. Although WKT Literals are the most used, other formats such as DGGS may be interesting for specific uses.\r\n\r\nThe Discrete Global Grid System is a serialization consisting of a mosaic of cells whose shape depends on the grid type. There are two different groups of grids depending on whether each cell is partitioned recursively or not, these being **Hierarchical grids** and **Non-hierarchical grids** respectively.\r\n An example of a non-hierarchical grid is UTM Zones:\r\n\r\n![UTM Zones DGG](https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8d\/Utm-zones-USA.svg\/360px-Utm-zones-USA.svg.png)\r\n\r\nAn example of a hierarchical grid is HealPix:\r\n\r\n![HealPix DGG](https:\/\/www.zonca.dev\/posts\/healpix_nside_4.png)\r\n\r\nTo learn more about Geometry Serializations, read the section 8.8 of the [OGC GeoSPARQL specification](https:\/\/opengeospatial.github.io\/ogc-geosparql\/geosparql11\/spec.pdf). Note that GeoSPARQL implementations often do not support all serializations.",
-    "user_template": "<#-- No task -->",
-    "solution_template": "<#-- No task -->",
-    "expected_result": ""
-  }
